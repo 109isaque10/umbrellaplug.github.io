@@ -412,7 +412,7 @@ def lang(i, lang):
 		i = i.replace('War', u'\u0057\u006f\u006a\u0065\u006e\u006e\u0079')
 		i = i.replace('Western', u'\u0057\u0065\u0073\u0074\u0065\u0072\u006e')
 
-	elif lang == 'pt':
+	elif lang == 'pt-BR':
 		i = i.replace('Action', u'\u0041\u00e7\u00e3\u006f')
 		i = i.replace('Adventure', u'\u0041\u0076\u0065\u006e\u0074\u0075\u0072\u0061')
 		i = i.replace('Animation', u'\u0041\u006e\u0069\u006d\u0061\u00e7\u00e3\u006f')
