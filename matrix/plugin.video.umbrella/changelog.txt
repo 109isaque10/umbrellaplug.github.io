@@ -1,3 +1,54 @@
+[B]Update - v6.6.59 - July 10th, 2024[/B]
+--[Fix] Added code to catch blank values on clearlogo for seasons.
+
+[B]Update - v6.6.58 - July 8th, 2024[/B]
+--[Change] Added option to use custom background for addon fanart. General settings.
+--[Fix] Corrected anime section to new imdb website format and urls.
+
+[B]Update - v6.6.57 - June 19th, 2024[/B]
+--[Change] Changed confirmation popup text on cache clearing for new functions.
+
+[B]Update - v6.6.56 - June 9th, 2024[/B]
+--[Change] IMDb lists changed to show imdb in my tv and my movie sections if set to public.
+
+[B]Update - v6.6.55 - June 7th, 2024[/B]
+--[Change] Made change to clearlogo code to keep clear logo from show level.
+--[Change] Added clear fanart cache.
+
+[B]Update - v6.6.54 - May 24th, 2024[/B]
+--[Change] Made change to source_utils code to allow for more title options and less filtering.
+--[Fix] Corrected imdb lists.
+
+[B]Update - v6.6.53 - May 14th, 2024[/B]
+--[Fix] Change made to MDBList pagination code.
+
+[B]Update - v6.6.52 - May 14th, 2024[/B]
+--[Fix] Change made to database detection code.
+--[Fix] Change made to imdb movie lists.
+
+[B]Update - v6.6.51 - May 9th, 2024[/B]
+--[Fix] Removed code for pagination changes.
+
+[B]Update - v6.6.50 - May 8th, 2024[/B]
+--[Fix] Removed unused import.
+--[Settings] More changes for settings.
+--[Fix] Made changes to mdblist to allow for static lists with no list type to still show.
+--[Enhancement] Removed previous changes made for fanart.
+--[Change] Removed Title of Show from Episode Progress in widgets.
+--[Fix] Made changes to pagination for lists equal to the limit.
+--[Enhancement] Removed another unneeded file.
+--[Fix] Fixed 4k icon missing on some devices.
+--[Fix] Made change to resolve issues identifying MyVideos database on some systems.
+--[Fix] Removed subscene module and moved delete all function to tools.
+--[Enhancement] Changes to TMDb api url to add images. credit -onEMoAr
+--[Enhancement] Changes to Episodes, Seasons to include clearlogo. credit -onEMoAr
+--[Enhancement] Changes to Movies to include clearlogo correctly. credit -onEMoAr
+--[Enhancement] Changes made to allow user fanart background. credit -onEMoAr
+--[Fix] Changes made to control module for checking external modules. credit -onEMoAr
+--[Fix] Changes made to service module for settings module. credit -onEMoAr
+--[Enhancement] Changes made flatten tv shows. credit -onEMoAr
+--[Enhancement] Changes made to settings to accomodate changes.
+
 [B]Update - v6.6.48 - March 22nd, 2024[/B]
 --[Fix] Settings change to fix allowing resume from Trakt without Trakt scrobble.
 

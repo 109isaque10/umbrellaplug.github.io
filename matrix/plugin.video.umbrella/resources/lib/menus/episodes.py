@@ -36,6 +36,7 @@ class Episodes:
 		self.showunaired = getSetting('showunaired') == 'true'
 		self.unairedcolor = getSetting('unaired.identify')
 		self.showspecials = getSetting('tv.specials') == 'true'
+
 		self.highlight_color = control.setting('highlight.color')
 		self.date_time = datetime.now()
 		self.today_date = (self.date_time).strftime('%Y-%m-%d')
@@ -854,7 +855,7 @@ class Episodes:
 					if not self.progress_showunaired and i.get('unaired', '') == 'true': continue
 				else:
 					if not self.showunaired and i.get('unaired', '') == 'true': continue
-
+				
 
 				tvshowtitle, title, imdb, tmdb, tvdb = i.get('tvshowtitle'), i.get('title'), i.get('imdb', ''), i.get('tmdb', ''), i.get('tvdb', '')
 				year, season, episode, premiered = i.get('year', ''), i.get('season'), i.get('episode'), i.get('premiered', '')
@@ -867,8 +868,11 @@ class Episodes:
 				
 				if 'label' not in i: i['label'] = title
 				if (not i['label'] or i['label'] == '0'): label = '%sx%02d . %s %s' % (season, int(episode), 'Episode', episode)
-				else: label = '%sx%02d . %s' % (season, int(episode), i['label'])
-				if isMultiList: label = '[COLOR %s]%s[/COLOR] - %s' % (self.highlight_color, tvshowtitle, label)
+				else: label = '%sx%02d. %s' % (season, int(episode), i['label'])
+				if is_widget:
+					labelProgress = label
+				else:
+					if isMultiList: label = '[COLOR %s]%s[/COLOR] - %s' % (self.highlight_color, tvshowtitle, label)
 				try: labelProgress = label + '[COLOR %s]  [%s][/COLOR]' % (self.highlight_color, str(round(float(i['progress']), 1)) + '%')
 				except: labelProgress = label
 				try:
@@ -939,7 +943,6 @@ class Episodes:
 						elif airLocation == '1': labelProgress = '%s %s' % (labelProgress, air)
 						elif airLocation == '2': meta['plot'] = '%s%s\r\n%s' % (airLabel, air, meta['plot'])
 						elif airLocation == '3': meta['plot'] = '%s\r\n%s%s' % (meta['plot'], airLabel, air)
-
 				if self.prefer_tmdbArt: poster = meta.get('poster3') or meta.get('poster') or meta.get('poster2') or addonPoster
 				else: poster = meta.get('poster2') or meta.get('poster3') or meta.get('poster') or addonPoster
 				season_poster = meta.get('season_poster') or poster
@@ -953,7 +956,7 @@ class Episodes:
 				banner = meta.get('banner') or addonBanner
 				art = {}
 				art.update({'poster': season_poster, 'tvshow.poster': poster, 'season.poster': season_poster, 'fanart': fanart, 'icon': icon, 'thumb': thumb, 'banner': banner,
-						'clearlogo': meta.get('clearlogo', ''), 'tvshow.clearlogo': meta.get('clearlogo', ''), 'clearart': meta.get('clearart', ''), 'tvshow.clearart': meta.get('clearart', ''), 'landscape': thumb})
+						'tvshow.clearlogo': meta.get('clearlogo', ''), 'clearart': meta.get('clearart', ''), 'tvshow.clearart': meta.get('clearart', ''), 'landscape': thumb})
 				for k in ('metacache', 'poster2', 'poster3', 'fanart2', 'fanart3', 'banner2', 'banner3', 'trailer'): meta.pop(k, None)
 				meta.update({'poster': poster, 'fanart': fanart, 'banner': banner, 'thumb': thumb, 'icon': icon})
 				sysmeta, sysart, syslabelProgress = quote_plus(jsdumps(meta)), quote_plus(jsdumps(art)), quote_plus(labelProgress)
@@ -1036,6 +1039,7 @@ class Episodes:
 								else:
 									item.setProperties({'WatchedEpisodes': str(count['watched']), 'UnWatchedEpisodes': str(count['unwatched'])})
 								item.setProperties({'TotalSeasons': str(meta.get('total_seasons', '')), 'TotalEpisodes': str(count['total'])})
+								item.setProperty('WatchedProgress', str(int(float(count['watched']) / float(count['total']) * 100)))
 							else:
 								if control.getKodiVersion() >= 20:
 									item.setProperties({'UnWatchedEpisodes': str(meta.get('total_aired_episodes', ''))}) # for shows never watched

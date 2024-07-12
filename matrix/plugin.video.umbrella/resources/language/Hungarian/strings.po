@@ -5189,3 +5189,31 @@ msgstr ""
 msgctxt "#40513"
 msgid "Local scrobble notification"
 msgstr ""
+
+msgctxt "#40514"
+msgid "Never"
+msgstr ""
+
+msgctxt "#40515"
+msgid "Always"
+msgstr ""
+
+msgctxt "#40516"
+msgid "One Season"
+msgstr ""
+
+msgctxt "#40517"
+msgid "Use TMDB Clearlogo"
+msgstr ""
+
+msgctxt "#40518"
+msgid "Fanart Cache Successfully Cleared!"
+msgstr ""
+
+msgctxt "#40519"
+msgid "Clear [COLOR yellow]Fanart Cache [/COLOR]..."
+msgstr ""
+
+msgctxt "#40520"
+msgid "Library Movie Cache Successfully Cleared!"
+msgstr ""

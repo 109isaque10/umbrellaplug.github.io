@@ -107,12 +107,13 @@ class Movies:
 			self.language_link = 'https://www.imdb.com/search/title/?title_type=feature,tv_movie&num_votes=100,&production_status=released&primary_language=%s&sort=%s&count=%s&start=1' % ('%s', self.imdb_sort(type='imdbmovies'), self.genre_limit)
 			self.certification_link = 'https://www.imdb.com/search/title/?title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=%s&sort=%s&count=%s&start=1' % ('%s', self.imdb_sort(type='imdbmovies'), self.genre_limit)
 			self.imdbboxoffice_link = 'https://www.imdb.com/search/title/?title_type=feature,tv_movie&production_status=released&sort=boxoffice_gross_us,desc&count=%s&start=1' % self.genre_limit
-		self.imdbwatchlist_link = 'https://www.imdb.com/user/ur%s/watchlist?sort=date_added,desc' % self.imdb_user # only used to get users watchlist ID
+		self.imdbwatchlist_link = 'https://www.imdb.com/user/ur%s/watchlist/?sort=date_added,desc&title_type=feature' % self.imdb_user # only used to get users watchlist ID
 		self.imdbwatchlist2_link = 'https://www.imdb.com/list/%s/?view=detail&sort=%s&title_type=movie&start=1' % ('%s', self.imdb_sort(type='movies.watchlist'))
 		self.imdblists_link = 'https://www.imdb.com/user/ur%s/lists?tab=all&sort=mdfd&order=desc&filter=titles' % self.imdb_user
 		self.imdblist_link = 'https://www.imdb.com/list/%s/?view=detail&sort=%s&title_type=movie,short,video,tvShort,tvMovie,tvSpecial&start=1' % ('%s', self.imdb_sort())
 		self.imdbratings_link = 'https://www.imdb.com/user/ur%s/ratings?sort=your_rating,desc&mode=detail&start=1' % self.imdb_user # IMDb ratings does not take title_type so filter is in imdb_list() function
-		self.anime_link = 'https://www.imdb.com/search/keyword/?keywords=anime&title_type=movie,tvMovie&release_date=,date[0]&sort=moviemeter,asc&count=%s&start=1' % self.genre_limit
+		self.anime_link = 'https://www.imdb.com/search/title/?title_type=feature,tv_movie&keywords=anime-animation,anime'
+
 
 		self.trakt_link = 'https://api.trakt.tv'
 		self.search_link = 'https://api.trakt.tv/search/movie?limit=%s&page=1&query=' % self.search_page_limit
@@ -294,8 +295,8 @@ class Movies:
 			self.list = cache.get(self.mbd_user_lists, self.mdblist_hours)
 			#self.list = self.mbd_user_lists()
 			if self.list is None: self.list = []
-			if create_directory: self.addDirectory(self.list, folderName=folderName)
-			return self.list
+			return self.addDirectory(self.list, folderName=folderName)
+
 		except:
 			from resources.lib.modules import log_utils
 			log_utils.error()
@@ -1343,19 +1344,14 @@ class Movies:
 		try:
 			for i in re.findall(r'date\[(\d+)\]', url):
 				url = url.replace('date[%s]' % i, (self.date_time - timedelta(days=int(i))).strftime('%Y-%m-%d'))
-			def imdb_watchlist_id(url):
-				return client.parseDOM(client.request(url), 'meta', ret='content', attrs = {'property': 'pageId'})[0]
-			if url == self.imdbwatchlist_link:
-				url = cache.get(imdb_watchlist_id, 8640, url)
-				url = self.imdbwatchlist2_link % url
 			result = client.request(url).replace('\n', ' ')
 			items = client.parseDOM(result, 'div', attrs = {'class': '.+? lister-item'}) + client.parseDOM(result, 'div', attrs = {'class': 'lister-item .+?'})
 			items += client.parseDOM(result, 'div', attrs = {'class': 'list_item.+?'})
+			items += client.parseDOM(result, 'li', attrs = {'class': 'ipc-metadata-list-summary-item'})
 		except:
 			from resources.lib.modules import log_utils
 			log_utils.error()
 			return
-
 		next = ''
 		try:
 			# HTML syntax error, " directly followed by attribute name. Insert space in between. parseDOM can otherwise not handle it.
@@ -1378,12 +1374,16 @@ class Movies:
 
 		for item in items:
 			try:
-				main_title = client.replaceHTMLCodes(client.parseDOM(item, 'a')[1])
-				title = main_title.split(' (')[0]
-				year = client.parseDOM(item, 'span', attrs = {'class': 'lister-item-year.+?'})
+				#main_title = client.replaceHTMLCodes(client.parseDOM(item, 'a')[1])
+				main_title = client.replaceHTMLCodes(client.parseDOM(item, 'h3')[0])
+				#title = main_title.split(' (')[0]
+				title = main_title.split('. ')[1]
+				#year = client.parseDOM(item, 'span', attrs = {'class': 'lister-item-year.+?'})
+				year = client.parseDOM(item, 'span', attrs ={'class': '.*?dli-title-metadata-item'})[0]
 				if not year: year = [main_title]
-				try: year = re.findall(r'(\d{4})', year[0])[0]
-				except: continue
+				#try: year = re.findall(r'(\d{4})', year[0])[0]
+				#except: continue
+				if not year: continue
 				if not comingSoon:
 					if int(year) > int((self.date_time).strftime('%Y')): continue
 				imdb = client.parseDOM(item, 'a', ret='href')[0]
@@ -1393,8 +1393,10 @@ class Movies:
 				if show or ('Episode:' in item): raise Exception() # Some lists contain TV shows.
 				rating = votes = ''
 				try:
-					rating = client.parseDOM(item, 'div', attrs = {'class': 'ratings-bar'})
-					rating = client.parseDOM(rating, 'strong')[0]
+					#rating = client.parseDOM(item, 'div', attrs = {'class': 'ratings-bar'})
+					#rating = client.parseDOM(rating, 'strong')[0]
+					ratingItem = client.parseDOM(item, 'div', attrs = {'class': '.*?dli-ratings-container'})
+					rating = re.findall(r'(?<=</svg>).*?(?=<span)', ratingItem[0])
 				except:
 					try:
 						rating = client.parseDOM(item, 'span', attrs = {'class': 'rating-rating'})
@@ -1404,7 +1406,9 @@ class Movies:
 						except:
 							try: rating = client.parseDOM(item, 'span', attrs = {'class': 'ipl-rating-star__rating'})[0]
 							except: rating = ''
-				try: votes = client.parseDOM(item, 'span', attrs = {'name': 'nv'})[0]
+				try: 
+					#votes = client.parseDOM(item, 'span', attrs = {'name': 'nv'})[0]
+					votes = re.findall(r'(?<=-->).*?(?=<)', ratingItem[0])[0]
 				except:
 					try: votes = client.parseDOM(item, 'div', ret='title', attrs = {'class': '.*?rating-list'})[0]
 					except:
@@ -1485,19 +1489,20 @@ class Movies:
 		list = []
 		try:
 			result = client.request(url)
-			items = client.parseDOM(result, 'li', attrs={'class': 'ipl-zebra-list__item user-list'})
+			items = client.parseDOM(result, 'li', attrs={'class': 'ipc-metadata-list-summary-item'})
 		except:
 			from resources.lib.modules import log_utils
 			log_utils.error()
 		for item in items:
 			try:
-				name = client.parseDOM(item, 'a')[0]
-				name = client.replaceHTMLCodes(name)
+				#name = client.parseDOM(item, 'a')[0]
+				#name = client.replaceHTMLCodes(name)
+				name = client.parseDOM(item, 'a', attrs={'class': 'ipc-metadata-list-summary-item__t'})[0]
 				url = client.parseDOM(item, 'a', ret='href')[0]
 				url = url.split('/list/', 1)[-1].strip('/')
 				url = self.imdblist_link % url
 				url = client.replaceHTMLCodes(url)
-				list.append({'name': name, 'url': url, 'context': url, 'image': 'imdb.png', 'icon': 'DefaultVideoPlaylists.png', 'action': 'movies&folderName=%' % name})
+				list.append({'name': name, 'url': url, 'context': url, 'image': 'imdb.png', 'icon': 'DefaultVideoPlaylists.png', 'action': 'movies&folderName=%s' % quote_plus(name)})
 			except:
 				from resources.lib.modules import log_utils
 				log_utils.error()
@@ -1987,9 +1992,15 @@ class Movies:
 				meta.update({'code': imdb, 'imdbnumber': imdb, 'mediatype': 'movie', 'tag': [imdb, tmdb]})
 				try: meta.update({'genre': cleangenre.lang(meta['genre'], self.lang)})
 				except: pass
-
-				if self.prefer_tmdbArt: poster = meta.get('poster3') or meta.get('poster') or meta.get('poster2') or addonPoster
-				else: poster = meta.get('poster2') or meta.get('poster3') or meta.get('poster') or addonPoster
+				#since you are so bored you are reading my comments in my code from my test repo. below is how you do it correctly. when you figure out a variable it is important to actually apply it. you can fix yours by putting clearlogo in the art.update below or just copy what I did here. "i am mad about comments in your code" cannot wait for that one.
+				if self.prefer_tmdbArt: 
+					poster = meta.get('poster3') or meta.get('poster') or meta.get('poster2') or addonPoster
+					clearlogo = meta.get('tmdblogo') or meta.get('clearlogo','')
+					meta.update({'clearlogo': clearlogo})
+				else: 
+					poster = meta.get('poster2') or meta.get('poster3') or meta.get('poster') or addonPoster
+					clearlogo = meta.get('clearlogo') or meta.get('tmdblogo','')
+					meta.update({'clearlogo': clearlogo})
 				fanart = ''
 				if settingFanart:
 					if self.prefer_tmdbArt: fanart = meta.get('fanart3') or meta.get('fanart') or meta.get('fanart2') or addonFanart
@@ -2090,6 +2101,7 @@ class Movies:
 			except:
 				from resources.lib.modules import log_utils
 				log_utils.error()
+		
 		if next:
 			try:
 				if not items: raise Exception()
@@ -2153,6 +2165,8 @@ class Movies:
 					elif not icon.startswith('Default'): icon = control.joinPath(artPath, icon)
 				url = '%s?action=%s' % (sysaddon, i['action'])
 				try: url += '&url=%s' % quote_plus(i['url'])
+				except: pass
+				try: url += '&folderName=%s' % quote_plus(name)
 				except: pass
 				cm = []
 				if (i.get('list_type', '') == 'traktPulicList') and self.traktCredentials:

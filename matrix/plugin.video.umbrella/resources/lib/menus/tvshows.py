@@ -69,12 +69,12 @@ class TVshows:
 		self.language_link = 'https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=100,&production_status=released&primary_language=%s&sort=%s&count=%s&start=1' % ('%s', self.imdb_sort(type='imdbshows'), self.genre_limit)
 		self.certification_link = 'https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&release_date=,date[0]&certificates=%s&sort=%s&count=%s&start=1' % ('%s', self.imdb_sort(type='imdbshows'), self.genre_limit)
 		self.year_link = 'https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=100,&production_status=released&year=%s,%s&sort=moviemeter,asc&count=%s&start=1' % ('%s', '%s', self.genre_limit)
-		self.imdbwatchlist_link = 'https://www.imdb.com/user/ur%s/watchlist?sort=date_added,desc' % self.imdb_user # only used to get users watchlist ID
+		self.imdbwatchlist_link = 'https://www.imdb.com/user/ur%s/watchlist/?sort=date_added,desc&title_type=tv_series,tv_miniseries' % self.imdb_user # only used to get users watchlist ID
 		self.imdbwatchlist2_link = 'https://www.imdb.com/list/%s/?view=detail&sort=%s&title_type=tvSeries&start=1' % ('%s', self.imdb_sort(type='shows.watchlist'))
 		self.imdblists_link = 'https://www.imdb.com/user/ur%s/lists?tab=all&sort=mdfd&order=desc&filter=titles' % self.imdb_user
 		self.imdblist_link = 'https://www.imdb.com/list/%s/?view=detail&sort=%s&title_type=tvSeries,tvMiniSeries&start=1' % ('%s', self.imdb_sort())
 		self.imdbratings_link = 'https://www.imdb.com/user/ur%s/ratings?sort=your_rating,desc&mode=detail&start=1' % self.imdb_user # IMDb ratings does not take title_type so filter in imdb_list() function
-		self.anime_link = 'https://www.imdb.com/search/keyword/?keywords=anime&title_type=tvSeries,miniSeries&release_date=,date[0]&sort=moviemeter,asc&count=%s&start=1' % self.genre_limit
+		self.anime_link = 'https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&keywords=anime-animation,anime'
 
 		self.trakt_user = getSetting('trakt.user.name').strip()
 		self.traktCredentials = trakt.getTraktCredentialsInfo()
@@ -193,10 +193,11 @@ class TVshows:
 				self.list = cache.get(self.imdb_genre_list, self.imdblist_hours, url, folderName)
 				if idx: self.worker()
 			elif u in self.mbdlist_list_items:
-				self.list = self.mdb_list_items(url, create_directory=False)
+				self.list = self.mdb_list_items(url, create_directory=False, folderName=folderName)
 				if idx: self.worker()
 			if self.list is None: self.list = []
-			if create_directory: self.tvshowDirectory(self.list, folderName=folderName)
+			if len(self.list) > 0:
+				if create_directory: self.tvshowDirectory(self.list, folderName=folderName)
 			return self.list
 		except:
 			from resources.lib.modules import log_utils
@@ -874,6 +875,7 @@ class TVshows:
 					self.list = paginated_ids[index]
 			try:
 				if int(q['limit']) != len(self.list): raise Exception()
+			
 				q.update({'page': str(int(q['page']) + 1)})
 				q = (urlencode(q)).replace('%2C', ',')
 				next = url.replace('?' + urlparse(url).query, '') + '?' + q
@@ -977,7 +979,8 @@ class TVshows:
 				for i in range(len(self.list)): self.list[i]['next'] = next
 				self.worker()
 				self.sort(type="shows.favourite")
-				if create_directory: self.tvshowDirectory(self.list, folderName=folderName)
+				if len(self.list) > 0:
+					if create_directory: self.tvshowDirectory(self.list, folderName=folderName)
 				return self.list
 			except:
 				from resources.lib.modules import log_utils
@@ -1184,15 +1187,16 @@ class TVshows:
 		if self.list is None: self.list = []
 		if create_directory: self.tvshowDirectory(self.list, folderName=folderName)
 		return self.list
-	def getMDBUserList(self, create_directory=True, folderName=''): 
+	def getMDBUserList(self, create_directory=True, folderName=''):
+		
 		self.list = []
 		try:
 			#self.list = cache.get(self.mbd_top_lists, 0)
 			self.list = cache.get(self.mbd_user_lists, self.mdblist_hours)
 			#self.list = self.mbd_user_lists()
 			if self.list is None: self.list = []
-			if create_directory: self.addDirectory(self.list, folderName=folderName)
-			return self.list
+			return self.addDirectory(self.list, folderName=folderName)
+
 		except:
 			from resources.lib.modules import log_utils
 			log_utils.error()
@@ -1212,7 +1216,8 @@ class TVshows:
 				list_count = item.get('params', {}).get('list_count', '')
 				list_url = self.mbdlist_list_items % (list_id)
 				label = '%s - (%s)' % (list_name, list_count)
-				self.list.append({'name': label, 'url': list_url, 'list_owner': list_owner, 'list_name': list_name, 'list_id': list_id, 'context': list_url, 'next': next, 'image': 'mdblist.png', 'icon': 'mdblist.png', 'action': 'tvshows'})
+				folderN = quote_plus(list_name)
+				self.list.append({'name': label, 'url': list_url, 'list_owner': list_owner, 'list_name': list_name, 'list_id': list_id, 'context': list_url, 'next': next, 'image': 'mdblist.png', 'icon': 'mdblist.png','folderName': folderN, 'action': 'tvshows'})
 			except:
 				from resources.lib.modules import log_utils
 				log_utils.error()
@@ -1223,15 +1228,16 @@ class TVshows:
 		try:
 			for i in re.findall(r'date\[(\d+)\]', url):
 				url = url.replace('date[%s]' % i, (self.date_time - timedelta(days=int(i))).strftime('%Y-%m-%d'))
-			def imdb_watchlist_id(url):
-				return client.parseDOM(client.request(url), 'meta', ret='content', attrs = {'property': 'pageId'})[0]
-			if url == self.imdbwatchlist_link:
-				url = cache.get(imdb_watchlist_id, 8640, url)
-				url = self.imdbwatchlist2_link % url
+			# def imdb_watchlist_id(url):
+			# 	return client.parseDOM(client.request(url), 'meta', ret='content', attrs = {'property': 'pageId'})[0]
+			# if url == self.imdbwatchlist_link:
+			# 	url = cache.get(imdb_watchlist_id, 8640, url)
+			# 	url = self.imdbwatchlist2_link % url
 			result = client.request(url)
 			result = result.replace('\n', ' ')
 			items = client.parseDOM(result, 'div', attrs = {'class': '.+? lister-item'}) + client.parseDOM(result, 'div', attrs = {'class': 'lister-item .+?'})
 			items += client.parseDOM(result, 'div', attrs = {'class': 'list_item.+?'})
+			items += client.parseDOM(result, 'li', attrs = {'class': 'ipc-metadata-list-summary-item'})
 		except:
 			from resources.lib.modules import log_utils
 			log_utils.error()
@@ -1250,10 +1256,13 @@ class TVshows:
 		except: next = ''
 		for item in items:
 			try:
-				title = client.replaceHTMLCodes(client.parseDOM(item, 'a')[1])
-				year = client.parseDOM(item, 'span', attrs = {'class': 'lister-item-year.+?'})
-				year += client.parseDOM(item, 'span', attrs = {'class': 'year_type'})
-				year = re.findall(r'(\d{4})', year[0])[0]
+				#title = client.replaceHTMLCodes(client.parseDOM(item, 'a')[1])
+				title = client.replaceHTMLCodes(client.parseDOM(item, 'h3')[0]).split('. ')[1]
+				#year = client.parseDOM(item, 'span', attrs = {'class': 'lister-item-year.+?'})
+				year = client.parseDOM(item, 'span', attrs ={'class': '.*?dli-title-metadata-item'})[0]
+				#year += client.parseDOM(item, 'span', attrs = {'class': 'year_type'})
+				year = year[:4]
+				#year = re.findall(r'(\d{4})', year[0])[0]
 				if int(year) > int((self.date_time).strftime('%Y')): raise Exception()
 				imdb = client.parseDOM(item, 'a', ret='href')[0]
 				imdb = re.findall(r'(tt\d*)', imdb)[0]
@@ -1261,8 +1270,10 @@ class TVshows:
 				dupes.append(imdb)
 				rating = votes = ''
 				try:
-					rating = client.parseDOM(item, 'div', attrs = {'class': 'ratings-bar'})
-					rating = client.parseDOM(rating, 'strong')[0]
+					#rating = client.parseDOM(item, 'div', attrs = {'class': 'ratings-bar'})
+					#rating = client.parseDOM(rating, 'strong')[0]
+					ratingItem = client.parseDOM(item, 'div', attrs = {'class': '.*?dli-ratings-container'})
+					rating = re.findall(r'(?<=</svg>).*?(?=<span)', ratingItem[0])
 				except:
 					try:
 						rating = client.parseDOM(item, 'span', attrs = {'class': 'rating-rating'})
@@ -1272,7 +1283,9 @@ class TVshows:
 						except:
 							try: rating = client.parseDOM(item, 'span', attrs = {'class': 'ipl-rating-star__rating'})[0]
 							except: rating = ''
-				try: votes = client.parseDOM(item, 'span', attrs = {'name': 'nv'})[0]
+				try: 
+					#votes = client.parseDOM(item, 'span', attrs = {'name': 'nv'})[0]
+					votes = re.findall(r'(?<=-->).*?(?=<)', ratingItem[0])[0]
 				except:
 					try: votes = client.parseDOM(item, 'div', ret='title', attrs = {'class': '.*?rating-list'})[0]
 					except:
@@ -1347,14 +1360,16 @@ class TVshows:
 		list = []
 		try:
 			result = client.request(url)
-			items = client.parseDOM(result, 'li', attrs={'class': 'ipl-zebra-list__item user-list'})
+			#items = client.parseDOM(result, 'li', attrs={'class': 'ipl-zebra-list__item user-list'})
+			items = client.parseDOM(result, 'li', attrs={'class': 'ipc-metadata-list-summary-item'})
 		except:
 			from resources.lib.modules import log_utils
 			log_utils.error()
 		for item in items:
 			try:
-				name = client.parseDOM(item, 'a')[0]
-				name = client.replaceHTMLCodes(name)
+				#name = client.parseDOM(item, 'a')[0]
+				#name = client.replaceHTMLCodes(name)
+				name = client.parseDOM(item, 'a', attrs={'class': 'ipc-metadata-list-summary-item__t'})[0]
 				url = client.parseDOM(item, 'a', ret='href')[0]
 				url = url.split('/list/', 1)[-1].strip('/')
 				url = self.imdblist_link % url
@@ -1547,7 +1562,7 @@ class TVshows:
 		is_widget = 'plugin' not in control.infoLabel('Container.PluginName')
 		settingFanart = getSetting('fanart') == 'true'
 		addonPoster, addonFanart, addonBanner = control.addonPoster(), control.addonFanart(), control.addonBanner()
-		flatten = getSetting('flatten.tvshows') == 'true'
+		flatten = int(getSetting('flatten.tvshows'))
 		if trakt.getTraktIndicatorsInfo(): watchedMenu, unwatchedMenu = getLS(32068), getLS(32069)
 		else: watchedMenu, unwatchedMenu = getLS(32066), getLS(32067)
 		traktManagerMenu, queueMenu = getLS(32070), getLS(32065)
@@ -1588,14 +1603,20 @@ class TVshows:
 				try:
 					if 'tvshowtitle' not in meta: meta.update({'tvshowtitle': title})
 				except: pass
-				if self.prefer_tmdbArt: poster = meta.get('poster3') or meta.get('poster') or meta.get('poster2') or addonPoster
-				else: poster = meta.get('poster2') or meta.get('poster3') or meta.get('poster') or addonPoster
+				if self.prefer_tmdbArt: 
+					poster = meta.get('poster3') or meta.get('poster') or meta.get('poster2') or addonPoster
+					clearlogo = meta.get('tmdblogo') or meta.get('clearlogo', '')
+					meta.update({'clearlogo': clearlogo})
+				else: 
+					poster = meta.get('poster2') or meta.get('poster3') or meta.get('poster') or addonPoster
+					clearlogo = meta.get('clearlogo') or meta.get('tmdblogo', '')
+					meta.update({'clearlogo': clearlogo})
 				landscape = meta.get('landscape')
 				fanart = ''
 				if settingFanart:
 					if self.prefer_tmdbArt: fanart = meta.get('fanart3') or meta.get('fanart') or meta.get('fanart2') or addonFanart
 					else: fanart = meta.get('fanart2') or meta.get('fanart3') or meta.get('fanart') or addonFanart
-				thumb = meta.get('thumb') or poster or landscape # set to show level poster
+				thumb = meta.get('thumb') or poster or landscape
 				icon = meta.get('icon') or poster
 				banner = meta.get('banner3') or meta.get('banner2') or meta.get('banner') or None #changed due to some skins using banner.
 				art = {}
@@ -1604,7 +1625,11 @@ class TVshows:
 				for k in ('metacache', 'poster2', 'poster3', 'fanart2', 'fanart3', 'banner2', 'banner3', 'trailer'): meta.pop(k, None)
 				meta.update({'poster': poster, 'fanart': fanart, 'banner': banner, 'thumb': thumb, 'icon': icon})
 				sysmeta, sysart = quote_plus(jsdumps(meta)), quote_plus(jsdumps(art))
-				if flatten: url = '%s?action=episodes&tvshowtitle=%s&year=%s&imdb=%s&tmdb=%s&tvdb=%s&meta=%s' % (sysaddon, systitle, year, imdb, tmdb, tvdb, sysmeta)
+				if flatten > 0:
+					total_seasons = meta.get('total_seasons')
+					if flatten == 2 and total_seasons < 2: url = '%s?action=episodes&tvshowtitle=%s&year=%s&imdb=%s&tmdb=%s&tvdb=%s&meta=%s' % (sysaddon, systitle, year, imdb, tmdb, tvdb, sysmeta)
+					elif flatten == 1: url = '%s?action=episodes&tvshowtitle=%s&year=%s&imdb=%s&tmdb=%s&tvdb=%s&meta=%s' % (sysaddon, systitle, year, imdb, tmdb, tvdb, sysmeta)
+					else: url = '%s?action=seasons&tvshowtitle=%s&year=%s&imdb=%s&tmdb=%s&tvdb=%s&art=%s' % (sysaddon, systitle, year, imdb, tmdb, tvdb, sysart)
 				else: url = '%s?action=seasons&tvshowtitle=%s&year=%s&imdb=%s&tmdb=%s&tvdb=%s&art=%s' % (sysaddon, systitle, year, imdb, tmdb, tvdb, sysart)
 
 ####-Context Menu and Overlays-####
@@ -1659,7 +1684,6 @@ class TVshows:
 								item.setProperties({'UnWatchedEpisodes': str(count['unwatched'])})
 								item.setProperty('WatchedProgress', str(0))
 							item.setProperties({'TotalSeasons': str(meta.get('total_seasons', '')), 'TotalEpisodes': str(count['total'])})
-							
 						else:
 							if control.getKodiVersion() >= 20:
 								item.setProperties({'UnWatchedEpisodes': ''}) # for shows never watched
@@ -1769,6 +1793,8 @@ class TVshows:
 					elif not icon.startswith('Default'): icon = control.joinPath(artPath, icon)
 				url = '%s?action=%s' % (sysaddon, i['action'])
 				try: url += '&url=%s' % quote_plus(i['url'])
+				except: pass
+				try: url += '&folderName=%s' % quote_plus(name)
 				except: pass
 				cm = []
 				if (i.get('list_type', '') == 'traktPulicList') and self.traktCredentials:

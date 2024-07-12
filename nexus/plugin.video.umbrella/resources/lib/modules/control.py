@@ -250,6 +250,10 @@ def addonPoster():
 	return 'DefaultVideo.png'
 
 def addonFanart():
+	custom_bg = setting('custombg')
+	if custom_bg:
+		if custom_bg is None or custom_bg == '': pass
+		else: return custom_bg
 	theme = appearance()
 	art = artPath()
 	if not (art is None and theme in ('-', '')): return joinPath(art, 'fanart.jpg')
@@ -725,9 +729,7 @@ def setContextColors():
 
 def checkModules():
 	if setting('provider.external.enabled') == 'false':
-		homeWindow.setProperty('umbrella.updateSettings', 'false')
 		setSetting('external_provider.name', '')
-		homeWindow.setProperty('umbrella.updateSettings', 'true')
 		setSetting('external_provider.module', '')
 
 def backToMain(folder):
