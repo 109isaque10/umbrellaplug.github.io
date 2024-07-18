@@ -70,6 +70,9 @@ def seas_ep_filter(season, episode, release_title, split=False):
 		episode = str(episode)
 		episode_fill = episode.zfill(2)
 		int_episode = int(episode)
+		string8 = ''
+		if int(season)==1:
+		    string8 = r'[.-]?(?:\s)[e]?[p]?[.-]?(?:\s)<<E>>'
 
 		string1 = r'(s<<S>>[.-]?e[p]?[.-]?<<E>>[.-])'
 		string2 = r'(season[.-]?<<S>>[.-]?episode[.-]?<<E>>[.-])|' \
@@ -97,6 +100,7 @@ def seas_ep_filter(season, episode, release_title, split=False):
 		append(string5.replace('<<E>>', episode))
 		append(string6.replace('<<E>>', episode_fill))
 		append(string7.replace('<<E>>', episode_fill))
+		if not string8=='': append(string8.replace('<<E>>', episode_fill))
 		final_string = '|'.join(string_list)
 		reg_pattern = re.compile(final_string)
 		if split: return release_title.split(re.search(reg_pattern, release_title).group(), 1)[1]
