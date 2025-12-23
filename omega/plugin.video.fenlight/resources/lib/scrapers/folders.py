@@ -1,105 +1,84 @@
-# -*- coding: utf-8 -*-
-import os
-from urllib.parse import urlparse
-from caches.main_cache import cache_object
-from modules import source_utils
-from modules.kodi_utils import list_dirs, open_file
-from modules.utils import clean_file_name, normalize, make_thread_list
-from modules.settings import filter_by_name
-# from modules.kodi_utils import logger
+# -*- coding: UTF-8 -*-
+# (updated 7-19-2022)
+'''
+    Infinity Internal Scrapers
+'''
 
-extensions = source_utils.supported_video_extensions()
-internal_results, check_title, clean_title, get_aliases_titles = source_utils.internal_results, source_utils.check_title, source_utils.clean_title, source_utils.get_aliases_titles
-get_file_info, release_info_format, seas_ep_filter = source_utils.get_file_info, source_utils.release_info_format, source_utils.seas_ep_filter
-command = 'SELECT id, data from maincache where id LIKE %s'
+from json import loads as jsloads
+import requests
+from modules import source_utils
+
+headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:137.0) Gecko/137.0 Firefox/137.0'}
 
 class source:
-	def __init__(self, scrape_provider, scraper_name, folder_path):
-		self.scrape_provider = scrape_provider
-		self.scraper_name = scraper_name
-		self.folder_path = folder_path
-		self.sources, self.scrape_results = [], []
+    priority = 1
+    pack_capable = False
+    hasMovies = True
+    hasEpisodes = True
+    def __init__(self):
+        self.language = ['en']
+        self.scrape_provider = 'folders'
+        self.base_link = "https://davio.327835.xyz"
+        self.movieSearch_link = "/eyJkYXZJZCI6ImN1c3RvbSIsIm5hbWUiOiJDdXN0b20iLCJzaG9ydE5hbWUiOiJEQVYiLCJ1cmwiOiJodHRwczovL2Rhdi4zMjc4MzUueHl6IiwidXNlcm5hbWUiOiJqZWxseSIsInBhc3N3b3JkIjoiUTdpRm42bFBQM0YzbTZOb1BLeTVYcWxZRjlXYTc0Iiwicm9vdCI6Ii9GaWxtZXMvIiwicm9vdFRWIjoiL1NlcmlhZG9zLyJ9/stream/movie/%s.json"
+        self.tvSearch_link = "/eyJkYXZJZCI6ImN1c3RvbSIsIm5hbWUiOiJDdXN0b20iLCJzaG9ydE5hbWUiOiJEQVYiLCJ1cmwiOiJodHRwczovL2Rhdi4zMjc4MzUueHl6IiwidXNlcm5hbWUiOiJqZWxseSIsInBhc3N3b3JkIjoiUTdpRm42bFBQM0YzbTZOb1BLeTVYcWxZRjlXYTc0Iiwicm9vdCI6Ii9GaWxtZXMvIiwicm9vdFRWIjoiL1NlcmlhZG9zLyJ9/stream/series/%s:%s:%s.json"
+        
+    def results(self, data, hostDict):
+        sources = []
+        if not data: return sources
+        append = sources.append
+        try:
+            aliases = data['aliases']
+            year = data['year']
+            imdb = data['imdb']
+            if 'tvshowtitle' in data:
+                title = data['tvshowtitle'].replace('&', 'and').replace('Special Victims Unit', 'SVU').replace('/', ' ')
+                episode_title = data['title']
+                season = data['season']
+                episode = data['episode']
+                hdlr = 'S%02dE%02d' % (int(season), int(episode))
+                link = self.tvSearch_link % (imdb, season, episode)
+            else:
+                title = data['title'].replace('&', 'and').replace('/', ' ')
+                episode_title = None
+                hdlr = year
+                link = self.movieSearch_link % imdb
+            url = '%s%s' % (self.base_link, link)
+            # log_utils.log('url = %s' % url)
+            r = requests.get(url, headers=headers, timeout=30)
+            if not r: return sources
+            r = jsloads(r)
+            results = r['streams']
+        except:
+            source_utils.scraper_error('Davio')
+            return sources
 
-	def results(self, info):
-		try:
-			if not self.folder_path: return internal_results(self.scraper_name, self.sources)
-			filter_title = filter_by_name('folders')
-			self.media_type, title, self.year = info.get('media_type'), info.get('title'), int(info.get('year'))
-			self.season, self.episode = info.get('season'), info.get('episode')
-			self.tmdb_id = info.get('tmdb_id')
-			self.title_query = clean_title(normalize(title))
-			self.folder_query = self._season_query_list() if self.media_type == 'episode' else self._year_query_list()
-			self._scrape_directory(self.folder_path, first_run=True)
-			if not self.scrape_results: return internal_results(self.scraper_name, self.sources)
-			aliases = get_aliases_titles(info.get('aliases', []))
-			def _process():
-				for item in self.scrape_results:
-					try:
-						file_name = normalize(item[0])
-						if filter_title and not check_title(title, file_name, aliases, self.year, self.season, self.episode): continue
-						display_name = clean_file_name(file_name).replace('html', ' ').replace('+', ' ').replace('-', ' ')
-						file_dl = item[1]
-						try: size = item[2]
-						except: size = self._get_size(file_dl)
-						video_quality, details = get_file_info(name_info=release_info_format(file_name))
-						source_item = {'name': file_name, 'display_name': display_name, 'quality': video_quality, 'size': size, 'size_label': '%.2f GB' % size,
-									'extraInfo': details, 'url_dl': file_dl, 'id': file_dl, self.scrape_provider : True, 'direct': True, 'source': self.scraper_name,
-									'scrape_provider': 'folders'}
-						yield source_item
-					except: pass
-			self.sources = list(_process())
-		except Exception as e:
-			from modules.kodi_utils import logger
-			logger('FEN folders scraper Exception', str(e))
-		internal_results(self.scraper_name, self.sources)
-		return self.sources
+        for item in results:
+            try:
+                url = item['url']
+                description = item['description']
+                try: size = description.split('💾')[1]
+                except: size = 0
+                try: name = description.split('\n')[0]
+                except: name = 'Unknown'
+                name = source_utils.clean_name(name)
+                if not source_utils.check_title(title, aliases, name, hdlr, year): continue
+                name_info = source_utils.info_from_name(name, title, year, hdlr, episode_title)
+                #if source_utils.remove_lang(name_info, check_foreign_audio): continue
+                #if undesirables and source_utils.remove_undesirables(name_info, undesirables): continue
 
-	def _make_dirs(self, folder_name):
-		folder_files = []
-		folder_files_append = folder_files.append
-		dirs, files =  list_dirs(folder_name)
-		for i in dirs: folder_files_append((i, 'folder'))
-		for i in files: folder_files_append((i, 'file'))
-		return folder_files
+                # link_header = client.request(url, output='headers', timeout=5) # to slow to check validity of links
+                # if not any(value in str(link_header) for value in ('stream', 'video/mkv')): continue
 
-	def _scrape_directory(self, folder_name, first_run=False):
-		def _process(item):
-			file_type = item[1]
-			normalized = normalize(item[0])
-			item_name = clean_title(normalized)
-			if file_type == 'file':
-				ext = os.path.splitext(urlparse(item[0]).path)[-1].lower()
-				if ext in extensions:
-					if self.media_type == 'episode' and not seas_ep_filter(self.season, self.episode, normalized): return
-					url_path = self.url_path(folder_name, item[0])
-					size = self._get_size(url_path)
-					scrape_results_append((item[0], url_path, size))
-			elif self.title_query in item_name or any(x in item_name for x in self.folder_query):
-					folder_results_append((os.path.join(folder_name, item[0])))
-		folder_results = []
-		scrape_results_append = self.scrape_results.append
-		folder_results_append = folder_results.append
-		string = 'FOLDERSCRAPER_%s_%s' % (self.scrape_provider, folder_name)
-		folder_files = cache_object(self._make_dirs, string, (folder_name), json=False, expiration=4)
-		folder_threads = list(make_thread_list(_process, folder_files))
-		[i.join() for i in folder_threads]
-		if not folder_results: return
-		return self._scraper_worker(folder_results)
+                quality, info = source_utils.get_release_quality(name_info, url)
+                try:
+                    dsize, isize= source_utils._size(size)
+                    if isize: info.insert(0, isize)
+                except: dsize = 0
+                info = ' | '.join(info)
 
-	def _scraper_worker(self, folder_results):
-		scraper_threads = list(make_thread_list(self._scrape_directory, folder_results))
-		[i.join() for i in scraper_threads]
-
-	def url_path(self, folder, file):
-		return os.path.join(folder, file)
-
-	def _get_size(self, file):
-		if file.endswith('.strm'): return 'strm'
-		with open_file(file) as f: s = f.size()
-		return round(float(s)/1073741824, 2)
-
-	def _year_query_list(self):
-		return (str(self.year), str(self.year+1), str(self.year-1))
-
-	def _season_query_list(self):
-		return ('season%02d' % int(self.season), 'season%s' % self.season)
+                append({'scrape_provider': 'folders', 'source': 'folders', 'quality': '1080p', 'name': name, 'name_info': name_info, 'language': "en",
+                            'url_dl': url, 'id': url, 'info': info, 'direct': True, 'debridonly': False, 'size': dsize})
+            except:
+                source_utils.scraper_error('Davio')
+        source_utils.internal_results(self.scrape_provider, sources)
+        return sources

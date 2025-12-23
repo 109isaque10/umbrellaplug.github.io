@@ -155,14 +155,14 @@ class Movies:
 			if movieset_active: url_params = build_url({'mode': 'open_movieset_choice', 'key_id': movieset_id, 'name': movieset_name, 'is_external': self.is_external})
 			elif self.open_extras: url_params = extras_params
 			else: url_params = play_params
-			cm_append(('[B]Options[/B]', run_plugin % options_params))
-			cm_append(('[B]Playback Options[/B]', run_plugin % build_url({'mode': 'playback_choice', 'media_type': 'movie', 'meta': tmdb_id})))
+			cm_append(('[B]Opções[/B]', run_plugin % options_params))
+			cm_append(('[B]Opções de Reprodução[/B]', run_plugin % build_url({'mode': 'playback_choice', 'media_type': 'movie', 'meta': tmdb_id})))
 			if belongs_to_movieset == 'true' and not self.movieset_list_active and not self.open_movieset:
-				cm_append(('[B]Browse Movie Set[/B]', self.window_command % \
+				cm_append(('[B]Navegar Coleção do Filme[/B]', self.window_command % \
 					build_url({'mode': 'build_movie_list', 'action': 'tmdb_movies_sets', 'key_id': movieset_id, 'name': movieset_name})))
-			cm_append(('[B]Browse Recommended[/B]', self.window_command % \
+			cm_append(('[B]Navegar Recomendados[/B]', self.window_command % \
 					build_url({'mode': 'build_movie_list', 'action': 'tmdb_movies_recommendations', 'key_id': tmdb_id, 'name': 'Recommended based on %s' % title})))
-			cm_append(('[B]Browse More Like This[/B]', self.window_command % more_like_this_params))
+			cm_append(('[B]Navegar Similares[/B]', self.window_command % more_like_this_params))
 			if imdb_id: cm_append(('[B]In Trakt Lists[/B]', self.window_command % \
 							build_url({'mode': 'trakt.list.get_trakt_lists_with_media', 'media_type': 'movie', 'imdb_id': imdb_id, 'category_name': '%s In Trakt Lists' % title})))
 			cm_append(('[B]Trakt Lists Manager[/B]', run_plugin % \

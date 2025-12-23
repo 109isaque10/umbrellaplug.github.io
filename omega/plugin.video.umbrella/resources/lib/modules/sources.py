@@ -619,6 +619,17 @@ class Sources:
 			if getSetting('scrapers.prioritize') == 'true': 
 				sourceDict = [(i[0], i[1], i[1].priority) for i in sourceDict]
 				sourceDict = sorted(sourceDict, key=lambda i: i[2]) # sorted by scraper priority
+			if getSetting('scrapers.portuguese') == 'true':
+				def sortPortuguese(item):
+					if 'dual' in item.lower():
+						return 1
+					elif 'dublado' in item.lower():
+						return 2
+					elif 'legendado' in item.lower():
+						return 3
+					return None
+
+				sourceDict = sorted(sourceDict, key=sortPortuguese)
 			try: aliases = self.meta.get('aliases', [])
 			except: aliases = []
 			threads = [] ; threads_append = threads.append
@@ -739,7 +750,7 @@ class Sources:
 				try:
 					info = [x.getName() for x in threads if x.is_alive() is True]
 					line1 = pdiag_format % (source_4k_label, source_1080_label, source_720_label, source_sd_label)
-					#line2 = string4 % source_total_label + '     ' + string1 % round(time() - start_time, 1)
+					#line2 = string4 % source_total_label + '	 ' + string1 % round(time() - start_time, 1)
 					line2 = string1 % round(time() - start_time, 1)
 					if len(info) > 6: line3 = string3 % str(len(info))
 					elif len(info) > 0: line3 = string3 % (', '.join(info))
@@ -1614,6 +1625,7 @@ class Sources:
 			if getSetting('external_provider.module', '') == '':
 				#no external_provider_module
 				control.notification(message=control.lang(40447))
+				self.sourceDict = internalSources()
 				self.sourceDict = internalSources()
 				self.sourceDict.extend(cloudSources())
 			else:

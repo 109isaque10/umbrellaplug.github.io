@@ -70,7 +70,7 @@ audio_filter_choices = (
 ('DTS', 'DTS'), ('DTS-HD MASTER AUDIO', 'DTS-HD MA'), ('DTS-X', 'DTS-X'), ('DTS-HD', 'DTS-HD'), ('AAC', 'AAC'), ('OPUS', 'OPUS'), ('MP3', 'MP3'),
 ('8CH AUDIO', '8CH'), ('7CH AUDIO', '7CH'), ('6CH AUDIO', '6CH'), ('2CH AUDIO', '2CH'))
 source_filters = (
-('PACK', 'PACK'), ('DOLBY VISION', '[B]D/VISION[/B]'), ('HIGH DYNAMIC RANGE (HDR)', '[B]HDR[/B]'), ('IMAX', 'IMAX'), ('HYBRID', '[B]HYBRID[/B]'), ('AV1', '[B]AV1[/B]'),
+('PACK', 'PACK'), ('DUAL', 'DUAL'), ('DUBLADO', 'DUB'), ('LEGENDADO', 'LEG'), ('DOLBY VISION', '[B]D/VISION[/B]'), ('HIGH DYNAMIC RANGE (HDR)', '[B]HDR[/B]'), ('IMAX', 'IMAX'), ('HYBRID', '[B]HYBRID[/B]'), ('AV1', '[B]AV1[/B]'),
 ('HEVC (X265)', '[B]HEVC[/B]'), ('REMUX', 'REMUX'), ('BLURAY', 'BLURAY'), ('AI ENHANCED/UPSCALED', '[B]AI ENHANCED/UPSCALED[/B]'), ('SDR', 'SDR'), ('3D', '[B]3D[/B]'),
 ('DOLBY ATMOS', 'ATMOS'), ('DOLBY TRUEHD', 'TRUEHD'), ('DOLBY DIGITAL EX', 'DD-EX'), ('DOLBY DIGITAL PLUS', 'DD+'), ('DOLBY DIGITAL', 'DD'), ('DTS-HD MASTER AUDIO', 'DTS-HD MA'),
 ('DTS-X', 'DTS-X'), ('DTS-HD', 'DTS-HD'), ('DTS', 'DTS'), ('AAC', 'AAC'), ('OPUS', 'OPUS'), ('MP3', 'MP3'), ('8CH AUDIO', '8CH'), ('7CH AUDIO', '7CH'), ('6CH AUDIO', '6CH'),
@@ -123,23 +123,33 @@ def supported_video_extensions():
 	return [i for i in supported_video_extensions if not i in ('','.zip','.rar','.iso')]
 
 def seas_ep_filter(season, episode, release_title, split=False, return_match=False):
-	str_season, str_episode = string(season), string(episode)
+	str_season, str_episode = str(season), str(episode)
 	season_fill, episode_fill = str_season.zfill(2), str_episode.zfill(2)
-	str_ep_plus_1, str_ep_minus_1 = string(episode+1), string(episode-1)
-	release_title = re.sub(r'[^A-Za-z0-9-]+', '.', unquote(release_title).replace('\'', '')).lower()
+	episode_filled = str_episode.zfill(3)
+	str_ep_plus_1, str_ep_minus_1 = str(episode+1), str(episode-1)
+	release_title = re.sub(r'[^A-Za-z0-9-]+', '.', unquote(release_title).replace('\'', '').replace('/','.')).lower()
 	string1 = r'(s<<S>>[.-]?e[p]?[.-]?<<E>>[.-])'
 	string2 = r'(season[.-]?<<S>>[.-]?episode[.-]?<<E>>[.-])|([s]?<<S>>[x.]<<E>>[.-])'
 	string3 = r'(s<<S>>e<<E1>>[.-]?e?<<E2>>[.-])'
 	string4 = r'([.-]<<S>>[.-]?<<E>>[.-])'
 	string5 = r'(episode[.-]?<<E>>[.-])'
-	string6 = r'([.-]e[p]?[.-]?<<E>>[.-])'
-	string7 = r'(^(?=.*\.e?0*<<E>>\.)(?:(?!((?:s|season)[.-]?\d+[.-x]?(?:ep?|episode)[.-]?\d+)|\d+x\d+).)*$)'
+	string6 = r'([\s.-][ep]?[\s.-_]?<<E>>[\s.-])'
+	string10 = r'(ep[\s]?[.-_]?<<E>>[\s.-]<<S>>)'
+	string11 = r'\d+'
+	string12 = r'<<E>>'
+	string13 = r'(season[.-]?<<S>>[.-]?<<E>>)'
 	string_list = []
 	string_list_append = string_list.append
 	string_list_append(string1.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
 	string_list_append(string1.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
+	string_list_append(string13.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
+	string_list_append(string13.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
+	string_list_append(string1.replace('<<S>>', season_fill).replace('<<E>>', episode_filled))
+	string_list_append(string1.replace('<<S>>', str_season).replace('<<E>>', episode_filled))
 	string_list_append(string1.replace('<<S>>', season_fill).replace('<<E>>', str_episode))
 	string_list_append(string1.replace('<<S>>', str_season).replace('<<E>>', str_episode))
+	string_list_append(string13.replace('<<S>>', season_fill).replace('<<E>>', str_episode))
+	string_list_append(string13.replace('<<S>>', str_season).replace('<<E>>', str_episode))
 	string_list_append(string2.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
 	string_list_append(string2.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
 	string_list_append(string2.replace('<<S>>', season_fill).replace('<<E>>', str_episode))
@@ -148,9 +158,14 @@ def seas_ep_filter(season, episode, release_title, split=False, return_match=Fal
 	string_list_append(string3.replace('<<S>>', season_fill).replace('<<E1>>', episode_fill).replace('<<E2>>', str_ep_plus_1.zfill(2)))
 	string_list_append(string4.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
 	string_list_append(string4.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
+	string_list_append(string5.replace('<<E>>', episode_fill))
 	string_list_append(string5.replace('<<E>>', str_episode))
-	string_list_append(string6.replace('<<E>>', episode_fill))
-	string_list_append(string7.replace('<<E>>', episode_fill))
+	if season == '1': string_list_append(string6.replace('<<E>>', episode_fill))
+	if season == '1': string_list_append(string6.replace('<<E>>', episode_filled))
+	string_list_append(string10.replace('<<E>>', episode_fill).replace('<<S>>', season_fill))
+	string_list_append(string10.replace('<<E>>', episode_fill).replace('<<S>>', str_season))
+	if len(re.findall(string11, release_title.replace('.mp4','').replace('m4v',''))) == 1: string_list_append(string12.replace('<<E>>', episode_fill))
+	if len(re.findall(string11, release_title.replace('.mp4','').replace('m4v',''))) == 1: string_list_append(string12.replace('<<E>>', episode_filled))
 	final_string = '|'.join(string_list)
 	reg_pattern = re.compile(final_string)
 	if split: return release_title.split(re.search(reg_pattern, release_title).group(), 1)[1]
@@ -160,7 +175,7 @@ def seas_ep_filter(season, episode, release_title, split=False, return_match=Fal
 def find_season_in_release_title(release_title):
 	release_title = re.sub(r'[^A-Za-z0-9-]+', '.', unquote(release_title).replace('\'', '')).lower()
 	match = None
-	regex_list = [r's(\d+)', r's\.(\d+)', r'(\d+)x', r'(\d+)\.x', r'season(\d+)', r'season\.(\d+)']
+	regex_list = [r's(\d+)', r's\.(\d+)', r'(\d+)x', r'(\d+)\.x', r'season(\d+)', r'season\.(\d+)', r'temporada\.(\d+)', r'(\d+)a\.temporada']
 	for item in regex_list:
 		try:
 			match = re.search(item, release_title)
@@ -181,7 +196,7 @@ def check_title(title, release_title, aliases, year, season, episode):
 			cleaned_titles_append(
 				i.lower().replace('\'', '').replace(':', '').replace('!', '').replace('(', '').replace(')', '').replace('&', 'and').replace(' ', '.').replace(year, ''))
 		release_title = strip_non_ascii_and_unprintable(release_title).lstrip('/ ').replace(' ', '.').replace(':', '.').lower()
-		releasetitle_startswith = release_title.startswith
+		releasetitle_startswith = release_title.lower().startswith
 		for i in UNWANTED_TAGS:
 			if releasetitle_startswith(i):
 				i_startswith = i.startswith
@@ -266,6 +281,12 @@ def get_info(title):
 	# thanks 123Venom and gaiaaaiaai, whom I knicked most of this code from. :)
 	info = []
 	info_append = info.append
+	if 'dual' in title:
+		info_append('[B]DUAL[/B]')
+	elif 'dublado' in title:
+		info_append('[B]DUB[/B]')
+	elif 'legendado' in title:
+		info_append('[B]LEG[/B]')
 	if any(i in title for i in VIDEO_3D):  info_append('[B]3D[/B]')
 	if '.sdr' in title: info_append('SDR')
 	elif any(i in title for i in DOLBY_VISION): info_append('[B]D/VISION[/B]')
@@ -311,7 +332,6 @@ def get_info(title):
 	elif any(i in title for i in CODEC_MPEG): info_append('MPEG')
 	elif '.avi' in title: info_append('AVI')
 	elif any(i in title for i in CODEC_MKV): info_append('MKV')
-	if any(i in title for i in MULTI_LANG): info_append('MULTI-LANG')
 	if any(i in title for i in ADS): info_append('ADS')
 	if any(i in title for i in SUBS): info_append('SUBS')
 	return ' | '.join(filter(None, info))

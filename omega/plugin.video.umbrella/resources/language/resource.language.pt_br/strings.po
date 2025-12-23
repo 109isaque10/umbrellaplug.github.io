@@ -1,0 +1,5343 @@
+# Addon Name: Umbrella
+# Addon id: plugin.video.umbrella
+# Addon Provider: Umbrella
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Umbrella\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-06-11 02:03+0000\n"
+"Last-Translator: lambda81\n"
+"Language-Team: Português (pt-BR)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgctxt "#32000"
+msgid "Collections"
+msgstr "Coleções"
+
+msgctxt "#32001"
+msgid "Movies"
+msgstr "Filmes"
+
+msgctxt "#32002"
+msgid "TV Shows"
+msgstr "Séries de TV"
+
+msgctxt "#32003"
+msgid "My Movies"
+msgstr "Meus Filmes"
+
+msgctxt "#32004"
+msgid "My TV Shows"
+msgstr "Minhas Séries"
+
+msgctxt "#32005"
+msgid "Main"
+msgstr "Principal"
+
+msgctxt "#32006"
+msgid "New Episodes"
+msgstr "Episódios Novos"
+
+msgctxt "#32007"
+msgid "Terminate on Cloud Sources"
+msgstr "Encerrar em Fontes na Nuvem"
+
+msgctxt "#32008"
+msgid "Tools"
+msgstr "Ferramentas"
+
+msgctxt "#32009"
+msgid "Downloads"
+msgstr "Downloads"
+
+msgctxt "#32010"
+msgid "Search"
+msgstr "Buscar"
+
+msgctxt "#32011"
+msgid "Page Item Limit"
+msgstr "Limite de Itens por Página"
+
+msgctxt "#32012"
+msgid "Enable Extended artwork (fanart.tv)"
+msgstr "Ativar artes estendidas (fanart.tv)"
+
+msgctxt "#32013"
+msgid "News and Info!!"
+msgstr "Notícias e Informações!!"
+
+msgctxt "#32014"
+msgid "Change Log!!"
+msgstr "Registro de Alterações!!"
+
+msgctxt "#32015"
+msgid "Direct Progress Scrape"
+msgstr "Raspagem Direta de Progresso"
+
+msgctxt "#32016"
+msgid "Browse Progress"
+msgstr "Ver Progresso"
+
+msgctxt "#32017"
+msgid "Browse Progress - load all remaining episodes of series"
+msgstr "Ver Progresso - carregar todos os episódios restantes da série"
+
+msgctxt "#32018"
+msgid "Most Popular"
+msgstr "Mais Populares"
+
+msgctxt "#32019"
+msgid "Upcoming Progress"
+msgstr "Próximo Progresso"
+
+msgctxt "#32020"
+msgid "Box Office"
+msgstr "Bilheteria"
+
+msgctxt "#32021"
+msgid "Do Not Group(quality, size priority)"
+msgstr "Não Agrupar (prioridade: qualidade, tamanho)"
+
+msgctxt "#32022"
+msgid "Group(Torrents, Acct Sources, Prem Hosters)"
+msgstr "Agrupar (Torrents, Fontes de Conta, Hosters Premium)"
+
+msgctxt "#32023"
+msgid "Enable Calendar (TVMaze) fetching extended meta"
+msgstr "Ativar Calendário (TVMaze) para buscar meta estendida"
+
+msgctxt "#32024"
+msgid "Error Connecting to TMDb"
+msgstr "Erro ao conectar ao TMDb"
+
+msgctxt "#32025"
+msgid "My Ratings"
+msgstr "Minhas Avaliações"
+
+msgctxt "#32026"
+msgid "Favourites"
+msgstr "Favoritos"
+
+msgctxt "#32027"
+msgid "Calendar"
+msgstr "Calendário"
+
+msgctxt "#32028"
+msgid "People Search"
+msgstr "Buscar Pessoas"
+
+msgctxt "#32029"
+msgid "People (Movies)"
+msgstr "Pessoas (Filmes)"
+
+msgctxt "#32030"
+msgid "People (TV)"
+msgstr "Pessoas (TV)"
+
+msgctxt "#32031"
+msgid "Discover"
+msgstr "Descobrir"
+
+msgctxt "#32032"
+msgid "Collection"
+msgstr "Coleção"
+
+msgctxt "#32033"
+msgid "Watchlist"
+msgstr "Lista de Observação"
+
+msgctxt "#32034"
+msgid "IMDb"
+msgstr "IMDb"
+
+msgctxt "#32035"
+msgid "Remove Duplicate Sources"
+msgstr "Remover Fontes Duplicadas"
+
+msgctxt "#32036"
+msgid "History"
+msgstr "Histórico"
+
+msgctxt "#32037"
+msgid "Progress Episodes"
+msgstr "Episódios em Progresso"
+
+msgctxt "#32038"
+msgid "ENTER CUSTOM TITLE"
+msgstr "DIGITAR TÍTULO PERSONALIZADO"
+
+msgctxt "#32039"
+msgid "Movie Lists"
+msgstr "Listas de Filmes"
+
+msgctxt "#32040"
+msgid "TV Show Lists"
+msgstr "Listas de Séries"
+
+msgctxt "#32041"
+msgid "Episode Lists"
+msgstr "Listas de Episódios"
+
+msgctxt "#32042"
+msgid "No Trakt or IMDb account found."
+msgstr "Nenhuma conta Trakt ou IMDb encontrada."
+
+msgctxt "#32043"
+msgid "[B]SETTINGS[/B] : General"
+msgstr "[B]CONFIGURAÇÕES[/B] : Geral"
+
+msgctxt "#32044"
+msgid "[B]SETTINGS[/B] : Accounts"
+msgstr "[B]CONFIGURAÇÕES[/B] : Contas"
+
+msgctxt "#32045"
+msgid "[B]SETTINGS[/B] : Playback"
+msgstr "[B]CONFIGURAÇÕES[/B] : Reprodução"
+
+msgctxt "#32046"
+msgid "[B]SETTINGS[/B] : Subtitles"
+msgstr "[B]CONFIGURAÇÕES[/B] : Legendas"
+
+msgctxt "#32047"
+msgid "[B]SETTINGS[/B] : Providers"
+msgstr "[B]CONFIGURAÇÕES[/B] : Fornecedores"
+
+msgctxt "#32048"
+msgid "[B]SETTINGS[/B] : Downloads"
+msgstr "[B]CONFIGURAÇÕES[/B] : Downloads"
+
+msgctxt "#32049"
+msgid "[B]UMBRELLA[/B] : Viewtypes"
+msgstr "[B]UMBRELLA[/B] : Tipos de Visão"
+
+msgctxt "#32050"
+msgid "Enable cloud scraper"
+msgstr "Ativar scraper em nuvem"
+
+msgctxt "#32051"
+msgid "Remove 3D"
+msgstr "Remover 3D"
+
+msgctxt "#32052"
+msgid "Ignore m2ts in cloud files"
+msgstr "Ignorar m2ts em arquivos na nuvem"
+
+msgctxt "#32053"
+msgid "[I]Next Page[/I]"
+msgstr "[I]Próxima Página[/I]"
+
+msgctxt "#32054"
+msgid "Seasons"
+msgstr "Temporadas"
+
+msgctxt "#32055"
+msgid "Season"
+msgstr "Temporada"
+
+msgctxt "#32056"
+msgid "Are you sure?"
+msgstr "Tem certeza?"
+
+msgctxt "#32057"
+msgid "Process Complete"
+msgstr "Processo Concluído"
+
+msgctxt "#32058"
+msgid "This will slow down things until they are re-cached!"
+msgstr "Isto irá deixar as coisas mais lentas até que sejam re-cacheadas!"
+
+msgctxt "#32059"
+msgid "CLICK HERE TO SAVE VIEW"
+msgstr "CLIQUE AQUI PARA SALVAR A VISUALIZAÇÃO"
+
+msgctxt "#32060"
+msgid "January|February|March|April|May|June|July|August|September|October|November|December"
+msgstr "Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro"
+
+msgctxt "#32061"
+msgid "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday"
+msgstr "Segunda-feira|Terça-feira|Quarta-feira|Quinta-feira|Sexta-feira|Sábado|Domingo"
+
+msgctxt "#32062"
+msgid "[B]%s[/B] : %s"
+msgstr "[B]%s[/B] : %s"
+
+msgctxt "#32063"
+msgid "Source Select"
+msgstr "Selecionar Fonte"
+
+msgctxt "#32064"
+msgid "Auto Play"
+msgstr "Autoplay"
+
+msgctxt "#32065"
+msgid "Add To Playlist"
+msgstr "Adicionar à Playlist"
+
+msgctxt "#32066"
+msgid "Watched in Umbrella"
+msgstr "Assistido no Umbrella"
+
+msgctxt "#32067"
+msgid "Unwatched in Umbrella"
+msgstr "Não Assistido no Umbrella"
+
+msgctxt "#32068"
+msgid "Watched in Trakt"
+msgstr "Assistido no Trakt"
+
+msgctxt "#32069"
+msgid "Unwatched in Trakt"
+msgstr "Não Assistido no Trakt"
+
+msgctxt "#32070"
+msgid "[COLOR yellowgreen]Trakt Manager[/COLOR]"
+msgstr "[COLOR yellowgreen]Gerenciador Trakt[/COLOR]"
+
+msgctxt "#32071"
+msgid "Browse Series"
+msgstr "Navegar Séries"
+
+msgctxt "#32072"
+msgid "Refresh"
+msgstr "Atualizar"
+
+msgctxt "#32073"
+msgid "TRAKT: Authorize"
+msgstr "TRAKT: Autorizar"
+
+msgctxt "#32074"
+msgid "Source Options"
+msgstr "Opções de Fonte"
+
+msgctxt "#32075"
+msgid "Auto update User Lists"
+msgstr "Atualizar Listas do Usuário automaticamente"
+
+msgctxt "#32076"
+msgid "Removing metacache results in excessive api requests and system slow down.[CR]Are you sure?"
+msgstr "Remover metacache resultará em muitas requisições à API e lentidão do sistema.[CR]Tem certeza?"
+
+msgctxt "#32077"
+msgid "This wipes your cache, metacache, search, and providers database.  All meta must be fetched from scratch, resulting in excessive api requests and system slow down.  Best to only use this unless ABSOLUTELY necessary.[CR]Are you sure?"
+msgstr "Isto limpa seu cache, metacache, pesquisa e banco de dados de provedores. Todas as metas precisam ser buscadas do zero, resultando em muitas requisições à API e lentidão do sistema. Use somente se ABSOLUTAMENTE necessário.[CR]Tem certeza?"
+
+msgctxt "#32078"
+msgid "Show Notificatons for Library"
+msgstr "Mostrar Notificações para a Biblioteca"
+
+msgctxt "#32079"
+msgid "Prefer TMDb artwork (poster, fanart)"
+msgstr "Preferir artes do TMDb (poster, fanart)"
+
+msgctxt "#32080"
+msgid "File Size limit (GB)"
+msgstr "Limite de Tamanho de Arquivo (GB)"
+
+msgctxt "#32081"
+msgid "Enable"
+msgstr "Ativar"
+
+msgctxt "#32082"
+msgid "Trakt: Scrobble Reset"
+msgstr "Trakt: Resetar Scrobble"
+
+msgctxt "#32083"
+msgid "Clean Settings file: [B]UMBRELLA[/B]"
+msgstr "Limpar arquivo de Configurações: [B]UMBRELLA[/B]"
+
+msgctxt "#32084"
+msgid "{} Obsolete Settings Entries Removed"
+msgstr "{} Entradas de Configuração Obsoletas Removidas"
+
+msgctxt "#32085"
+msgid "Updating Library..."
+msgstr "Atualizando Biblioteca..."
+
+msgctxt "#32086"
+msgid "Libray Update Complete"
+msgstr "Atualização da Biblioteca Concluída"
+
+msgctxt "#32087"
+msgid "View Types Successfully Cleared!"
+msgstr "Tipos de Visualização Limpos com Sucesso!"
+
+msgctxt "#32088"
+msgid "Trakt: Scrobbled"
+msgstr "Trakt: Scrobble Registrado"
+
+msgctxt "#32089"
+msgid "All Cache Successfully Cleared!"
+msgstr "Todo o Cache Limpo com Sucesso!"
+
+msgctxt "#32090"
+msgid "Provider Cache Successfully Cleared!"
+msgstr "Cache de Provedores Limpo com Sucesso!"
+
+msgctxt "#32091"
+msgid "Metadata Cache Successfully Cleared!"
+msgstr "Cache de Metadados Limpo com Sucesso!"
+
+msgctxt "#32092"
+msgid "Cache Successfully Cleared!"
+msgstr "Cache Limpo com Sucesso!"
+
+msgctxt "#32093"
+msgid "Search History Successfully Cleared!"
+msgstr "Histórico de Busca Limpo com Sucesso!"
+
+msgctxt "#32094"
+msgid "Search Phrase Successfully Cleared!"
+msgstr "Frase de Busca Limpa com Sucesso!"
+
+msgctxt "#32095"
+msgid "Resume Point source:"
+msgstr "Fonte do Ponto de Retomada:"
+
+msgctxt "#32096"
+msgid "Trakt scrobbles"
+msgstr "Scrobbles do Trakt"
+
+msgctxt "#32097"
+msgid "Enable scrobbling"
+msgstr "Ativar scrobbling"
+
+msgctxt "#32098"
+msgid "NOTE: Do Not enable this if you scrobble through the Trakt add-on.[CR]Also note that only scrobble on Stop currently works."
+msgstr "NOTA: Não ative isto se você já scrobble através do add-on Trakt.[CR]Também note que atualmente apenas o scrobble ao parar funciona."
+
+msgctxt "#32099"
+msgid "Show notification on scrobble"
+msgstr "Mostrar notificação ao scrobble"
+
+msgctxt "#32100"
+msgid "Bookmarks Successfully Cleared!"
+msgstr "Favoritos Limpos com Sucesso!"
+
+msgctxt "#32101"
+msgid "Show [COLOR yellow]Changelog[/COLOR]..."
+msgstr "Mostrar [COLOR yellow]Registro de Alterações[/COLOR]..."
+
+msgctxt "#32102"
+msgid "Bookmark Successfully Cleared!"
+msgstr "Favorito Removido com Sucesso!"
+
+msgctxt "#32103"
+msgid "strm files written but library cannot be updated"
+msgstr "arquivos .strm escritos, mas a biblioteca não pode ser atualizada"
+
+msgctxt "#32104"
+msgid "strm file written but library cannot be updated"
+msgstr "arquivo .strm escrito, mas a biblioteca não pode ser atualizada"
+
+msgctxt "#32105"
+msgid "Trakt Movies Sync Complete"
+msgstr "Sincronização de Filmes Trakt Concluída"
+
+msgctxt "#32106"
+msgid "Update Service is disabled. Please enable and try again"
+msgstr "Serviço de Atualização está desativado. Por favor ative e tente novamente"
+
+msgctxt "#32107"
+msgid "Your Library Folders do not exist in Kodi Sources. Please run setup"
+msgstr "Suas Pastas da Biblioteca não existem nas Fontes do Kodi. Por favor execute a configuração"
+
+msgctxt "#32108"
+msgid "No Shows in Addon Folder"
+msgstr "Nenhum Programa na Pasta do Addon"
+
+msgctxt "#32109"
+msgid "No Episode Updates Found"
+msgstr "Nenhuma Atualização de Episódio Encontrada"
+
+msgctxt "#32110"
+msgid "Restart Kodi for changes is required"
+msgstr "Reinicie o Kodi para que as alterações entrem em vigor"
+
+msgctxt "#32111"
+msgid "Folders Failed to add to Kodi Sources"
+msgstr "Falha ao adicionar Pastas às Fontes do Kodi"
+
+msgctxt "#32112"
+msgid "Library Auto Update Service is now turned off"
+msgstr "Serviço de Atualização Automática da Biblioteca agora está desligado"
+
+msgctxt "#32113"
+msgid "No Movie lists imports found"
+msgstr "Nenhuma importação de listas de Filmes encontrada"
+
+msgctxt "#32114"
+msgid "My Accounts sync complete"
+msgstr "Sincronização de Minhas Contas concluída"
+
+msgctxt "#32115"
+msgid "Error Cleaning Settings.xml. Old settings.xml files Restored."
+msgstr "Erro ao limpar Settings.xml. Arquivos antigos de settings.xml restaurados."
+
+msgctxt "#32116"
+msgid "This feature is only supported in kodi 18 and beyond"
+msgstr "Este recurso é suportado apenas no Kodi 18 ou superior"
+
+msgctxt "#32117"
+msgid "Added to Favourites"
+msgstr "Adicionado aos Favoritos"
+
+msgctxt "#32118"
+msgid "Removed From Favourites"
+msgstr "Removido dos Favoritos"
+
+msgctxt "#32119"
+msgid "Playlist is empty"
+msgstr "A playlist está vazia"
+
+msgctxt "#32120"
+msgid "Title already in playlist"
+msgstr "Título já na playlist"
+
+msgctxt "#32121"
+msgid "%s Added to playlist"
+msgstr "%s Adicionado à playlist"
+
+msgctxt "#32122"
+msgid "%s Removed from playlist"
+msgstr "%s Removido da playlist"
+
+msgctxt "#32123"
+msgid "Not found in playlist"
+msgstr "Não encontrado na playlist"
+
+msgctxt "#32124"
+msgid "No TVShow lists imports found"
+msgstr "Nenhuma importação de listas de Séries encontrada"
+
+msgctxt "#32125"
+msgid "Scraper Preparation"
+msgstr "Preparação do Scraper"
+
+msgctxt "#32126"
+msgid "Furk Username"
+msgstr "Nome de Usuário Furk"
+
+msgctxt "#32127"
+msgid "Furk Password"
+msgstr "Senha Furk"
+
+msgctxt "#32128"
+msgid "Furk API Key"
+msgstr "Chave API Furk"
+
+msgctxt "#32129"
+msgid "Enable Furk.net Menu"
+msgstr "Ativar Menu Furk.net"
+
+msgctxt "#32130"
+msgid "Trakt: Scrobble Failed"
+msgstr "Trakt: Scrobble Falhou"
+
+msgctxt "#32131"
+msgid "Trakt: Scrobble Reset Failed"
+msgstr "Trakt: Reset de Scrobble Falhou"
+
+msgctxt "#32132"
+msgid "Highlight Color"
+msgstr "Cor de Destaque"
+
+msgctxt "#32133"
+msgid "Torent/Hoster sorting method"
+msgstr "Método de ordenação Torrent/Hoster"
+
+msgctxt "#32134"
+msgid "Sort by file size"
+msgstr "Ordenar por tamanho de arquivo"
+
+msgctxt "#32135"
+msgid "Open My Accounts Addon"
+msgstr "Abrir Addon Minhas Contas"
+
+msgctxt "#32136"
+msgid "Sync imported lists now"
+msgstr "Sincronizar listas importadas agora"
+
+msgctxt "#32137"
+msgid "[COLOR FFA0C12C] -- Help --[/COLOR]"
+msgstr "[COLOR FFA0C12C] -- Ajuda --[/COLOR]"
+
+msgctxt "#32138"
+msgid "[COLOR FFA0C12C] -- Dev Mode Help --[/COLOR]"
+msgstr "[COLOR FFA0C12C] -- Ajuda Modo Dev --[/COLOR]"
+
+msgctxt "#32139"
+msgid "reuselanguageinvoker current status"
+msgstr "estado atual do reuselanguageinvoker"
+
+msgctxt "#32140"
+msgid "[COLOR FFA0C12C] -- reuselanguageinvoker Help --[/COLOR]"
+msgstr "[COLOR FFA0C12C] -- Ajuda reuselanguageinvoker --[/COLOR]"
+
+msgctxt "#32141"
+msgid "Disable single episode scraping"
+msgstr "Desativar raspagem de episódio único"
+
+msgctxt "#32142"
+msgid "Disable single scraper filter"
+msgstr "Desativar filtro de scraper único"
+
+msgctxt "#32143"
+msgid "Disable season pack scraping"
+msgstr "Desativar raspagem de pacotes de temporada"
+
+msgctxt "#32144"
+msgid "Disable season pack scraper filter"
+msgstr "Desativar filtro de scraper para pacotes de temporada"
+
+msgctxt "#32145"
+msgid "Disable show pack scraping"
+msgstr "Desativar raspagem de pacotes de série"
+
+msgctxt "#32146"
+msgid "Disable show pack scraper filter"
+msgstr "Desativar filtro de scraper para pacotes de série"
+
+msgctxt "#32147"
+msgid "Developer mode"
+msgstr "Modo desenvolvedor"
+
+msgctxt "#32148"
+msgid "Delay before import"
+msgstr "Atraso antes da importação"
+
+msgctxt "#32149"
+msgid "Create .strm files for TMDB Helper"
+msgstr "Criar arquivos .strm para o TMDB Helper"
+
+msgctxt "#32150"
+msgid "Acount Info"
+msgstr "Informações da Conta"
+
+msgctxt "#32151"
+msgid "[I]Please Accounts in Settings to Setup[/I]"
+msgstr "[I]Por favor configure Contas nas Configurações[/I]"
+
+msgctxt "#32152"
+msgid "alldebrid token"
+msgstr "token alldebrid"
+
+msgctxt "#32153"
+msgid "Account Info"
+msgstr "Informações da Conta"
+
+msgctxt "#32154"
+msgid "premiumize token"
+msgstr "token premiumize"
+
+msgctxt "#32155"
+msgid "Min. Movie Size (GB)"
+msgstr "Tamanho Mín. de Filme (GB)"
+
+msgctxt "#32156"
+msgid "Max. Movie Size (GB)"
+msgstr "Tamanho Máx. de Filme (GB)"
+
+msgctxt "#32157"
+msgid "Min. Episode Size (GB)"
+msgstr "Tamanho Mín. de Episódio (GB)"
+
+msgctxt "#32158"
+msgid "Max. Episode Size (GB)"
+msgstr "Tamanho Máx. de Episódio (GB)"
+
+msgctxt "#32159"
+msgid "Do not spam log with removed duplicates"
+msgstr "Não encher o log com duplicatas removidas"
+
+msgctxt "#32160"
+msgid "Remove CAM"
+msgstr "Remover CAM"
+
+msgctxt "#32161"
+msgid "Remove SD sources (only if better quality exists)"
+msgstr "Remover fontes SD (apenas se existir qualidade melhor)"
+
+msgctxt "#32162"
+msgid "Remove uncached torrents"
+msgstr "Remover torrents não cacheados"
+
+msgctxt "#32163"
+msgid "Allow Multi Episodes to Show Unwatched Count"
+msgstr "Permitir que Multi Episódios mostrem contagem de não assistidos"
+
+msgctxt "#32164"
+msgid "Scraper Dialog Highlight Color"
+msgstr "Cor de Destaque do Diálogo do Scraper"
+
+msgctxt "#32165"
+msgid "Enable Movie File Size Limit"
+msgstr "Ativar limite de tamanho de arquivo para Filmes"
+
+msgctxt "#32166"
+msgid "Enable Episode File Size Limit"
+msgstr "Ativar limite de tamanho de arquivo para Episódios"
+
+msgctxt "#32167"
+msgid "Title Search limit (Movies and TVShows)"
+msgstr "Limite de busca por título (Filmes e Séries)"
+
+msgctxt "#32168"
+msgid "Play Next"
+msgstr "Reproduzir Próximo"
+
+msgctxt "#32169"
+msgid "Play Now"
+msgstr "Reproduzir Agora"
+
+msgctxt "#32170"
+msgid "Stop"
+msgstr "Parar"
+
+msgctxt "#32171"
+msgid "Ends at:"
+msgstr "Termina em:"
+
+msgctxt "#32172"
+msgid "Still there?"
+msgstr "Ainda aí?"
+
+msgctxt "#32173"
+msgid "Continue watching"
+msgstr "Continuar assistindo"
+
+msgctxt "#32174"
+msgid "Default Play Next Action in...."
+msgstr "Ação padrão Play Next em...."
+
+msgctxt "#32175"
+msgid "Still Watching in...."
+msgstr "Ainda assistindo em...."
+
+msgctxt "#32176"
+msgid "Play"
+msgstr "Reproduzir"
+
+msgctxt "#32177"
+msgid "Stop"
+msgstr "Parar"
+
+msgctxt "#32178"
+msgid "Pause"
+msgstr "Pausar"
+
+msgctxt "#32179"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "#32180"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "#32181"
+msgid "Watched Progress and Calendar"
+msgstr "Progresso Assistido e Calendário"
+
+msgctxt "#32182"
+msgid "Browsing Series must force close this xml and any changes will be lost.  Continue?"
+msgstr "Navegar Séries forçará o fechamento deste XML e quaisquer alterações serão perdidas. Continuar?"
+
+msgctxt "#32183"
+msgid "Hide fully watched shows"
+msgstr "Ocultar séries totalmente assistidas"
+
+msgctxt "#32184"
+msgid "Find similar"
+msgstr "Encontrar semelhantes"
+
+msgctxt "#32185"
+msgid "Rescrape Item"
+msgstr "Raspar Item Novamente"
+
+msgctxt "#32186"
+msgid "Like List"
+msgstr "Curtir Lista"
+
+msgctxt "#32187"
+msgid "UnLike List"
+msgstr "Descurtir Lista"
+
+msgctxt "#32188"
+msgid "Paginate Lists when possible"
+msgstr "Paginar Listas quando possível"
+
+msgctxt "#32189"
+msgid "Clear Umbrella Log File"
+msgstr "Limpar Arquivo de Log do Umbrella"
+
+msgctxt "#32190"
+msgid "Select All"
+msgstr "Selecionar Tudo"
+
+msgctxt "#32191"
+msgid "%s - Lang Downloaded from Subscene.com"
+msgstr "%s - Legenda baixada de Subscene.com"
+
+msgctxt "#32192"
+msgid "Enable notification of subtitle downloads"
+msgstr "Ativar notificação de downloads de legendas"
+
+msgctxt "#32193"
+msgid "Rescrape with All Providers"
+msgstr "Raspar novamente com Todos os Provedores"
+
+msgctxt "#32194"
+msgid "Refresh Progress List"
+msgstr "Atualizar Lista de Progresso"
+
+msgctxt "#32195"
+msgid "Prioritize HDR and Dolby-Vision to top"
+msgstr "Priorizar HDR e Dolby-Vision no topo"
+
+msgctxt "#32196"
+msgid "Umbrella log file uploaded to:"
+msgstr "Arquivo de log do Umbrella enviado para:"
+
+msgctxt "#32197"
+msgid "Write Umbrella log in reverse order"
+msgstr "Escrever log do Umbrella em ordem reversa"
+
+msgctxt "#32198"
+msgid "[B]Kodi - Upload log file to pastebin[/B]"
+msgstr "[B]Kodi - Enviar arquivo de log para pastebin[/B]"
+
+msgctxt "#32199"
+msgid "Kodi log file uploaded to:"
+msgstr "Arquivo de log do Kodi enviado para:"
+
+msgctxt "#32200"
+msgid "check title"
+msgstr "verificar título"
+
+msgctxt "#32201"
+msgid "check year"
+msgstr "verificar ano"
+
+msgctxt "#32202"
+msgid "Recent Episodes"
+msgstr "Episódios Recentes"
+
+msgctxt "#32203"
+msgid "Upcoming Episodes"
+msgstr "Próximos Episódios"
+
+msgctxt "#32204"
+msgid "Season Premieres"
+msgstr "Estreias de Temporada"
+
+msgctxt "#32205"
+msgid "Use default \"Rescrape\" option vs Menu"
+msgstr "Usar opção padrão \"Rescrape\" ao invés do Menu"
+
+msgctxt "#32206"
+msgid "selected default"
+msgstr "padrão selecionado"
+
+msgctxt "#32207"
+msgid "Rescrape Item - AutoPlay"
+msgstr "Raspar Item - Autoplay"
+
+msgctxt "#32208"
+msgid "Rescrape Item - Source Select"
+msgstr "Raspar Item - Selecionar Fonte"
+
+msgctxt "#32209"
+msgid "Rescrape Item with [COLOR %s][B]All Providers[/B][/COLOR] - AutoPlay"
+msgstr "Raspar Item com [COLOR %s][B]Todos os Provedores[/B][/COLOR] - Autoplay"
+
+msgctxt "#32210"
+msgid "Rescrape Item with [COLOR %s][B]All Providers[/B][/COLOR] - Source Select"
+msgstr "Raspar Item com [COLOR %s][B]Todos os Provedores[/B][/COLOR] - Selecionar Fonte"
+
+msgctxt "#32211"
+msgid "Use provider priority run ordering"
+msgstr "Usar ordenação por prioridade de provedor"
+
+msgctxt "#32212"
+msgid "Reverse Size Sort (Low to High)"
+msgstr "Ordenar por Tamanho Reverso (Baixo para Alto)"
+
+msgctxt "#32213"
+msgid "Uncached Torrents sort by seeders"
+msgstr "Torrents não cacheados ordenar por seeders"
+
+msgctxt "#32214"
+msgid "Coming Soon"
+msgstr "Em Breve"
+
+msgctxt "#32215"
+msgid "Coming Soon (IMDb)"
+msgstr "Em Breve (IMDb)"
+
+msgctxt "#32216"
+msgid "Rescrape Item with [COLOR %s][B]Custom Query[/B][/COLOR] - Source Select"
+msgstr "Raspar Item com [COLOR %s][B]Consulta Personalizada[/B][/COLOR] - Selecionar Fonte"
+
+msgctxt "#32217"
+msgid "Rescrape Item with [COLOR %s][B]Custom Query and All Providers[/B][/COLOR] - Source Select"
+msgstr "Raspar Item com [COLOR %s][B]Consulta Personalizada e Todos os Provedores[/B][/COLOR] - Selecionar Fonte"
+
+msgctxt "#32218"
+msgid "[B]Loyalty:[/B] %s"
+msgstr "[B]Lealdade:[/B] %s"
+
+msgctxt "#32219"
+msgid "[B]Data Used:[/B] %s"
+msgstr "[B]Dados Usados:[/B] %s"
+
+msgctxt "#32220"
+msgid "[B]Data Remaining:[/B] %s"
+msgstr "[B]Dados Restantes:[/B] %s"
+
+msgctxt "#32221"
+msgid "Error retrieving EasyNews Account Info"
+msgstr "Erro ao recuperar informações da conta EasyNews"
+
+msgctxt "#32222"
+msgid "Enter search Term"
+msgstr "Digite o termo de busca"
+
+msgctxt "#32223"
+msgid "Enable AllDebrid Menu"
+msgstr "Ativar Menu AllDebrid"
+
+msgctxt "#32224"
+msgid "Enable EasyNews Menu"
+msgstr "Ativar Menu EasyNews"
+
+msgctxt "#32225"
+msgid "Enable Premiumize.me Menu"
+msgstr "Ativar Menu Premiumize.me"
+
+msgctxt "#32226"
+msgid "Enable Real-Debrid Menu"
+msgstr "Ativar Menu Real-Debrid"
+
+msgctxt "#32227"
+msgid "Require Year in source for known Reboot shows"
+msgstr "Exigir Ano na fonte para séries conhecidas como Reboot"
+
+msgctxt "#32229"
+msgid "Prioritize HEVC to top"
+msgstr "Priorizar HEVC no topo"
+
+msgctxt "#32230"
+msgid "check IMDb Movie meta"
+msgstr "verificar meta IMDb de Filmes"
+
+msgctxt "#32231"
+msgid "check IMDb Show meta"
+msgstr "verificar meta IMDb de Séries"
+
+msgctxt "#32232"
+msgid "Rescrape Item [COLOR %s][B]Filterless(FS)[/B][/COLOR] with [COLOR %s][B]All Providers[/B][/COLOR] - Source Select"
+msgstr "Raspar Item [COLOR %s][B]Sem Filtro(FS)[/B][/COLOR] com [COLOR %s][B]Todos os Provedores[/B][/COLOR] - Selecionar Fonte"
+
+msgctxt "#32233"
+msgid "TMDb image resolutions"
+msgstr "Resoluções de imagem do TMDb"
+
+msgctxt "#32234"
+msgid "Low"
+msgstr "Baixa"
+
+msgctxt "#32235"
+msgid "Medium"
+msgstr "Média"
+
+msgctxt "#32236"
+msgid "High"
+msgstr "Alta"
+
+msgctxt "#32237"
+msgid "Original"
+msgstr "Original"
+
+msgctxt "#32301"
+msgid "Enabled"
+msgstr "Ativado"
+
+msgctxt "#32303"
+msgid "User"
+msgstr "Usuário"
+
+msgctxt "#32304"
+msgid "Email"
+msgstr "E-mail"
+
+msgctxt "#32305"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "#32306"
+msgid "Authorization..."
+msgstr "Autorizando..."
+
+msgctxt "#32307"
+msgid "Password"
+msgstr "Senha"
+
+msgctxt "#32308"
+msgid "PIN"
+msgstr "PIN"
+
+msgctxt "#32309"
+msgid "API"
+msgstr "API"
+
+msgctxt "#32310"
+msgid "General"
+msgstr "Geral"
+
+msgctxt "#32311"
+msgid "Icon Package"
+msgstr "Pacote de Ícones"
+
+msgctxt "#32312"
+msgid "Scraper Timeout"
+msgstr "Tempo limite do Scraper"
+
+msgctxt "#32313"
+msgid "Indicators"
+msgstr "Indicadores"
+
+msgctxt "#32314"
+msgid "Local"
+msgstr "Local"
+
+msgctxt "#32315"
+msgid "Trakt"
+msgstr "Trakt"
+
+msgctxt "#32316"
+msgid "api Language"
+msgstr "Idioma da API"
+
+msgctxt "#32317"
+msgid "Flatten TV seasons"
+msgstr "Aplainar temporadas de TV"
+
+msgctxt "#32318"
+msgid "Enable Fanart"
+msgstr "Ativar Fanart"
+
+msgctxt "#32319"
+msgid "Menu"
+msgstr "Menu"
+
+msgctxt "#32320"
+msgid "Auth Revoked"
+msgstr "Autorização Revogada"
+
+msgctxt "#32321"
+msgid "Featured"
+msgstr "Em Destaque"
+
+msgctxt "#32322"
+msgid "Trakt Trending"
+msgstr "Trakt em Alta"
+
+msgctxt "#32323"
+msgid "Most Popular"
+msgstr "Mais Populares"
+
+msgctxt "#32324"
+msgid "In Theaters"
+msgstr "Em Cartaz"
+
+msgctxt "#32325"
+msgid "Episode"
+msgstr "Episódio"
+
+msgctxt "#32326"
+msgid "Episodes"
+msgstr "Episódios"
+
+msgctxt "#32327"
+msgid "Easy News"
+msgstr "Easy News"
+
+msgctxt "#32328"
+msgid "Playback Canceled"
+msgstr "Reprodução Cancelada"
+
+msgctxt "#32329"
+msgid "My Lists (My Movies, My TV Shows)"
+msgstr "Minhas Listas (Meus Filmes, Minhas Séries)"
+
+msgctxt "#32330"
+msgid "Playback"
+msgstr "Reprodução"
+
+msgctxt "#32331"
+msgid "Default (movie/episode) select action"
+msgstr "Ação padrão ao selecionar (filme/episódio)"
+
+msgctxt "#32332"
+msgid "Dialog"
+msgstr "Diálogo"
+
+msgctxt "#32333"
+msgid "Source Select (Window xml skin)"
+msgstr "Selecionar Fonte (skin xml da janela)"
+
+msgctxt "#32334"
+msgid "Auto Play"
+msgstr "Autoplay"
+
+msgctxt "#32335"
+msgid "Progress Dialog (Scraping and Resolving)"
+msgstr "Diálogo de Progresso (Raspagem e Resolução)"
+
+msgctxt "#32336"
+msgid "Foreground"
+msgstr "Primeiro Plano"
+
+msgctxt "#32337"
+msgid "Background"
+msgstr "Segundo Plano"
+
+msgctxt "#32338"
+msgid "Sources Filtering Options"
+msgstr "Opções de Filtragem de Fontes"
+
+msgctxt "#32339"
+msgid "Max Quality"
+msgstr "Qualidade Máxima"
+
+msgctxt "#32340"
+msgid "SD Hosters in Auto Play"
+msgstr "Hosters SD no Autoplay"
+
+msgctxt "#32341"
+msgid "Remove pair/captcha hosts"
+msgstr "Remover hosts com pareamento/captcha"
+
+msgctxt "#32342"
+msgid "Sort by Scraper Provider"
+msgstr "Ordenar por Provedor do Scraper"
+
+msgctxt "#32343"
+msgid "When playback starts..."
+msgstr "Quando a reprodução iniciar..."
+
+msgctxt "#32344"
+msgid "Resume Playback"
+msgstr "Retomar Reprodução"
+
+msgctxt "#32345"
+msgid "Providers"
+msgstr "Provedores"
+
+msgctxt "#32346"
+msgid "Accounts(Debrid)"
+msgstr "Contas (Debrid)"
+
+msgctxt "#32347"
+msgid "Downloads"
+msgstr "Downloads"
+
+msgctxt "#32348"
+msgid "Enable downloads"
+msgstr "Ativar downloads"
+
+msgctxt "#32349"
+msgid "Movies"
+msgstr "Filmes"
+
+msgctxt "#32350"
+msgid "TV"
+msgstr "TV"
+
+msgctxt "#32351"
+msgid "Downloading features are disabled by default."
+msgstr "Recursos de download estão desativados por padrão."
+
+msgctxt "#32352"
+msgid "Set up your download folders in order to enable them."
+msgstr "Configure suas pastas de download para habilitá-las."
+
+msgctxt "#32353"
+msgid "Subtitles"
+msgstr "Legendas"
+
+msgctxt "#32354"
+msgid "Enable subtitles"
+msgstr "Ativar legendas"
+
+msgctxt "#32355"
+msgid "Convert subtitles to UTF-8"
+msgstr "Converter legendas para UTF-8"
+
+msgctxt "#32356"
+msgid "Primary Language"
+msgstr "Idioma Primário"
+
+msgctxt "#32357"
+msgid "Secondary Language"
+msgstr "Idioma Secundário"
+
+msgctxt "#32358"
+msgid "Subtitles could be unavailable or out of sync."
+msgstr "Legendas podem estar indisponíveis ou fora de sincronia."
+
+msgctxt "#32359"
+msgid "In that case use your own subtitles."
+msgstr "Nesse caso use suas próprias legendas."
+
+msgctxt "#32360"
+msgid "Providers Language"
+msgstr "Idioma dos Provedores"
+
+msgctxt "#32361"
+msgid "[B]UMBRELLA[/B] : Reset View Types"
+msgstr "[B]UMBRELLA[/B] : Redefinir Tipos de Visualização"
+
+msgctxt "#32362"
+msgid "[B]SETTINGS[/B] : Navigation"
+msgstr "[B]CONFIGURAÇÕES[/B] : Navegação"
+
+msgctxt "#32363"
+msgid "Remove HEVC"
+msgstr "Remover HEVC"
+
+msgctxt "#32364"
+msgid "Disable CloudFlare protected providers"
+msgstr "Desativar provedores protegidos por CloudFlare"
+
+msgctxt "#32365"
+msgid " (IMDb)"
+msgstr " (IMDb)"
+
+msgctxt "#32366"
+msgid " (TMDb)"
+msgstr " (TMDb)"
+
+msgctxt "#32367"
+msgid " (TVDb)"
+msgstr " (TVDb)"
+
+msgctxt "#32368"
+msgid " (Trakt)"
+msgstr " (Trakt)"
+
+msgctxt "#32369"
+msgid "TVDB api key1"
+msgstr "Chave API TVDB 1"
+
+msgctxt "#32370"
+msgid "TVDB api key2"
+msgstr "Chave API TVDB 2"
+
+msgctxt "#32371"
+msgid "TVDB api key3"
+msgstr "Chave API TVDB 3"
+
+msgctxt "#32372"
+msgid "When playback ends..."
+msgstr "Quando a reprodução terminar..."
+
+msgctxt "#32373"
+msgid "Force container refresh"
+msgstr "Forçar atualização do contêiner"
+
+msgctxt "#32374"
+msgid "Enable Debug"
+msgstr "Ativar Depuração"
+
+msgctxt "#32375"
+msgid "TV "Networks" menu options"
+msgstr "Opções do menu \"Redes\" de TV"
+
+msgctxt "#32376"
+msgid "List Mode"
+msgstr "Modo Lista"
+
+msgctxt "#32377"
+msgid "This Season's Shows"
+msgstr "Programas Desta Temporada"
+
+msgctxt "#32378"
+msgid "View All Shows"
+msgstr "Ver Todos os Programas"
+
+msgctxt "#32379"
+msgid "Allowed Shows"
+msgstr "Programas Permitidos"
+
+msgctxt "#32380"
+msgid "Airing"
+msgstr "No Ar"
+
+msgctxt "#32381"
+msgid "Ended"
+msgstr "Finalizado"
+
+msgctxt "#32382"
+msgid "Documentary"
+msgstr "Documentário"
+
+msgctxt "#32383"
+msgid "Talk-Show"
+msgstr "Talk Show"
+
+msgctxt "#32384"
+msgid "Airing/Ended"
+msgstr "No Ar/Finalizado"
+
+msgctxt "#32385"
+msgid "All"
+msgstr "Todos"
+
+msgctxt "#32386"
+msgid "Scraper Progress Dialog"
+msgstr "Diálogo de Progresso do Scraper"
+
+msgctxt "#32387"
+msgid "Sources Select"
+msgstr "Selecionar Fontes"
+
+msgctxt "#32388"
+msgid "Remove Dolby Vision"
+msgstr "Remover Dolby Vision"
+
+msgctxt "#32389"
+msgid "Remove HDR"
+msgstr "Remover HDR"
+
+msgctxt "#32390"
+msgid "Accounts(Meta)"
+msgstr "Contas (Meta)"
+
+msgctxt "#32391"
+msgid "Certification Country (MPAA)"
+msgstr "País de Certificação (MPAA)"
+
+msgctxt "#32392"
+msgid "Certification prefix"
+msgstr "Prefixo de Certificação"
+
+msgctxt "#32393"
+msgid "Using default available %s subtitle from stream"
+msgstr "Usando legenda %s padrão disponível do stream"
+
+msgctxt "#32394"
+msgid "Preferred %s subtitle available in stream and has been set"
+msgstr "Legenda %s preferida disponível no stream e foi definida"
+
+msgctxt "#32395"
+msgid "No matching Subtitle language found"
+msgstr "Nenhum idioma de legenda correspondente encontrado"
+
+msgctxt "#32398"
+msgid "Resolving Canceled"
+msgstr "Resolução Cancelada"
+
+msgctxt "#32399"
+msgid "Error with Debrid Pack"
+msgstr "Erro com Pacote Debrid"
+
+msgctxt "#32400"
+msgid "Sources Canceled"
+msgstr "Fontes Canceladas"
+
+msgctxt "#32401"
+msgid "No stream available"
+msgstr "Nenhum stream disponível"
+
+msgctxt "#32403"
+msgid "[B]Download[/B]"
+msgstr "[B]Download[/B]"
+
+msgctxt "#32404"
+msgid "[COLOR %s]Time Elapsed:[/COLOR][COLOR %s]  %s seconds[/COLOR]"
+msgstr "[COLOR %s]Tempo Decorrido:[/COLOR][COLOR %s]  %s segundos[/COLOR]"
+
+msgctxt "#32406"
+msgid "[COLOR %s]Remaining Providers:[/COLOR][COLOR %s] %s[/COLOR]"
+msgstr "[COLOR %s]Provedores Restantes:[/COLOR][COLOR %s] %s[/COLOR]"
+
+msgctxt "#32407"
+msgid "[COLOR %s]Unfiltered Total:[/COLOR][COLOR %s]  %s[/COLOR]"
+msgstr "[COLOR %s]Total Não Filtrado:[/COLOR][COLOR %s]  %s[/COLOR]"
+
+msgctxt "#32417"
+msgid "Trakt Popular Lists"
+msgstr "Listas Populares do Trakt"
+
+msgctxt "#32418"
+msgid "Trakt Trending Lists"
+msgstr "Listas em Alta do Trakt"
+
+msgctxt "#32419"
+msgid "Search Trakt Lists"
+msgstr "Buscar Listas do Trakt"
+
+msgctxt "#32420"
+msgid "In Theaters"
+msgstr "Em Cartaz"
+
+msgctxt "#32421"
+msgid "In Theaters (IMDb)"
+msgstr "Em Cartaz (IMDb)"
+
+msgctxt "#32422"
+msgid "Now Playing"
+msgstr "Agora em Exibição"
+
+msgctxt "#32423"
+msgid "Now Playing (TMDb)"
+msgstr "Agora em Exibição (TMDb)"
+
+msgctxt "#32424"
+msgid "Anticipated"
+msgstr "Antecipados"
+
+msgctxt "#32425"
+msgid "Anticipated (Trakt)"
+msgstr "Antecipados (Trakt)"
+
+msgctxt "#32426"
+msgid "Upcoming"
+msgstr "Próximos"
+
+msgctxt "#32427"
+msgid "Upcoming (TMDb)"
+msgstr "Próximos (TMDb)"
+
+msgctxt "#32428"
+msgid "Most Popular"
+msgstr "Mais Populares"
+
+msgctxt "#32429"
+msgid "Most Popular (IMDb)"
+msgstr "Mais Populares (IMDb)"
+
+msgctxt "#32430"
+msgid "Popular"
+msgstr "Populares"
+
+msgctxt "#32431"
+msgid "Popular (TMDb)"
+msgstr "Populares (TMDb)"
+
+msgctxt "#32433"
+msgid "Popular (Trakt)"
+msgstr "Populares (Trakt)"
+
+msgctxt "#32434"
+msgid "Box Office"
+msgstr "Bilheteria"
+
+msgctxt "#32435"
+msgid "Box Office (IMDb)"
+msgstr "Bilheteria (IMDb)"
+
+msgctxt "#32436"
+msgid "Box Office (TMDb)"
+msgstr "Bilheteria (TMDb)"
+
+msgctxt "#32437"
+msgid "Box Office (Trakt)"
+msgstr "Bilheteria (Trakt)"
+
+msgctxt "#32438"
+msgid "Most Voted"
+msgstr "Mais Votados"
+
+msgctxt "#32439"
+msgid "Most Voted (IMDb)"
+msgstr "Mais Votados (IMDb)"
+
+msgctxt "#32440"
+msgid "Top Rated"
+msgstr "Melhor Avaliados"
+
+msgctxt "#32441"
+msgid "Top Rated (TMDb)"
+msgstr "Melhor Avaliados (TMDb)"
+
+msgctxt "#32442"
+msgid "Trending"
+msgstr "Em Alta"
+
+msgctxt "#32443"
+msgid "Trending (Trakt)"
+msgstr "Em Alta (Trakt)"
+
+msgctxt "#32444"
+msgid "Recommended"
+msgstr "Recomendados"
+
+msgctxt "#32445"
+msgid "Recommended (Trakt)"
+msgstr "Recomendados (Trakt)"
+
+msgctxt "#32446"
+msgid "Featured"
+msgstr "Em Destaque"
+
+msgctxt "#32447"
+msgid "Featured (IMDb)"
+msgstr "Em Destaque (IMDb)"
+
+msgctxt "#32448"
+msgid "Highly Rated"
+msgstr "Altamente Avaliados"
+
+msgctxt "#32449"
+msgid "Highly Rated (IMDb)"
+msgstr "Altamente Avaliados (IMDb)"
+
+msgctxt "#32450"
+msgid "Calendar (TVMaze)"
+msgstr "Calendário (TVMaze)"
+
+msgctxt "#32451"
+msgid "Oscar Winners"
+msgstr "Vencedores do Oscar"
+
+msgctxt "#32452"
+msgid "Oscar Winners (IMDb)"
+msgstr "Vencedores do Oscar (IMDb)"
+
+msgctxt "#32453"
+msgid "Oscar Nominees"
+msgstr "Indicados ao Oscar"
+
+msgctxt "#32454"
+msgid "Oscar Nominees (IMDb)"
+msgstr "Indicados ao Oscar (IMDb)"
+
+msgctxt "#32455"
+msgid "Genres"
+msgstr "Gêneros"
+
+msgctxt "#32456"
+msgid "Genres (IMDb)"
+msgstr "Gêneros (IMDb)"
+
+msgctxt "#32457"
+msgid "Year"
+msgstr "Ano"
+
+msgctxt "#32458"
+msgid "Year (IMDb)"
+msgstr "Ano (IMDb)"
+
+msgctxt "#32459"
+msgid "People"
+msgstr "Pessoas"
+
+msgctxt "#32460"
+msgid "People (IMDb)"
+msgstr "Pessoas (IMDb)"
+
+msgctxt "#32461"
+msgid "Languages"
+msgstr "Idiomas"
+
+msgctxt "#32462"
+msgid "Languages (IMDb)"
+msgstr "Idiomas (IMDb)"
+
+msgctxt "#32463"
+msgid "Certificates"
+msgstr "Certificados"
+
+msgctxt "#32464"
+msgid "Certificates (IMDb)"
+msgstr "Certificados (IMDb)"
+
+msgctxt "#32465"
+msgid "Airing Today"
+msgstr "No Ar Hoje"
+
+msgctxt "#32466"
+msgid "Airing Today (IMDb)"
+msgstr "No Ar Hoje (IMDb)"
+
+msgctxt "#32467"
+msgid "Airing Today (TMDb)"
+msgstr "No Ar Hoje (TMDb)"
+
+msgctxt "#32468"
+msgid "Networks (TMDb)"
+msgstr "Redes (TMDb)"
+
+msgctxt "#32469"
+msgid "Networks"
+msgstr "Redes"
+
+msgctxt "#32470"
+msgid "Networks (TVMaze)"
+msgstr "Redes (TVMaze)"
+
+msgctxt "#32471"
+msgid "On TV"
+msgstr "Na TV"
+
+msgctxt "#32472"
+msgid "On TV (TMDb)"
+msgstr "Na TV (TMDb)"
+
+msgctxt "#32473"
+msgid "Returning TV Shows"
+msgstr "Séries de TV Retornando"
+
+msgctxt "#32474"
+msgid "Returning TV Shows (IMDb)"
+msgstr "Séries de TV Retornando (IMDb)"
+
+msgctxt "#32475"
+msgid "New TV Shows"
+msgstr "Novas Séries de TV"
+
+msgctxt "#32476"
+msgid "New TV Shows (IMDb)"
+msgstr "Novas Séries de TV (IMDb)"
+
+msgctxt "#32477"
+msgid "New Movies"
+msgstr "Novos Filmes"
+
+msgctxt "#32478"
+msgid "New Movies (IMDb)"
+msgstr "Novos Filmes (IMDb)"
+
+msgctxt "#32479"
+msgid "New Movies (Trakt)"
+msgstr "Novos Filmes (Trakt)"
+
+msgctxt "#32480"
+msgid "New Episodes"
+msgstr "Novos Episódios"
+
+msgctxt "#32481"
+msgid "New Episodes (TVMaze)"
+msgstr "Novos Episódios (TVMaze)"
+
+msgctxt "#32482"
+msgid "New Episodes (Trakt)"
+msgstr "Novos Episódios (Trakt)"
+
+msgctxt "#32483"
+msgid "Recently aired"
+msgstr "Transmitidos Recentemente"
+
+msgctxt "#32484"
+msgid "Recently aired (TVMaze)"
+msgstr "Transmitidos Recentemente (TVMaze)"
+
+msgctxt "#32485"
+msgid "Year (TMDb)"
+msgstr "Ano (TMDb)"
+
+msgctxt "#32486"
+msgid "Genres (TMDb)"
+msgstr "Gêneros (TMDb)"
+
+msgctxt "#32487"
+msgid "Certificates (TMDb)"
+msgstr "Certificados (TMDb)"
+
+msgctxt "#32488"
+msgid "Optional"
+msgstr "Opcional"
+
+msgctxt "#32489"
+msgid "[B]Account:[/B] %s"
+msgstr "[B]Conta:[/B] %s"
+
+msgctxt "#32490"
+msgid "[B]Monthly Limit:[/B] %s GB"
+msgstr "[B]Limite Mensal:[/B] %s GB"
+
+msgctxt "#32491"
+msgid "[B]Current Month:[/B]"
+msgstr "[B]Mês Atual:[/B]"
+
+msgctxt "#32492"
+msgid "[B]Days Remaining:[/B] %s"
+msgstr "[B]Dias Restantes:[/B] %s"
+
+msgctxt "#32493"
+msgid "[B]Data Used:[/B] %s"
+msgstr "[B]Dados Usados:[/B] %s"
+
+msgctxt "#32494"
+msgid "[B]Data Remaining:[/B] %s"
+msgstr "[B]Dados Restantes:[/B] %s"
+
+msgctxt "#32495"
+msgid "[B]Current Subscription:[/B]"
+msgstr "[B]Assinatura Atual:[/B]"
+
+msgctxt "#32496"
+msgid "[B]Resets On:[/B] %s"
+msgstr "[B]Reinicia Em:[/B] %s"
+
+msgctxt "#32497"
+msgid "[B]Renewal Needed On:[/B] %s"
+msgstr "[B]Renovação Necessária Em:[/B] %s"
+
+msgctxt "#32501"
+msgid "Start from beginning"
+msgstr "Começar do início"
+
+msgctxt "#32502"
+msgid "Resume from %s"
+msgstr "Retomar de %s"
+
+msgctxt "#32503"
+msgid "Resume"
+msgstr "Retomar"
+
+msgctxt "#32506"
+msgid "[B]Umbrella Global Context[/B] Settings"
+msgstr "[B]Contexto Global do Umbrella[/B] Configurações"
+
+msgctxt "#32510"
+msgid "[B]Cache Functions[/B]"
+msgstr "[B]Funções de Cache[/B]"
+
+msgctxt "#32511"
+msgid "An account already exists."
+msgstr "Uma conta já existe."
+
+msgctxt "#32512"
+msgid "Do you want to reset?"
+msgstr "Você quer redefinir?"
+
+msgctxt "#32513"
+msgid "1) Open this link in a browser : [COLOR %s]%s[/COLOR]"
+msgstr "1) Abra este link em um navegador : [COLOR %s]%s[/COLOR]"
+
+msgctxt "#32514"
+msgid "2) When prompted enter : [COLOR %s]%s[/COLOR]"
+msgstr "2) Quando solicitado, digite : [COLOR %s]%s[/COLOR]"
+
+msgctxt "#32515"
+msgid "Trakt Manager"
+msgstr "Gerenciador Trakt"
+
+msgctxt "#32516"
+msgid "Add Collection"
+msgstr "Adicionar Coleção"
+
+msgctxt "#32517"
+msgid "Remove Collection"
+msgstr "Remover Coleção"
+
+msgctxt "#32518"
+msgid "Add Watchlist"
+msgstr "Adicionar Lista de Observação"
+
+msgctxt "#32519"
+msgid "Remove Watchlist"
+msgstr "Remover Lista de Observação"
+
+msgctxt "#32520"
+msgid "Add New List"
+msgstr "Adicionar Nova Lista"
+
+msgctxt "#32521"
+msgid "Add to [B]%s[/B]"
+msgstr "Adicionar a [B]%s[/B]"
+
+msgctxt "#32522"
+msgid "Remove from [B]%s[/B]"
+msgstr "Remover de [B]%s[/B]"
+
+msgctxt "#32523"
+msgid "[B]Logging Tools[/B]"
+msgstr "[B]Ferramentas de Log[/B]"
+
+msgctxt "#32524"
+msgid "[B]Umbrella - View Log File[/B]"
+msgstr "[B]Umbrella - Ver Arquivo de Log[/B]"
+
+msgctxt "#32525"
+msgid "[B]Umbrella - Clear Log File[/B]"
+msgstr "[B]Umbrella - Limpar Arquivo de Log[/B]"
+
+msgctxt "#32526"
+msgid "[B]Umbrella - Show Changelog[/B]"
+msgstr "[B]Umbrella - Mostrar Registro de Alterações[/B]"
+
+msgctxt "#32527"
+msgid "[B]Umbrella - Upload log file to pastebin[/B]"
+msgstr "[B]Umbrella - Enviar arquivo de log para pastebin[/B]"
+
+msgctxt "#32528"
+msgid "[B]My Accounts - View Log File[/B]"
+msgstr "[B]Minhas Contas - Ver Arquivo de Log[/B]"
+
+msgctxt "#32529"
+msgid "[B]Umbrella - Show Full Changelog[/B]"
+msgstr "[B]Umbrella - Mostrar Registro Completo de Alterações[/B]"
+
+msgctxt "#32530"
+msgid ""
+msgstr ""
+
+msgctxt "#32531"
+msgid ""
+msgstr ""
+
+msgctxt "#32532"
+msgid "[B]View Kodi Log File[/B]"
+msgstr "[B]Ver Arquivo de Log do Kodi[/B]"
+
+msgctxt "#32535"
+msgid "Play Random"
+msgstr "Reproduzir Aleatório"
+
+msgctxt "#32536"
+msgid "Playing"
+msgstr "Reproduzindo"
+
+msgctxt "#32537"
+msgid "Nothing found to play"
+msgstr "Nada encontrado para reproduzir"
+
+msgctxt "#32541"
+msgid "Library"
+msgstr "Biblioteca"
+
+msgctxt "#32542"
+msgid "folders will be imported to library if they are added to media sources."
+msgstr "pastas serão importadas para a biblioteca se forem adicionadas às fontes de mídia."
+
+msgctxt "#32543"
+msgid "Movies"
+msgstr "Filmes"
+
+msgctxt "#32544"
+msgid "TV"
+msgstr "TV"
+
+msgctxt "#32545"
+msgid "Auto Update Service"
+msgstr "Serviço de Atualização Automática"
+
+msgctxt "#32546"
+msgid "Show Notifications for Service"
+msgstr "Mostrar Notificações para o Serviço"
+
+msgctxt "#32547"
+msgid "Update library after adding content"
+msgstr "Atualizar biblioteca após adicionar conteúdo"
+
+msgctxt "#32548"
+msgid "Avoid creating duplicate content"
+msgstr "Evitar criar conteúdo duplicado"
+
+msgctxt "#32549"
+msgid "Check movie before adding it"
+msgstr "Verificar filme antes de adicioná-lo"
+
+msgctxt "#32550"
+msgid "Check first episode of season before adding it"
+msgstr "Verificar primeiro episódio da temporada antes de adicioná-lo"
+
+msgctxt "#32551"
+msgid "Add to Library"
+msgstr "Adicionar à Biblioteca"
+
+msgctxt "#32552"
+msgid "Checking library..."
+msgstr "Verificando biblioteca..."
+
+msgctxt "#32553"
+msgid "Updating TV Shows In Local Library..."
+msgstr "Atualizando Séries de TV na Biblioteca Local..."
+
+msgctxt "#32554"
+msgid "Adding to Library..."
+msgstr "Adicionando à Biblioteca..."
+
+msgctxt "#32555"
+msgid "Are you sure?"
+msgstr "Tem certeza?"
+
+msgctxt "#32556"
+msgid "[B]UMBRELLA[/B] : Library"
+msgstr "[B]UMBRELLA[/B] : Biblioteca"
+
+msgctxt "#32557"
+msgid "[B]LIBRARY[/B] : Settings"
+msgstr "[B]BIBLIOTECA[/B] : Configurações"
+
+msgctxt "#32558"
+msgid "[B]UMBRELLA[/B] : Update library..."
+msgstr "[B]UMBRELLA[/B] : Atualizar biblioteca..."
+
+msgctxt "#32559"
+msgid "[B]UMBRELLA[/B] : Movie folder..."
+msgstr "[B]UMBRELLA[/B] : Pasta de filmes..."
+
+msgctxt "#32560"
+msgid "[B]UMBRELLA[/B] : TV folder..."
+msgstr "[B]UMBRELLA[/B] : Pasta de TV..."
+
+msgctxt "#32561"
+msgid "[B]TRAKT[/B] : Import Movie Collection..."
+msgstr "[B]TRAKT[/B] : Importar Coleção de Filmes..."
+
+msgctxt "#32562"
+msgid "[B]TRAKT[/B] : Import Movie Watchlist..."
+msgstr "[B]TRAKT[/B] : Importar Lista de Observação de Filmes..."
+
+msgctxt "#32563"
+msgid "[B]TRAKT[/B] : Import TV Collection..."
+msgstr "[B]TRAKT[/B] : Importar Coleção de TV..."
+
+msgctxt "#32564"
+msgid "[B]TRAKT[/B] : Import TV Watchlist..."
+msgstr "[B]TRAKT[/B] : Importar Lista de Observação de TV..."
+
+msgctxt "#32565"
+msgid "Include episodes with unknown air dates"
+msgstr "Incluir episódios com datas de exibição desconhecidas"
+
+msgctxt "#32570"
+msgid "Show unaired seasons/episodes"
+msgstr "Mostrar temporadas/episódios não exibidos"
+
+msgctxt "#32571"
+msgid "Hide movies in cinema and unreleased"
+msgstr "Ocultar filmes em cartaz e não lançados"
+
+msgctxt "#32572"
+msgid "Trakt Progress Show unaired episodes"
+msgstr "Progresso do Trakt mostrar episódios não exibidos"
+
+msgctxt "#32573"
+msgid "Trakt Upcoming Progress prepend date"
+msgstr "Progresso Próximo do Trakt preceder data"
+
+msgctxt "#32584"
+msgid "Sort order for Trakt Watched Progress"
+msgstr "Ordem de classificação para Progresso Assistido do Trakt"
+
+msgctxt "#32585"
+msgid "Recently aired"
+msgstr "Transmitidos recentemente"
+
+msgctxt "#32586"
+msgid "Recently watched"
+msgstr "Assistidos recentemente"
+
+msgctxt "#32588"
+msgid "Debrid(Hoster) Source Color"
+msgstr "Cor da Fonte Debrid(Hoster)"
+
+msgctxt "#32589"
+msgid "[COLOR blue]█ [B]Blue[/B][/COLOR]"
+msgstr "[COLOR blue]█ [B]Azul[/B][/COLOR]"
+
+msgctxt "#32590"
+msgid "[COLOR red]█ [B]Red[/B][/COLOR]"
+msgstr "[COLOR red]█ [B]Vermelho[/B][/COLOR]"
+
+msgctxt "#32591"
+msgid "[COLOR yellow]█ [B]Yellow[/B][/COLOR]"
+msgstr "[COLOR yellow]█ [B]Amarelo[/B][/COLOR]"
+
+msgctxt "#32592"
+msgid "[COLOR deeppink]█ [B]Deep Pink[/B][/COLOR]"
+msgstr "[COLOR deeppink]█ [B]Rosa Profundo[/B][/COLOR]"
+
+msgctxt "#32593"
+msgid "[COLOR cyan]█ [B]Cyan[/B][/COLOR]"
+msgstr "[COLOR cyan]█ [B]Ciano[/B][/COLOR]"
+
+msgctxt "#32594"
+msgid "[COLOR lawngreen]█ [B]Lawn Green[/B][/COLOR]"
+msgstr "[COLOR lawngreen]█ [B]Verde Gramado[/B][/COLOR]"
+
+msgctxt "#32595"
+msgid "[COLOR gold]█ [B]Gold[/B][/COLOR]"
+msgstr "[COLOR gold]█ [B]Ouro[/B][/COLOR]"
+
+msgctxt "#32596"
+msgid "[COLOR magenta]█ [B]Magenta[B][/COLOR]"
+msgstr "[COLOR magenta]█ [B]Magenta[B][/COLOR]"
+
+msgctxt "#32597"
+msgid "[COLOR yellowgreen]█ [B]Yellow Green[/B][/COLOR]"
+msgstr "[COLOR yellowgreen]█ [B]Verde Amarelo[/B][/COLOR]"
+
+msgctxt "#32598"
+msgid "[COLOR nocolor]█ [B]No Color[/B][/COLOR]"
+msgstr "[COLOR nocolor]█ [B]Sem Cor[/B][/COLOR]"
+
+msgctxt "#32599"
+msgid "Getting genre information from Trakt"
+msgstr "Obtendo informações de gênero do Trakt"
+
+msgctxt "#32600"
+msgid "Preparing sources"
+msgstr "Preparando fontes"
+
+msgctxt "#32603"
+msgid "[COLOR %s][I]New search...[/I][/COLOR]"
+msgstr "[COLOR %s][I]Nova busca...[/I][/COLOR]"
+
+msgctxt "#32604"
+msgid "[B]UMBRELLA[/B] : Clear search history..."
+msgstr "[B]UMBRELLA[/B] : Limpar histórico de busca..."
+
+msgctxt "#32605"
+msgid "Click to clear search history"
+msgstr "Clique para limpar histórico de busca"
+
+msgctxt "#32608"
+msgid "Unaired Season/Episode Color"
+msgstr "Cor de Temporada/Episódio Não Exibido"
+
+msgctxt "#32609"
+msgid "[B]My Accounts[/B] Settings"
+msgstr "[B]Minhas Contas[/B] Configurações"
+
+msgctxt "#32610"
+msgid "Clear [COLOR yellow]All [/COLOR]Cache..."
+msgstr "Limpar [COLOR yellow]Todo [/COLOR]Cache..."
+
+msgctxt "#32611"
+msgid "Clear [COLOR yellow]Providers [/COLOR]Cache..."
+msgstr "Limpar Cache de [COLOR yellow]Provedores [/COLOR]..."
+
+msgctxt "#32612"
+msgid "Clear [COLOR yellow]Metadata [/COLOR]Cache..."
+msgstr "Limpar Cache de [COLOR yellow]Metadados [/COLOR]..."
+
+msgctxt "#32613"
+msgid "Clear [COLOR yellow]Cache [/COLOR]..."
+msgstr "Limpar [COLOR yellow]Cache [/COLOR]..."
+
+msgctxt "#32614"
+msgid "Clear [COLOR yellow]Search[/COLOR] Cache..."
+msgstr "Limpar Cache de [COLOR yellow]Busca[/COLOR]..."
+
+msgctxt "#32615"
+msgid "Clear [COLOR yellow]Bookmarks[/COLOR] Cache..."
+msgstr "Limpar Cache de [COLOR yellow]Favoritos[/COLOR]..."
+
+msgctxt "#32616"
+msgid "Debugging"
+msgstr "Depuração"
+
+msgctxt "#32617"
+msgid "Logging Location"
+msgstr "Localização do Log"
+
+msgctxt "#32618"
+msgid "kodi.log"
+msgstr "kodi.log"
+
+msgctxt "#32619"
+msgid "umbrella.log"
+msgstr "umbrella.log"
+
+msgctxt "#32620"
+msgid "Clear [COLOR yellow]Metadata[/COLOR] and [COLOR yellow]Cache[/COLOR]."
+msgstr "Limpar [COLOR yellow]Metadados[/COLOR] e [COLOR yellow]Cache[/COLOR]."
+
+msgctxt "#32621"
+msgid "Navigation"
+msgstr "Navegação"
+
+msgctxt "#32622"
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+msgctxt "#32630"
+msgid "Show Season 0 in Browse Seasons"
+msgstr "Mostrar Temporada 0 em Navegar Temporadas"
+
+msgctxt "#32631"
+msgid "Documentaries"
+msgstr "Documentários"
+
+msgctxt "#32634"
+msgid "Cached Torrent Source Color"
+msgstr "Cor da Fonte Torrent Cacheado"
+
+msgctxt "#32635"
+msgid "UnCached Torrent Source Color"
+msgstr "Cor da Fonte Torrent Não Cacheado"
+
+msgctxt "#32636"
+msgid "Secondary(info) Line Color"
+msgstr "Cor da Linha Secundária (info)"
+
+msgctxt "#32637"
+msgid "Secondary Line Content Type"
+msgstr "Tipo de Conteúdo da Linha Secundária"
+
+msgctxt "#32638"
+msgid "Minimum Seeders"
+msgstr "Seeders Mínimos"
+
+msgctxt "#32639"
+msgid "View Uncached Torrents"
+msgstr "Ver Torrents Não Cacheados"
+
+msgctxt "#32642"
+msgid "Provider filters"
+msgstr "Filtros de provedor"
+
+msgctxt "#32643"
+msgid "[B]UMBRELLA[/B]: Settings"
+msgstr "[B]UMBRELLA[/B]: Configurações"
+
+msgctxt "#32644"
+msgid "Trakt Bookmarks"
+msgstr "Favoritos do Trakt"
+
+msgctxt "#32645"
+msgid "Auto Trakt Collections Syncing"
+msgstr "Sincronização Automática de Coleções do Trakt"
+
+msgctxt "#32646"
+msgid "Sync on Kodi Start"
+msgstr "Sincronizar ao Iniciar Kodi"
+
+msgctxt "#32647"
+msgid "Schedule Updates Every - Hour/s"
+msgstr "Agendar Atualizações a Cada - Hora/s"
+
+msgctxt "#32648"
+msgid "0 Value Disables Scheduling"
+msgstr "Valor 0 Desabilita Agendamento"
+
+msgctxt "#32649"
+msgid "Include Special Episodes (Season 0)"
+msgstr "Incluir Episódios Especiais (Temporada 0)"
+
+msgctxt "#32651"
+msgid ""
+msgstr ""
+
+msgctxt "#32652"
+msgid "Title Already Exists in Library"
+msgstr "Título Já Existe na Biblioteca"
+
+msgctxt "#32654"
+msgid "Pre-emptive Termination"
+msgstr "Terminação Preventiva"
+
+msgctxt "#32655"
+msgid "Pre-emptive Limit"
+msgstr "Limite Preventivo"
+
+msgctxt "#32656"
+msgid "Autoplay SD Quality only"
+msgstr "Autoplay Apenas Qualidade SD"
+
+msgctxt "#32657"
+msgid "Auto Resume"
+msgstr "Retomada Automática"
+
+msgctxt "#32658"
+msgid "Your Online List is Empty!"
+msgstr "Sua Lista Online Está Vazia!"
+
+msgctxt "#32659"
+msgid "Min. Pre-emptive Res."
+msgstr "Res. Preventiva Mín."
+
+msgctxt "#32660"
+msgid "Local Resume Point Saved..."
+msgstr "Ponto de Retomada Local Salvo..."
+
+msgctxt "#32661"
+msgid "Importing Trakt Collection..."
+msgstr "Importando Coleção do Trakt..."
+
+msgctxt "#32662"
+msgid "Importing Trakt Watchlist..."
+msgstr "Importando Lista de Observação do Trakt..."
+
+msgctxt "#32663"
+msgid "Importing Trakt User List..."
+msgstr "Importando Lista de Usuário do Trakt..."
+
+msgctxt "#32664"
+msgid "Importing Trakt Liked List..."
+msgstr "Importando Lista Curtida do Trakt..."
+
+msgctxt "#32665"
+msgid "Check Host for Valid URL"
+msgstr "Verificar Host para URL Válida"
+
+msgctxt "#32666"
+msgid "[COLOR skyblue]█ [B]Sky Blue[/B][/COLOR]"
+msgstr "[COLOR skyblue]█ [B]Azul Céu[/B][/COLOR]"
+
+msgctxt "#32667"
+msgid "[COLOR lime]█ [B]Lime[/B][/COLOR]"
+msgstr "[COLOR lime]█ [B]Lima[/B][/COLOR]"
+
+msgctxt "#32668"
+msgid "[COLOR limegreen]█ [B]Lime Green[/B][/COLOR]"
+msgstr "[COLOR limegreen]█ [B]Verde Lima[/B][/COLOR]"
+
+msgctxt "#32669"
+msgid "[COLOR deepskyblue]█ [B]Deep Sky Blue[/B][/COLOR]"
+msgstr "[COLOR deepskyblue]█ [B]Azul Céu Profundo[/B][/COLOR]"
+
+msgctxt "#32670"
+msgid "[COLOR white]█ [B]White[/B][/COLOR]"
+msgstr "[COLOR white]█ [B]Branco[/B][/COLOR]"
+
+msgctxt "#32671"
+msgid "[COLOR whitesmoke]█ [B]White Smoke[/B][/COLOR]"
+msgstr "[COLOR whitesmoke]█ [B]Fumaça Branca[/B][/COLOR]"
+
+msgctxt "#32672"
+msgid "[B]TRAKT[/B] : Import Movie User List..."
+msgstr "[B]TRAKT[/B] : Importar Lista de Usuário de Filmes..."
+
+msgctxt "#32673"
+msgid "[B]TRAKT[/B] : Import Movie Liked List..."
+msgstr "[B]TRAKT[/B] : Importar Lista Curtida de Filmes..."
+
+msgctxt "#32674"
+msgid "[B]TRAKT[/B] : Import TV User List..."
+msgstr "[B]TRAKT[/B] : Importar Lista de Usuário de TV..."
+
+msgctxt "#32675"
+msgid "[B]TRAKT[/B] : Import TV Liked List..."
+msgstr "[B]TRAKT[/B] : Importar Lista Curtida de TV..."
+
+msgctxt "#32676"
+msgid "[B]UMBRELLA[/B] : Clean library..."
+msgstr "[B]UMBRELLA[/B] : Limpar biblioteca..."
+
+msgctxt "#32677"
+msgid "Add folders to Kodi Sources Now..."
+msgstr "Adicionar pastas às Fontes do Kodi Agora..."
+
+msgctxt "#32678"
+msgid "Updated TV Show title"
+msgstr "Título da Série de TV Atualizado"
+
+msgctxt "#32679"
+msgid "Importing TMDb Watchlist..."
+msgstr "Importando Lista de Observação do TMDb..."
+
+msgctxt "#32680"
+msgid "Importing TMDb Favourites..."
+msgstr "Importando Favoritos do TMDb..."
+
+msgctxt "#32681"
+msgid "Importing TMDb Userlist..."
+msgstr "Importando Lista de Usuário do TMDb..."
+
+msgctxt "#32682"
+msgid "IMDb Watchlist"
+msgstr "Lista de Observação IMDb"
+
+msgctxt "#32683"
+msgid "Trakt Watchlist"
+msgstr "Lista de Observação Trakt"
+
+msgctxt "#32684"
+msgid "Store resolved items in cloud"
+msgstr "Armazenar itens resolvidos na nuvem"
+
+msgctxt "#33005"
+msgid "Enable startup notice"
+msgstr "Ativar aviso de inicialização"
+
+msgctxt "#33017"
+msgid "New value = [B]%s[/B]: Successfully changed."
+msgstr "Novo valor = [B]%s[/B]: Alterado com sucesso."
+
+msgctxt "#33018"
+msgid "[B]Reuse Langauage Invoker[/B] is currently set to [B]%s[/B].\n\nDo you wish to change this setting to [B]%s[/B]?"
+msgstr "[B]Reutilizar Invocador de Linguagem[/B] está atualmente definido como [B]%s[/B].\n\nVocê deseja alterar esta configuração para [B]%s[/B]?"
+
+msgctxt "#33019"
+msgid "Enabling this setting may cause instability issues.\nTest at your own free will.\nContinue?"
+msgstr "Ativar esta configuração pode causar problemas de instabilidade.\nTeste por sua conta e risco.\nContinuar?"
+
+msgctxt "#33020"
+msgid "Umbrella will reload your profile to refresh the addon.xml"
+msgstr "O Umbrella irá recarregar seu perfil para atualizar o addon.xml"
+
+msgctxt "#33021"
+msgid "Write failed"
+msgstr "Falha na escrita"
+
+msgctxt "#33022"
+msgid "Error setting correct value."
+msgstr "Erro ao definir valor correto."
+
+msgctxt "#33023"
+msgid "[B]Reuse Language Invoker[/B] SETTING/XML mismatch"
+msgstr "[B]Reutilizar Invocador de Linguagem[/B] Incompatibilidade de CONFIGURAÇÃO/XML"
+
+msgctxt "#33034"
+msgid "No Debrid Account setup, account is required!"
+msgstr "Nenhuma conta Debrid configurada, conta é necessária!"
+
+msgctxt "#33039"
+msgid "Title"
+msgstr "Título"
+
+msgctxt "#33040"
+msgid "Description"
+msgstr "Descrição"
+
+msgctxt "#33041"
+msgid "Searches"
+msgstr "Buscas"
+
+msgctxt "#33042"
+msgid "Search Movies..."
+msgstr "Buscar Filmes..."
+
+msgctxt "#33043"
+msgid "Search Shows..."
+msgstr "Buscar Séries..."
+
+msgctxt "#33044"
+msgid "Search Movies By Actor..."
+msgstr "Buscar Filmes por Ator..."
+
+msgctxt "#33045"
+msgid "Search Shows By Actor..."
+msgstr "Buscar Séries por Ator..."
+
+msgctxt "#33046"
+msgid "Discover Movies"
+msgstr "Descobrir Filmes"
+
+msgctxt "#33047"
+msgid "Discover TV Shows"
+msgstr "Descobrir Séries de TV"
+
+msgctxt "#33048"
+msgid "Local Content"
+msgstr "Conteúdo Local"
+
+msgctxt "#33049"
+msgid "Nothing Was Found"
+msgstr "Nada Foi Encontrado"
+
+msgctxt "#33050"
+msgid "Notifications"
+msgstr "Notificações"
+
+msgctxt "#33051"
+msgid "Server Notifications"
+msgstr "Notificações do Servidor"
+
+msgctxt "#33052"
+msgid "General Notifications"
+msgstr "Notificações Gerais"
+
+msgctxt "#33053"
+msgid "%s has been hidden from your %s"
+msgstr "%s foi ocultado do seu %s"
+
+msgctxt "#33486"
+msgid "Close"
+msgstr "Fechar"
+
+msgctxt "#33564"
+msgid "Default"
+msgstr "Padrão"
+
+msgctxt "#33573"
+msgid "Add Show to your [COLOR %s][B]Watchlist[/B][/COLOR]"
+msgstr "Adicionar Série à sua [COLOR %s][B]Lista de Observação[/B][/COLOR]"
+
+msgctxt "#33574"
+msgid "Remove Show from your [COLOR %s][B]Watchlist[/B][/COLOR]"
+msgstr "Remover Série da sua [COLOR %s][B]Lista de Observação[/B][/COLOR]"
+
+msgctxt "#33575"
+msgid "Add item to your [COLOR %s][B]Collection[/B][/COLOR]"
+msgstr "Adicionar item à sua [COLOR %s][B]Coleção[/B][/COLOR]"
+
+msgctxt "#33576"
+msgid "Remove item from your [COLOR %s][B]Collection[/B][/COLOR]"
+msgstr "Remover item da sua [COLOR %s][B]Coleção[/B][/COLOR]"
+
+msgctxt "#33577"
+msgid "Add item to your [COLOR %s][B]Watchlist[/B][/COLOR]"
+msgstr "Adicionar item à sua [COLOR %s][B]Lista de Observação[/B][/COLOR]"
+
+msgctxt "#33578"
+msgid "Remove item from your [COLOR %s][B]Watchlist[/B][/COLOR]"
+msgstr "Remover item da sua [COLOR %s][B]Lista de Observação[/B][/COLOR]"
+
+msgctxt "#33579"
+msgid "Add item to a new list"
+msgstr "Adicionar item a uma nova lista"
+
+msgctxt "#33580"
+msgid "Add item to your [COLOR %s][B]%s[/B][/COLOR] list"
+msgstr "Adicionar item à sua lista [COLOR %s][B]%s[/B][/COLOR]"
+
+msgctxt "#33581"
+msgid "Remove item from your [COLOR %s][B]%s[/B][/COLOR] list"
+msgstr "Remover item da sua lista [COLOR %s][B]%s[/B][/COLOR]"
+
+msgctxt "#33582"
+msgid "Item Added To Trakt"
+msgstr "Item Adicionado ao Trakt"
+
+msgctxt "#33583"
+msgid "Item Removed From Trakt"
+msgstr "Item Removido do Trakt"
+
+msgctxt "#33584"
+msgid "Trakt List Addition Failed"
+msgstr "Falha na Adição de Lista do Trakt"
+
+msgctxt "#33585"
+msgid "Download Manager"
+msgstr "Gerenciador de Downloads"
+
+msgctxt "#33586"
+msgid "Error"
+msgstr "Erro"
+
+msgctxt "#33587"
+msgid "Install Umbrella Global Context menu Addon..."
+msgstr "Instalar Addon de Menu de Contexto Global do Umbrella..."
+
+msgctxt "#33588"
+msgid "Enable Umbrella Global Context menu"
+msgstr "Ativar Menu de Contexto Global do Umbrella"
+
+msgctxt "#33649"
+msgid "Ascending"
+msgstr "Crescente"
+
+msgctxt "#33650"
+msgid "Descending"
+msgstr "Decrescente"
+
+msgctxt "#33651"
+msgid "Mark As [COLOR %s][B]Watched[/B][/COLOR] Item"
+msgstr "Marcar Item Como [COLOR %s][B]Assistido[/B][/COLOR]"
+
+msgctxt "#33652"
+msgid "Mark As [COLOR %s][B]Unwatched[/B][/COLOR] Item"
+msgstr "Marcar Item Como [COLOR %s][B]Não Assistido[/B][/COLOR]"
+
+msgctxt "#33653"
+msgid "[COLOR %s][B]Rate[/B][/COLOR] Item"
+msgstr "[COLOR %s][B]Avaliar[/B][/COLOR] Item"
+
+msgctxt "#33654"
+msgid "[COLOR %s][B]Unrate[/B][/COLOR] Item"
+msgstr "[COLOR %s][B]Desavaliar[/B][/COLOR] Item"
+
+msgctxt "#33655"
+msgid "Mark the item as [COLOR red][B]Watched[/B][/COLOR]"
+msgstr "Marcar o item como [COLOR red][B]Assistido[/B][/COLOR]"
+
+msgctxt "#33656"
+msgid "Mark the item as [COLOR red][B]Unwatched[/B][/COLOR]"
+msgstr "Marcar o item como [COLOR red][B]Não Assistido[/B][/COLOR]"
+
+msgctxt "#33657"
+msgid "Provide a rating for the item"
+msgstr "Forneça uma avaliação para o item"
+
+msgctxt "#33658"
+msgid "Remove the rating from the item"
+msgstr "Remova a avaliação do item"
+
+msgctxt "#33659"
+msgid "This action requires the Trakt addon to be installed."
+msgstr "Esta ação requer que o addon Trakt esteja instalado."
+
+msgctxt "#33660"
+msgid "IMDb Charts"
+msgstr "Gráficos IMDb"
+
+msgctxt "#33661"
+msgid "Trakt List Addition Succeeded"
+msgstr "Adição de Lista do Trakt Bem-Sucedida"
+
+msgctxt "#33665"
+msgid "Season Lists"
+msgstr "Listas de Temporada"
+
+msgctxt "#33674"
+msgid "Trakt Throttling Applied, Sleeping for %s seconds"
+msgstr "Limitação do Trakt Aplicada, Dormindo por %s segundos"
+
+msgctxt "#33675"
+msgid "Locked User Account - contact Trakt support"
+msgstr "Conta de Usuário Bloqueada - contate o suporte do Trakt"
+
+msgctxt "#33676"
+msgid "Temporary Trakt Server Problems"
+msgstr "Problemas Temporários do Servidor Trakt"
+
+msgctxt "#33677"
+msgid "Re-Authenticate Trakt Access"
+msgstr "Reautenticar Acesso ao Trakt"
+
+msgctxt "#33678"
+msgid "Sorting Filters"
+msgstr "Filtros de Classificação"
+
+msgctxt "#33679"
+msgid "Sorting Order"
+msgstr "Ordem de Classificação"
+
+msgctxt "#33786"
+msgid "No Trakt Result"
+msgstr "Nenhum Resultado do Trakt"
+
+msgctxt "#33787"
+msgid "Trakt Rate Limit Reached"
+msgstr "Limite de Taxa do Trakt Atingido"
+
+msgctxt "#33890"
+msgid "Season Count"
+msgstr "Contagem de Temporada"
+
+msgctxt "#33891"
+msgid "Unwatched Count"
+msgstr "Contagem de Não Assistidos"
+
+msgctxt "#33942"
+msgid "The Umbrella library path does not appear in the Kodi file sources and automatic library updates are therefore not possible. Please manually add the library path from Umbrella's settings to the Kodi file sources. If the path in the settings were not changed, Umbrella will use a directory in the addon profile to store library data."
+msgstr "O caminho da biblioteca do Umbrella não aparece nas fontes de arquivo do Kodi e, portanto, as atualizações automáticas da biblioteca não são possíveis. Adicione manualmente o caminho da biblioteca das configurações do Umbrella às fontes de arquivo do Kodi. Se o caminho nas configurações não foi alterado, o Umbrella usará um diretório no perfil do addon para armazenar dados da biblioteca."
+
+msgctxt "#35017"
+msgid "Air Information"
+msgstr "Informações de Exibição"
+
+msgctxt "#35018"
+msgid "Air Label Zone"
+msgstr "Zona do Rótulo de Exibição"
+
+msgctxt "#35019"
+msgid "Air Label Location"
+msgstr "Localização do Rótulo de Exibição"
+
+msgctxt "#35020"
+msgid "Air Label Format"
+msgstr "Formato do Rótulo de Exibição"
+
+msgctxt "#35021"
+msgid "Air Label Bold"
+msgstr "Rótulo de Exibição em Negrito"
+
+msgctxt "#35022"
+msgid "Native"
+msgstr "Nativo"
+
+msgctxt "#35023"
+msgid "UTC"
+msgstr "UTC"
+
+msgctxt "#35024"
+msgid "Before Title"
+msgstr "Antes do Título"
+
+msgctxt "#35025"
+msgid "After Title"
+msgstr "Após o Título"
+
+msgctxt "#35026"
+msgid "Before Plot"
+msgstr "Antes do Enredo"
+
+msgctxt "#35027"
+msgid "After Plot"
+msgstr "Após o Enredo"
+
+msgctxt "#35028"
+msgid "Day"
+msgstr "Dia"
+
+msgctxt "#35029"
+msgid "Time"
+msgstr "Hora"
+
+msgctxt "#35030"
+msgid "Day and Time"
+msgstr "Dia e Hora"
+
+msgctxt "#35031"
+msgid "Air Label Day"
+msgstr "Dia do Rótulo de Exibição"
+
+msgctxt "#35032"
+msgid "[B]Airs[/B]:"
+msgstr "[B]Exibe[/B]:"
+
+msgctxt "#35048"
+msgid "Air Label Time"
+msgstr "Hora do Rótulo de Exibição"
+
+msgctxt "#35049"
+msgid "Full"
+msgstr "Completo"
+
+msgctxt "#35050"
+msgid "Abbreviated"
+msgstr "Abreviado"
+
+msgctxt "#35051"
+msgid "24-Hour"
+msgstr "24 Horas"
+
+msgctxt "#35052"
+msgid "12-Hour"
+msgstr "12 Horas"
+
+msgctxt "#35053"
+msgid "Period"
+msgstr "Período"
+
+msgctxt "#35054"
+msgid "IMDb list sorting"
+msgstr "Classificação de lista IMDb"
+
+msgctxt "#35055"
+msgid "My Movies and list sort options"
+msgstr "Meus Filmes e opções de classificação de lista"
+
+msgctxt "#35056"
+msgid "My TVShows and list sort options"
+msgstr "Minhas Séries e opções de classificação de lista"
+
+msgctxt "#35057"
+msgid "[B]Trakt Management Tools[/B]"
+msgstr "[B]Ferramentas de Gerenciamento Trakt[/B]"
+
+msgctxt "#35058"
+msgid "[COLOR %s][B]Hidden Progress Manager[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Progresso Oculto[/B][/COLOR]"
+
+msgctxt "#35059"
+msgid "[COLOR %s][B]Unfinished Progress Manager - Movies[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Progresso Inacabado - Filmes[/B][/COLOR]"
+
+msgctxt "#35060"
+msgid "[COLOR %s][B]Unfinished Progress Manager - Episodes[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Progresso Inacabado - Episódios[/B][/COLOR]"
+
+msgctxt "#35061"
+msgid "[COLOR %s][B]Watchlist Manager - Movies[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Lista de Observação - Filmes[/B][/COLOR]"
+
+msgctxt "#35062"
+msgid "[COLOR %s][B]Watchlist Manager - Shows[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Lista de Observação - Séries[/B][/COLOR]"
+
+msgctxt "#35063"
+msgid "[COLOR %s][B]Collection Manager - Movies[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Coleção - Filmes[/B][/COLOR]"
+
+msgctxt "#35064"
+msgid "[COLOR %s][B]Collection Manager - Shows[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Coleção - Séries[/B][/COLOR]"
+
+msgctxt "#35065"
+msgid "[COLOR %s][B]Liked List Manager[/B][/COLOR]"
+msgstr "[COLOR %s][B]Gerenciador de Lista Curtida[/B][/COLOR]"
+
+msgctxt "#35066"
+msgid "[COLOR %s][B]Force Trakt Sync to local database[/B][/COLOR]"
+msgstr "[COLOR %s][B]Forçar Sincronização Trakt para banco de dados local[/B][/COLOR]"
+
+msgctxt "#35187"
+msgid "Rating"
+msgstr "Avaliação"
+
+msgctxt "#35188"
+msgid "Votes"
+msgstr "Votos"
+
+msgctxt "#35189"
+msgid "Favourites Sorting"
+msgstr "Classificação de Favoritos"
+
+msgctxt "#35190"
+msgid "Movie Sorting"
+msgstr "Classificação de Filmes"
+
+msgctxt "#35191"
+msgid "Show Sorting"
+msgstr "Classificação de Séries"
+
+msgctxt "#35192"
+msgid "Collections Sorting"
+msgstr "Classificação de Coleções"
+
+msgctxt "#35193"
+msgid "Short Sorting"
+msgstr "Classificação Curta"
+
+msgctxt "#35194"
+msgid "Date Order"
+msgstr "Ordem de Data"
+
+msgctxt "#35195"
+msgid "Ignore Articles"
+msgstr "Ignorar Artigos"
+
+msgctxt "#35196"
+msgid "Failed To Add To Local Library"
+msgstr "Falha ao Adicionar à Biblioteca Local"
+
+msgctxt "#35308"
+msgid "Finish Watching"
+msgstr "Terminar de Assistir"
+
+msgctxt "#35391"
+msgid "Date Premiered"
+msgstr "Data de Estreia"
+
+msgctxt "#35392"
+msgid "Date Added"
+msgstr "Data Adicionada"
+
+msgctxt "#35393"
+msgid "Date Watched"
+msgstr "Data Assistida"
+
+msgctxt "#35485"
+msgid "Note"
+msgstr "Nota"
+
+msgctxt "#35492"
+msgid "Direct Progress Scraping"
+msgstr "Raspagem Direta de Progresso"
+
+msgctxt "#35493"
+msgid "Update Library"
+msgstr "Atualizar Biblioteca"
+
+msgctxt "#35494"
+msgid "The stream cannot be found in the library. This can be caused by corrupted or deleted files, or if files or folders are renamed in the library location."
+msgstr "O stream não pode ser encontrado na biblioteca. Isso pode ser causado por arquivos corrompidos ou excluídos, ou se arquivos ou pastas forem renomeados no local da biblioteca."
+
+msgctxt "#35495"
+msgid "Add %s To Library"
+msgstr "Adicionar %s à Biblioteca"
+
+msgctxt "#35500"
+msgid "Watch"
+msgstr "Assistir"
+
+msgctxt "#35501"
+msgid "Rate"
+msgstr "Avaliar"
+
+msgctxt "#35502"
+msgid "%s Marked As Watched On Trakt"
+msgstr "%s Marcado Como Assistido no Trakt"
+
+msgctxt "#35503"
+msgid "%s Marked As Unwatched On Trakt"
+msgstr "%s Marcado Como Não Assistido no Trakt"
+
+msgctxt "#35504"
+msgid "%s Failed to Mark As Watched On Trakt"
+msgstr "%s Falhou ao Marcar Como Assistido no Trakt"
+
+msgctxt "#35505"
+msgid "%s Failed to Mark As Unwatched On Trakt"
+msgstr "%s Falhou ao Marcar Como Não Assistido no Trakt"
+
+msgctxt "#35506"
+msgid "Movie Information"
+msgstr "Informações do Filme"
+
+msgctxt "#35507"
+msgid "Show Information"
+msgstr "Informações da Série"
+
+msgctxt "#35508"
+msgid "Season Information"
+msgstr "Informações da Temporada"
+
+msgctxt "#35509"
+msgid "Episode Information"
+msgstr "Informações do Episódio"
+
+msgctxt "#35510"
+msgid "Marked As Watched"
+msgstr "Marcado Como Assistido"
+
+msgctxt "#35511"
+msgid "Marked As Unwatched"
+msgstr "Marcado Como Não Assistido"
+
+msgctxt "#35512"
+msgid "Mark"
+msgstr "Marcar"
+
+msgctxt "#35513"
+msgid "Marked"
+msgstr "Marcado"
+
+msgctxt "#35514"
+msgid "Scrape"
+msgstr "Raspar"
+
+msgctxt "#35515"
+msgid "Playlist"
+msgstr "Playlist"
+
+msgctxt "#35516"
+msgid "Clear Playlist"
+msgstr "Limpar Playlist"
+
+msgctxt "#35517"
+msgid "Show Playlist"
+msgstr "Mostrar Playlist"
+
+msgctxt "#35518"
+msgid "Remove From Playlist"
+msgstr "Remover da Playlist"
+
+msgctxt "#35519"
+msgid "Added To Playlist"
+msgstr "Adicionado à Playlist"
+
+msgctxt "#35520"
+msgid "Removed From Playlist"
+msgstr "Removido da Playlist"
+
+msgctxt "#35521"
+msgid "Playlist Cleared"
+msgstr "Playlist Limpa"
+
+msgctxt "#35522"
+msgid "Playlist Manager"
+msgstr "Gerenciador de Playlist"
+
+msgctxt "#35523"
+msgid "A new version of Umbrella is available from the repository. Please consider updating to v%s"
+msgstr "Uma nova versão do Umbrella está disponível no repositório. Considere atualizar para v%s"
+
+msgctxt "#35524"
+msgid "Notify Me About Available Updates"
+msgstr "Notifique-me Sobre Atualizações Disponíveis"
+
+msgctxt "#35526"
+msgid "Movie theatrical unreleased color"
+msgstr "Cor de filme teatral não lançado"
+
+msgctxt "#35527"
+msgid "Enable Notification Sound"
+msgstr "Ativar Som de Notificação"
+
+msgctxt "#35528"
+msgid "Log Level"
+msgstr "Nível de Log"
+
+msgctxt "#35529"
+msgid "Normal"
+msgstr "Normal"
+
+msgctxt "#35530"
+msgid "Debug(Extra info)"
+msgstr "Depuração (Info extra)"
+
+msgctxt "#35531"
+msgid "Clear both Cache and Metacache?"
+msgstr "Limpar Cache e Metacache?"
+
+msgctxt "#35532"
+msgid "Cache and Metacache successfully cleared!"
+msgstr "Cache e Metacache limpos com sucesso!"
+
+msgctxt "#35547"
+msgid "Force"
+msgstr "Forçar"
+
+msgctxt "#35572"
+msgid "Progress Sorting"
+msgstr "Classificação de Progresso"
+
+msgctxt "#35573"
+msgid "Calendar Sorting"
+msgstr "Classificação de Calendário"
+
+msgctxt "#35574"
+msgid "Watchlist Sorting"
+msgstr "Classificação de Lista de Observação"
+
+msgctxt "#40005"
+msgid "Priority"
+msgstr "Prioridade"
+
+msgctxt "#40006"
+msgid "Username"
+msgstr "Nome de Usuário"
+
+msgctxt "#40007"
+msgid "[B]Restart Transfer?: %s[/B]"
+msgstr "[B]Reiniciar Transferência?: %s[/B]"
+
+msgctxt "#40008"
+msgid "[B]Restart Transfer[/B]"
+msgstr "[B]Reiniciar Transferência[/B]"
+
+msgctxt "#40009"
+msgid "Revoke Authorization Success"
+msgstr "Revogação de Autorização Bem-Sucedida"
+
+msgctxt "#40010"
+msgid "All Debrid successfully authorized"
+msgstr "All Debrid autorizado com sucesso"
+
+msgctxt "#40011"
+msgid "Downloading %s GB @ %s mbps from %s peers, %s %% completed"
+msgstr "Baixando %s GB @ %s mbps de %s peers, %s %% concluído"
+
+msgctxt "#40012"
+msgid "%s seeders"
+msgstr "%s seeders"
+
+msgctxt "#40013"
+msgid "Converting MAGNET..."
+msgstr "Convertendo MAGNET..."
+
+msgctxt "#40014"
+msgid "Progress Dialog Canceled"
+msgstr "Diálogo de Progresso Cancelado"
+
+msgctxt "#40015"
+msgid "Uploading at %s MB/s, %s%% of %s GB completed"
+msgstr "Enviando a %s MB/s, %s%% de %s GB concluído"
+
+msgctxt "#40016"
+msgid "Downloading at %s MB/s from %s peers, %s%% of %sGB completed"
+msgstr "Baixando a %s MB/s de %s peers, %s%% de %sGB concluído"
+
+msgctxt "#40017"
+msgid "Saving Torrent to the %s Cloud"
+msgstr "Salvando Torrent na Nuvem %s"
+
+msgctxt "#40018"
+msgid "Umbrella: Cloud Transfer"
+msgstr "Umbrella: Transferência na Nuvem"
+
+msgctxt "#40019"
+msgid "Authentication with Real-Debrid has failed, please try again"
+msgstr "Autenticação com Real-Debrid falhou, tente novamente"
+
+msgctxt "#40020"
+msgid "Authentication with Premiumize.me has failed, please try again"
+msgstr "Autenticação com Premiumize.me falhou, tente novamente"
+
+msgctxt "#40021"
+msgid "Authentication with AllDebrid has failed, please try again"
+msgstr "Autenticação com AllDebrid falhou, tente novamente"
+
+msgctxt "#40022"
+msgid "File Name Format"
+msgstr "Formato do Nome do Arquivo"
+
+msgctxt "#40023"
+msgid "Title (year) or Title S01E01"
+msgstr "Título (ano) ou Título S01E01"
+
+msgctxt "#40024"
+msgid "torrent file name"
+msgstr "nome do arquivo torrent"
+
+msgctxt "#40025"
+msgid "Still Watching default action"
+msgstr "Ação padrão Ainda Assistindo"
+
+msgctxt "#40026"
+msgid "Number of episodes till Still Watching?"
+msgstr "Número de episódios até Ainda Assistindo?"
+
+msgctxt "#40027"
+msgid "Continuous Episode Playback Settings"
+msgstr "Configurações de Reprodução Contínua de Episódios"
+
+msgctxt "#40028"
+msgid "Enable PlayNext popup"
+msgstr "Ativar popup PlayNext"
+
+msgctxt "#40029"
+msgid "PlayNext Notification time"
+msgstr "Hora de notificação PlayNext"
+
+msgctxt "#40030"
+msgid "Auto Playlist Creation"
+msgstr "Criação Automática de Playlist"
+
+msgctxt "#40031"
+msgid "Auto Episode Resume"
+msgstr "Retomada Automática de Episódio"
+
+msgctxt "#40032"
+msgid "Force Episode Resume on Continue Watching Items"
+msgstr "Forçar Retomada de Episódio em Itens Continuar Assistindo"
+
+msgctxt "#40033"
+msgid "Menu Icon type"
+msgstr "Tipo de ícone do menu"
+
+msgctxt "#40034"
+msgid "Add Meta Provider Labels..ex. (IMDb)"
+msgstr "Adicionar Rótulos de Provedor Meta..ex. (IMDb)"
+
+msgctxt "#40035"
+msgid "[B]Email:[/B] %s"
+msgstr "[B]E-mail:[/B] %s"
+
+msgctxt "#40036"
+msgid "[B]Username:[/B] %s"
+msgstr "[B]Nome de Usuário:[/B] %s"
+
+msgctxt "#40037"
+msgid "[B]Status:[/B] %s"
+msgstr "[B]Status:[/B] %s"
+
+msgctxt "#40038"
+msgid "[B]Fidelity Points:[/B] %s"
+msgstr "[B]Pontos de Fidelidade:[/B] %s"
+
+msgctxt "#40039"
+msgid "Highlight Color"
+msgstr "Cor de Destaque"
+
+msgctxt "#40040"
+msgid "[B]Customer ID:[/B] %s"
+msgstr "[B]ID do Cliente:[/B] %s"
+
+msgctxt "#40041"
+msgid "[B]Expires:[/B] %s"
+msgstr "[B]Expira:[/B] %s"
+
+msgctxt "#40042"
+msgid "[B]Days Remaining:[/B] %s"
+msgstr "[B]Dias Restantes:[/B] %s"
+
+msgctxt "#40043"
+msgid "[B]Points Used:[/B] %.f"
+msgstr "[B]Pontos Usados:[/B] %.f"
+
+msgctxt "#40044"
+msgid "[B]Space Used:[/B] %.2f"
+msgstr "[B]Espaço Usado:[/B] %.2f"
+
+msgctxt "#40045"
+msgid "[B]Fair Use (Percentage Used):[/B] %s"
+msgstr "[B]Uso Justo (Porcentagem Usada):[/B] %s"
+
+msgctxt "#40046"
+msgid "folder"
+msgstr "pasta"
+
+msgctxt "#40047"
+msgid "file"
+msgstr "arquivo"
+
+msgctxt "#40048"
+msgid "[B]Download File[/B]"
+msgstr "[B]Baixar Arquivo[/B]"
+
+msgctxt "#40049"
+msgid "[B]Rename %s[/B]"
+msgstr "[B]Renomear %s[/B]"
+
+msgctxt "#40050"
+msgid "[B]Delete %s[/B]"
+msgstr "[B]Excluir %s[/B]"
+
+msgctxt "#40051"
+msgid "[B]Clear Finished Transfers[/B]"
+msgstr "[B]Limpar Transferências Concluídas[/B]"
+
+msgctxt "#40052"
+msgid "Preminumize.me successfully authorized"
+msgstr "Premiumize.me autorizado com sucesso"
+
+msgctxt "#40053"
+msgid "All Debrid Torrent Settings"
+msgstr "Configurações de Torrent All Debrid"
+
+msgctxt "#40054"
+msgid "Premiumize.me Auth"
+msgstr "Autenticação Premiumize.me"
+
+msgctxt "#40055"
+msgid "Real-Debrid Auth"
+msgstr "Autenticação Real-Debrid"
+
+msgctxt "#40056"
+msgid "AllDebrid Auth"
+msgstr "Autenticação AllDebrid"
+
+msgctxt "#40057"
+msgid "Premiumize.me"
+msgstr "Premiumize.me"
+
+msgctxt "#40058"
+msgid "Real-Debrid"
+msgstr "Real-Debrid"
+
+msgctxt "#40059"
+msgid "All Debrid"
+msgstr "All Debrid"
+
+msgctxt "#40060"
+msgid "Enable Premium Services Menu"
+msgstr "Ativar Menu de Serviços Premium"
+
+msgctxt "#40061"
+msgid "Enable Youtube Menu"
+msgstr "Ativar Menu YouTube"
+
+msgctxt "#40062"
+msgid "Trakt Username"
+msgstr "Nome de Usuário Trakt"
+
+msgctxt "#40063"
+msgid "Months to Rollback for Hide in Cinema"
+msgstr "Meses para Retroceder para Ocultar em Cinema"
+
+msgctxt "#40064"
+msgid "Enable Christmas Collections"
+msgstr "Ativar Coleções de Natal"
+
+msgctxt "#40065"
+msgid "PlayNext default action"
+msgstr "Ação padrão PlayNext"
+
+msgctxt "#40066"
+msgid "[B]Plan:[/B] %s"
+msgstr "[B]Plano:[/B] %s"
+
+msgctxt "#40067"
+msgid "Clear Providers Cache After Changing Scraper Provider"
+msgstr "Limpar Cache de Provedores Após Alterar Provedor de Scraper"
+
+msgctxt "#40068"
+msgid "Enable Anime Menu"
+msgstr "Ativar Menu Anime"
+
+msgctxt "#40069"
+msgid "Enable Originals (ex. Netflix)"
+msgstr "Ativar Originais (ex. Netflix)"
+
+msgctxt "#40070"
+msgid "Originals"
+msgstr "Originais"
+
+msgctxt "#40071"
+msgid "Originals (TVMaze)"
+msgstr "Originais (TVMaze)"
+
+msgctxt "#40072"
+msgid "Watched Progress"
+msgstr "Progresso Assistido"
+
+msgctxt "#40073"
+msgid "Calendar"
+msgstr "Calendário"
+
+msgctxt "#40074"
+msgid "Select Menu type to hide from"
+msgstr "Selecionar tipo de menu para ocultar de"
+
+msgctxt "#40075"
+msgid "[COLOR %s][B]Hide[/B][/COLOR] %s"
+msgstr "[COLOR %s][B]Ocultar[/B][/COLOR] %s"
+
+msgctxt "#40076"
+msgid "[COLOR %s][B]Scrobbble Reset[/B][/COLOR] Item"
+msgstr "[COLOR %s][B]Reset de Scrobbble[/B][/COLOR] Item"
+
+msgctxt "#40077"
+msgid "Originals (TMDb)"
+msgstr "Originais (TMDb)"
+
+msgctxt "#40078"
+msgid "Clear [COLOR yellow]Icon and Fanart [/COLOR]..."
+msgstr "Limpar [COLOR yellow]Ícone e Fanart [/COLOR]..."
+
+msgctxt "#40079"
+msgid "Icon and Fanart Successfully Cleared!"
+msgstr "Ícone e Fanart Limpos com Sucesso!"
+
+msgctxt "#40080"
+msgid "Trakt Tokens are out of sync and have been revoked. Please re-authorize Trakt in My Accounts module and reboot."
+msgstr "Tokens do Trakt estão fora de sincronia e foram revogados. Reautorize o Trakt no módulo Minhas Contas e reinicie."
+
+msgctxt "#40081"
+msgid "Prioritize Dolby-Vision above HDR"
+msgstr "Priorizar Dolby-Vision acima de HDR"
+
+msgctxt "#40082"
+msgid "[COLOR black]█[/COLOR]  [COLOR white][B]Black[/B][/COLOR]"
+msgstr "[COLOR black]█[/COLOR]  [COLOR white][B]Preto[/B][/COLOR]"
+
+msgctxt "#40083"
+msgid "Show List Owner"
+msgstr "Mostrar Proprietário da Lista"
+
+msgctxt "#40084"
+msgid "MDBList Top Lists"
+msgstr "Listas Top MDBList"
+
+msgctxt "#40085"
+msgid "MDBList API Key"
+msgstr "Chave API MDBList"
+
+msgctxt "#40086"
+msgid "Paginate MDBList"
+msgstr "Paginar MDBList"
+
+msgctxt "#40087"
+msgid "MDBList User Lists"
+msgstr "Listas de Usuário MDBList"
+
+msgctxt "#40088"
+msgid "MDBList Search Lists"
+msgstr "Buscar Listas MDBList"
+
+msgctxt "#40089"
+msgid "MBDList - Top Lists"
+msgstr "MBDList - Listas Top"
+
+msgctxt "#40090"
+msgid "MBDList - User Lists"
+msgstr "MBDList - Listas de Usuário"
+
+msgctxt "#40091"
+msgid "Playnext Popup Background Color"
+msgstr "Cor de Fundo do Popup Playnext"
+
+msgctxt "#40092"
+msgid "Pre-emptive Termination (Movie)"
+msgstr "Terminação Preventiva (Filme)"
+
+msgctxt "#40093"
+msgid "Pre-emptive Limit (Movie)"
+msgstr "Limite Preventivo (Filme)"
+
+msgctxt "#40094"
+msgid "Min. Pre-emptive Res.(Movie)"
+msgstr "Res. Preventiva Mín.(Filme)"
+
+msgctxt "#40095"
+msgid "Pre-emptive Termination (TV Shows)"
+msgstr "Terminação Preventiva (Séries de TV)"
+
+msgctxt "#40096"
+msgid "Pre-emptive Limit (TV Shows)"
+msgstr "Limite Preventivo (Séries de TV)"
+
+msgctxt "#40097"
+msgid "Min. Pre-emptive Res. (TV Shows)"
+msgstr "Res. Preventiva Mín. (Séries de TV)"
+
+msgctxt "#40098"
+msgid "Next Episode in"
+msgstr "Próximo Episódio em"
+
+msgctxt "#40099"
+msgid "Watch Now"
+msgstr "Assistir Agora"
+
+msgctxt "#40100"
+msgid "Hide"
+msgstr "Ocultar"
+
+msgctxt "#40101"
+msgid "Show Close/Hide Button"
+msgstr "Mostrar Botão Fechar/Ocultar"
+
+msgctxt "#40102"
+msgid "Use Skin Theme for PlayNext"
+msgstr "Usar Tema da Skin para PlayNext"
+
+msgctxt "#40103"
+msgid "Trakt Client ID"
+msgstr "ID do Cliente Trakt"
+
+msgctxt "#40104"
+msgid "Trakt Client Secret"
+msgstr "Segredo do Cliente Trakt"
+
+msgctxt "#40105"
+msgid "Trakt API Key"
+msgstr "Chave API Trakt"
+
+msgctxt "#40106"
+msgid "Use Custom Trakt API Keys"
+msgstr "Usar Chaves API Personalizadas do Trakt"
+
+msgctxt "#40107"
+msgid "Trakt Authorized Successfully"
+msgstr "Trakt Autorizado com Sucesso"
+
+msgctxt "#40108"
+msgid "Trakt Authorization Error"
+msgstr "Erro de Autorização do Trakt"
+
+msgctxt "#40109"
+msgid "Trakt Authorization Revoked"
+msgstr "Autorização do Trakt Revogada"
+
+msgctxt "#40110"
+msgid "Revoke Authorization"
+msgstr "Revogar Autorização"
+
+msgctxt "#40111"
+msgid "%s %s hours %s minutes"
+msgstr "%s %s horas %s minutos"
+
+msgctxt "#40112"
+msgid "[B]Timezone:[/B] %s"
+msgstr "[B]Fuso Horário:[/B] %s"
+
+msgctxt "#40113"
+msgid "[B]Joined:[/B] %s"
+msgstr "[B]Ingressou:[/B] %s"
+
+msgctxt "#40114"
+msgid "[B]Private:[/B] %s"
+msgstr "[B]Privado:[/B] %s"
+
+msgctxt "#40115"
+msgid "[B]VIP Status:[/B] %s"
+msgstr "[B]Status VIP:[/B] %s"
+
+msgctxt "#40116"
+msgid "[B]Ratings Given:[/B] %s"
+msgstr "[B]Avaliações Dadas:[/B] %s"
+
+msgctxt "#40117"
+msgid "[B]Movies:[/B] [B]%s[/B] Collected, [B]%s[/B] Watched for [B]%s[/B]"
+msgstr "[B]Filmes:[/B] [B]%s[/B] Coletados, [B]%s[/B] Assistidos por [B]%s[/B]"
+
+msgctxt "#40118"
+msgid "[B]Shows:[/B] [B]%s[/B] Collected, [B]%s[/B] Watched"
+msgstr "[B]Séries:[/B] [B]%s[/B] Coletadas, [B]%s[/B] Assistidas"
+
+msgctxt "#40119"
+msgid "[B]Episodes:[/B] [B]%s[/B] Watched for [B]%s[/B]"
+msgstr "[B]Episódios:[/B] [B]%s[/B] Assistidos por [B]%s[/B]"
+
+msgctxt "#40120"
+msgid "Account Expiry Notification"
+msgstr "Notificação de Expiração da Conta"
+
+msgctxt "#40121"
+msgid "Authorization"
+msgstr "Autorização"
+
+msgctxt "#40122"
+msgid "Launch Umbrella on Kodi Start"
+msgstr "Iniciar Umbrella ao Iniciar Kodi"
+
+msgctxt "#40123"
+msgid "[B]SETTINGS[/B] : Trakt"
+msgstr "[B]CONFIGURAÇÕES[/B] : Trakt"
+
+msgctxt "#40124"
+msgid "[B]SETTINGS[/B] : Meta Accounts"
+msgstr "[B]CONFIGURAÇÕES[/B] : Contas Meta"
+
+msgctxt "#40125"
+msgid "Get API Key"
+msgstr "Obter Chave API"
+
+msgctxt "#40126"
+msgid "Clear API Key"
+msgstr "Limpar Chave API"
+
+msgctxt "#40127"
+msgid "Error retrieving Furk Account Info"
+msgstr "Erro ao recuperar informações da conta Furk"
+
+msgctxt "#40128"
+msgid "Account Found for Furk but not Premium."
+msgstr "Conta Encontrada para Furk, mas não Premium."
+
+msgctxt "#40129"
+msgid "[B]Furk Username:[/B] %s"
+msgstr "[B]Nome de Usuário Furk:[/B] %s"
+
+msgctxt "#40130"
+msgid "[B]Furk API Key:[/B] %s"
+msgstr "[B]Chave API Furk:[/B] %s"
+
+msgctxt "#40131"
+msgid "Prioritize AV1 to top"
+msgstr "Priorizar AV1 no topo"
+
+msgctxt "#40132"
+msgid "Remove AV1"
+msgstr "Remover AV1"
+
+msgctxt "#40133"
+msgid "Premiumize Authorization Revoked"
+msgstr "Autorização Premiumize Revogada"
+
+msgctxt "#40134"
+msgid ""
+msgstr ""
+
+msgctxt "#40135"
+msgid "Do not show removed duplicates popup"
+msgstr "Não mostrar popup de duplicatas removidas"
+
+msgctxt "#40136"
+msgid "Sort Episodes Descending (Default Ascending)"
+msgstr "Classificar Episódios em Ordem Decrescente (Padrão Crescente)"
+
+msgctxt "#40137"
+msgid "Sorting and Filters"
+msgstr "Classificação e Filtros"
+
+msgctxt "#40138"
+msgid "Remove AVC"
+msgstr "Remover AVC"
+
+msgctxt "#40139"
+msgid "Remove DIVX"
+msgstr "Remover DIVX"
+
+msgctxt "#40140"
+msgid "Remove MP4"
+msgstr "Remover MP4"
+
+msgctxt "#40141"
+msgid "Remove MPEG"
+msgstr "Remover MPEG"
+
+msgctxt "#40142"
+msgid "Remove WMV"
+msgstr "Remover WMV"
+
+msgctxt "#40143"
+msgid "Source Sorting Options"
+msgstr "Opções de Classificação de Fonte"
+
+msgctxt "#40144"
+msgid "Source Filtering Options"
+msgstr "Opções de Filtragem de Fonte"
+
+msgctxt "#40145"
+msgid "Source Filtering (Video)"
+msgstr "Filtragem de Fonte (Vídeo)"
+
+msgctxt "#40146"
+msgid "Source Filtering (Audio Codec)"
+msgstr "Filtragem de Fonte (Codec de Áudio)"
+
+msgctxt "#40147"
+msgid "Source Filtering (Audio Channel)"
+msgstr "Filtragem de Fonte (Canal de Áudio)"
+
+msgctxt "#40148"
+msgid "Remove Dolby Digital"
+msgstr "Remover Dolby Digital"
+
+msgctxt "#40149"
+msgid "Remove Dolby Digital Plus"
+msgstr "Remover Dolby Digital Plus"
+
+msgctxt "#40150"
+msgid "Remove DTS"
+msgstr "Remover DTS"
+
+msgctxt "#40151"
+msgid "Remove DTS-HD"
+msgstr "Remover DTS-HD"
+
+msgctxt "#40152"
+msgid "Remove DTS-HDMA"
+msgstr "Remover DTS-HDMA"
+
+msgctxt "#40153"
+msgid "Remove DTS-X"
+msgstr "Remover DTS-X"
+
+msgctxt "#40154"
+msgid "Remove MP3"
+msgstr "Remover MP3"
+
+msgctxt "#40155"
+msgid "Remove Dolby Atmos"
+msgstr "Remover Dolby Atmos"
+
+msgctxt "#40156"
+msgid "Remove OPUS"
+msgstr "Remover OPUS"
+
+msgctxt "#40157"
+msgid "Remove 2 Channel"
+msgstr "Remover 2 Canais"
+
+msgctxt "#40158"
+msgid "Remove 6 Channel"
+msgstr "Remover 6 Canais"
+
+msgctxt "#40159"
+msgid "Remove 7 Channel"
+msgstr "Remover 7 Canais"
+
+msgctxt "#40160"
+msgid "Remove 8 Channel"
+msgstr "Remover 8 Canais"
+
+msgctxt "#40161"
+msgid "Remove Dolby TrueHD"
+msgstr "Remover Dolby TrueHD"
+
+msgctxt "#40162"
+msgid "[B]SETTINGS:[/B] Sorting and Filters"
+msgstr "[B]CONFIGURAÇÕES:[/B] Classificação e Filtros"
+
+msgctxt "#40163"
+msgid "Shortcuts"
+msgstr "Atalhos"
+
+msgctxt "#40164"
+msgid "Select from different icon packages to use in the addon."
+msgstr "Selecione de diferentes pacotes de ícones para usar no addon."
+
+msgctxt "#40165"
+msgid "FANART.TV"
+msgstr "FANART.TV"
+
+msgctxt "#40166"
+msgid "TMDb"
+msgstr "TMDb"
+
+msgctxt "#40168"
+msgid "Fanart API"
+msgstr "API Fanart"
+
+msgctxt "#40169"
+msgid "TMDb API"
+msgstr "API TMDb"
+
+msgctxt "#40170"
+msgid "TMDb Username"
+msgstr "Nome de Usuário TMDb"
+
+msgctxt "#40171"
+msgid "TMDb Password"
+msgstr "Senha TMDb"
+
+msgctxt "#40172"
+msgid "IMDb Username"
+msgstr "Nome de Usuário IMDb"
+
+msgctxt "#40173"
+msgid "MDBList"
+msgstr "MDBList"
+
+msgctxt "#40174"
+msgid "session_id"
+msgstr "session_id"
+
+msgctxt "#40175"
+msgid "With this setting enabled, Source Select settings will be overridden for TV Shows and set to AutoPlay."
+msgstr "Com esta configuração ativada, as configurações de Selecionar Fonte serão substituídas para Séries de TV e definidas como Autoplay."
+
+msgctxt "#40176"
+msgid "4K"
+msgstr "4K"
+
+msgctxt "#40177"
+msgid "1080p"
+msgstr "1080p"
+
+msgctxt "#40178"
+msgid "720p"
+msgstr "720p"
+
+msgctxt "#40179"
+msgid "480p(SD)"
+msgstr "480p(SD)"
+
+msgctxt "#40180"
+msgid "Turn reuselanguageinvoker Off"
+msgstr "Desligar reuselanguageinvoker"
+
+msgctxt "#40181"
+msgid "Turn reuselanguageinvoker On"
+msgstr "Ligar reuselanguageinvoker"
+
+msgctxt "#40182"
+msgid "Turn 'reuselanguageinvoker' on within addon."
+msgstr "Ligar 'reuselanguageinvoker' dentro do addon."
+
+msgctxt "#40183"
+msgid "Turn 'reuselanguageinvoker' off within addon."
+msgstr "Desligar 'reuselanguageinvoker' dentro do addon."
+
+msgctxt "#40184"
+msgid "General settings category for settings that effect multiple things throughout the addon and general settings for the addon."
+msgstr "Categoria de configurações gerais para configurações que afetam várias coisas no addon e configurações gerais para o addon."
+
+msgctxt "#40185"
+msgid "Navigation settings category for turning on and off different lists or features within the Movies section."
+msgstr "Categoria de configurações de navegação para ligar e desligar diferentes listas ou recursos na seção Filmes."
+
+msgctxt "#40186"
+msgid "TV Show settings category for settings related to television shows. Includes Playnext and TV Show list options."
+msgstr "Categoria de configurações de Séries de TV para configurações relacionadas a séries de televisão. Inclui Playnext e opções de lista de Séries de TV."
+
+msgctxt "#40187"
+msgid "Playback settings category for settings related to video playback."
+msgstr "Categoria de configurações de reprodução para configurações relacionadas à reprodução de vídeo."
+
+msgctxt "#40188"
+msgid "Sorting and Filtering settings category for settings related to sources and sorting and filtering results from sources."
+msgstr "Categoria de configurações de Classificação e Filtragem para configurações relacionadas a fontes e classificação e filtragem de resultados de fontes."
+
+msgctxt "#40189"
+msgid "Source settings category for settings related to sources and how results for sources are presented."
+msgstr "Categoria de configurações de fonte para configurações relacionadas a fontes e como os resultados para fontes são apresentados."
+
+msgctxt "#40190"
+msgid "Trakt settings category for Trakt authorization and settings exclusive to Trakt."
+msgstr "Categoria de configurações Trakt para autorização Trakt e configurações exclusivas ao Trakt."
+
+msgctxt "#40191"
+msgid "Account settings category for Account setups and authorizations. Includes Real Debrid, All Debrid, Premiumize, Easy News, Furk, and File Pursuit."
+msgstr "Categoria de configurações de conta para configurações de conta e autorizações. Inclui Real Debrid, All Debrid, Premiumize, Easy News, Furk e File Pursuit."
+
+msgctxt "#40192"
+msgid "Meta Account settings category for Meta Account setups and authorizations. Includes TMDb, MDBList, Fanart, and IMDb."
+msgstr "Categoria de configurações de conta meta para configurações de conta meta e autorizações. Inclui TMDb, MDBList, Fanart e IMDb."
+
+msgctxt "#40193"
+msgid "Library settings category for personal library setup and organization."
+msgstr "Categoria de configurações de biblioteca para configuração e organização pessoal da biblioteca."
+
+msgctxt "#40194"
+msgid "Download settings category for downloads. Includes folders and file formatting."
+msgstr "Categoria de configurações de download para downloads. Inclui pastas e formatação de arquivo."
+
+msgctxt "#40195"
+msgid "Download settings category for subtitles. Automatic subtitle settings."
+msgstr "Categoria de configurações de download para legendas. Configurações automáticas de legenda."
+
+msgctxt "#40196"
+msgid "Provider settings category for Providers."
+msgstr "Categoria de configurações de provedor para Provedores."
+
+msgctxt "#40196"
+msgid "Plexshare"
+msgstr "Plexshare"
+
+msgctxt "#40197"
+msgid "Plex Token"
+msgstr "Token Plex"
+
+msgctxt "#40198"
+msgid "Plex Client ID"
+msgstr "ID do Cliente Plex"
+
+msgctxt "#40199"
+msgid "Plex Device ID"
+msgstr "ID do Dispositivo Plex"
+
+msgctxt "#40200"
+msgid "Plexshare Source Title"
+msgstr "Título da Fonte Plexshare"
+
+msgctxt "#40201"
+msgid "Plexshare accessToken"
+msgstr "Token de Acesso Plexshare"
+
+msgctxt "#40202"
+msgid "Plexshare url"
+msgstr "URL Plexshare"
+
+msgctxt "#40203"
+msgid "FilePursuit"
+msgstr "FilePursuit"
+
+msgctxt "#40204"
+msgid "Furk.net"
+msgstr "Furk.net"
+
+msgctxt "#40205"
+msgid "GDrive"
+msgstr "GDrive"
+
+msgctxt "#40206"
+msgid "GDrive Worker URL"
+msgstr "URL do Worker GDrive"
+
+msgctxt "#40207"
+msgid "Debugging settings for developers and advanced users."
+msgstr "Configurações de depuração para desenvolvedores e usuários avançados."
+
+msgctxt "#40208"
+msgid "Helpful shortcuts for quick access."
+msgstr "Atalhos úteis para acesso rápido."
+
+msgctxt "#40209"
+msgid "Auto-update library from Trakt list(s)"
+msgstr "Atualizar biblioteca automaticamente de lista(s) Trakt"
+
+msgctxt "#40210"
+msgid "Updating library from Trakt List(s)."
+msgstr "Atualizando biblioteca de Lista(s) Trakt."
+
+msgctxt "#40211"
+msgid "Please select list(s)"
+msgstr "Selecione lista(s)"
+
+msgctxt "#40212"
+msgid "Update library now?"
+msgstr "Atualizar biblioteca agora?"
+
+msgctxt "#40213"
+msgid "List: %s  has [B]%s[/B] items. Are you sure you want to add to library?"
+msgstr "Lista: %s tem [B]%s[/B] itens. Tem certeza de que deseja adicionar à biblioteca?"
+
+msgctxt "#40214"
+msgid "List Import Canceled."
+msgstr "Importação de Lista Cancelada."
+
+msgctxt "#40215"
+msgid "Auto-update lists at time"
+msgstr "Atualizar listas automaticamente na hora"
+
+msgctxt "#40216"
+msgid "Last Update"
+msgstr "Última Atualização"
+
+msgctxt "#40217"
+msgid "[B]List(s) Import Manager - Library[/B]"
+msgstr "[B]Gerenciador de Importação de Lista(s) - Biblioteca[/B]"
+
+msgctxt "#40218"
+msgid "No Lists Found on Imported Lists Database"
+msgstr "Nenhuma Lista Encontrada no Banco de Dados de Listas Importadas"
+
+msgctxt "#40219"
+msgid "Service Checking Library"
+msgstr "Serviço Verificando Biblioteca"
+
+msgctxt "#40220"
+msgid "Last Import:"
+msgstr "Última Importação:"
+
+msgctxt "#40221"
+msgid "# of List Importing:"
+msgstr "# de Importação de Lista:"
+
+msgctxt "#40222"
+msgid "Select Lists to Auto-Import"
+msgstr "Selecionar Listas para Importar Automaticamente"
+
+msgctxt "#40223"
+msgid "Import Now"
+msgstr "Importar Agora"
+
+msgctxt "#40224"
+msgid "In-Progress"
+msgstr "Em Andamento"
+
+msgctxt "#40225"
+msgid "List Cleared from Database."
+msgstr "Lista Limpa do Banco de Dados."
+
+msgctxt "#40226"
+msgid "Error Clearing List"
+msgstr "Erro ao Limpar Lista"
+
+msgctxt "#40227"
+msgid "Import in progress already, are you sure you want to start import?"
+msgstr "Importação já em andamento, tem certeza de que deseja iniciar a importação?"
+
+msgctxt "#40228"
+msgid "Please use list import management window from settings for list imports."
+msgstr "Use a janela de gerenciamento de importação de lista das configurações para importações de lista."
+
+msgctxt "#40229"
+msgid "Trakt Import Completed."
+msgstr "Importação Trakt Concluída."
+
+msgctxt "#40230"
+msgid "Trakt Import Error."
+msgstr "Erro de Importação Trakt."
+
+msgctxt "#40231"
+msgid "Include unaired episodes"
+msgstr "Incluir episódios não exibidos"
+
+msgctxt "#40232"
+msgid "Trakt service sync interval (in minutes)"
+msgstr "Intervalo de sincronização do serviço Trakt (em minutos)"
+
+msgctxt "#40233"
+msgid "Internet Speed (Mbps)"
+msgstr "Velocidade da Internet (Mbps)"
+
+msgctxt "#40234"
+msgid "Speed"
+msgstr "Velocidade"
+
+msgctxt "#40235"
+msgid "Max Size"
+msgstr "Tamanho Máximo"
+
+msgctxt "#40236"
+msgid "Off"
+msgstr "Desligado"
+
+msgctxt "#40237"
+msgid "Filter Movies by Size"
+msgstr "Filtrar Filmes por Tamanho"
+
+msgctxt "#40238"
+msgid "Filter Episodes by Size"
+msgstr "Filtrar Episódios por Tamanho"
+
+msgctxt "#40239"
+msgid "Substitute Title Name(s)"
+msgstr "Substituir Nome(s) do Título"
+
+msgctxt "#40240"
+msgid "List of Substitutes"
+msgstr "Lista de Substitutos"
+
+msgctxt "#40241"
+msgid "Original Title:"
+msgstr "Título Original:"
+
+msgctxt "#40242"
+msgid "Substitute Title:"
+msgstr "Título Substituto:"
+
+msgctxt "#40243"
+msgid "Add New"
+msgstr "Adicionar Novo"
+
+msgctxt "#40244"
+msgid "Current Title"
+msgstr "Título Atual"
+
+msgctxt "#40245"
+msgid "Please enter the current title being used you would like to substitute:"
+msgstr "Digite o título atual que você gostaria de substituir:"
+
+msgctxt "#40246"
+msgid "Substitute Title"
+msgstr "Título Substituto"
+
+msgctxt "#40247"
+msgid "Please enter the the title to use when scraping:"
+msgstr "Digite o título a usar ao raspar:"
+
+msgctxt "#40248"
+msgid "New substitute added"
+msgstr "Novo substituto adicionado"
+
+msgctxt "#40249"
+msgid "# of hours to delay"
+msgstr "# de horas para atrasar"
+
+msgctxt "#40250"
+msgid "Unable to save file. File named incorrectly please try a different file."
+msgstr "Não foi possível salvar o arquivo. Nome do arquivo incorreto, tente um arquivo diferente."
+
+msgctxt "#40251"
+msgid "Service interval (hours)"
+msgstr "Intervalo do serviço (horas)"
+
+msgctxt "#40252"
+msgid "Unreleased movies may not appear with chosen colors in some views if using skins due to inconsistent use of item properties throughout views."
+msgstr "Filmes não lançados podem não aparecer com as cores escolhidas em algumas visualizações se usando skins devido ao uso inconsistente de propriedades de item nas visualizações."
+
+msgctxt "#40253"
+msgid "Unairied episodes may not appear with chosen colors in some views if using skins due to inconsistent use of item properties throughout views."
+msgstr "Episódios não exibidos podem não aparecer com as cores escolhidas em algumas visualizações se usando skins devido ao uso inconsistente de propriedades de item nas visualizações."
+
+msgctxt "#40254"
+msgid "Hide popup for uncached torrents if no results."
+msgstr "Ocultar popup para torrents não cacheados se não houver resultados."
+
+msgctxt "#40255"
+msgid "Based on Recently Watched (Trakt)"
+msgstr "Baseado em Assistidos Recentemente (Trakt)"
+
+msgctxt "#40256"
+msgid "Based on Recently Watched"
+msgstr "Baseado em Assistidos Recentemente"
+
+msgctxt "#40257"
+msgid "Because you watched"
+msgstr "Porque você assistiu"
+
+msgctxt "#40258"
+msgid "Show section titles if available"
+msgstr "Mostrar títulos de seção se disponíveis"
+
+msgctxt "#40259"
+msgid "Similar to"
+msgstr "Similar a"
+
+msgctxt "#40260"
+msgid "Similar to Recently Watched (Trakt)"
+msgstr "Similar a Assistidos Recentemente (Trakt)"
+
+msgctxt "#40261"
+msgid "Similar to Recently Watched"
+msgstr "Similar a Assistidos Recentemente"
+
+msgctxt "#40262"
+msgid "Select Lists to Manually Import Now (One-time)"
+msgstr "Selecionar Listas para Importar Manualmente Agora (Uma Vez)"
+
+msgctxt "#40263"
+msgid "Used to select which Trakt lists to auto import into library. Collection, Watchlist, Liked Lists, and User Lists can be auto-imported. This import repeats."
+msgstr "Usado para selecionar quais listas Trakt importar automaticamente para a biblioteca. Coleção, Lista de Observação, Listas Curtidas e Listas de Usuário podem ser importadas automaticamente. Esta importação se repete."
+
+msgctxt "#40264"
+msgid "Used to select Trakt lists to  import into library now. Collection, Watchlist, Liked Lists, and User Lists can be imported."
+msgstr "Usado para selecionar listas Trakt para importar para a biblioteca agora. Coleção, Lista de Observação, Listas Curtidas e Listas de Usuário podem ser importadas."
+
+msgctxt "#40265"
+msgid "Movie select action"
+msgstr "Ação de seleção de filme"
+
+msgctxt "#40266"
+msgid "TV select action"
+msgstr "Ação de seleção de TV"
+
+msgctxt "#40267"
+msgid "If Continuous playback (Playnext) is enabled under "TV shows" section Source Select settings will be overridden for TV Shows and set to AutoPlay automatically."
+msgstr "Se a reprodução contínua (Playnext) estiver ativada na seção \"Séries de TV\", as configurações de Selecionar Fonte serão substituídas para Séries de TV e definidas como Autoplay automaticamente."
+
+msgctxt "#40268"
+msgid "Recently Released (TMDb)"
+msgstr "Lançados Recentemente (TMDb)"
+
+msgctxt "#40269"
+msgid "Recently Released"
+msgstr "Lançados Recentemente"
+
+msgctxt "#40270"
+msgid "Real-Debrid Highlight Color"
+msgstr "Cor de Destaque Real-Debrid"
+
+msgctxt "#40271"
+msgid "All-Debrid Highlight Color"
+msgstr "Cor de Destaque All-Debrid"
+
+msgctxt "#40272"
+msgid "Highlight Method"
+msgstr "Método de Destaque"
+
+msgctxt "#40273"
+msgid "Premiumize Highlight Color"
+msgstr "Cor de Destaque Premiumize"
+
+msgctxt "#40274"
+msgid "EasyNews Highlight Color"
+msgstr "Cor de Destaque EasyNews"
+
+msgctxt "#40275"
+msgid "Use Player instead of Resolver"
+msgstr "Usar Player em vez de Resolver"
+
+msgctxt "#40276"
+msgid "Plex Highlight Color"
+msgstr "Cor de Destaque Plex"
+
+msgctxt "#40277"
+msgid "GDrive Highlight Color"
+msgstr "Cor de Destaque GDrive"
+
+msgctxt "#40278"
+msgid "Match quality icons to provider color"
+msgstr "Corresponder ícones de qualidade à cor do provedor"
+
+msgctxt "#40283"
+msgid "[COLOR lightgray]█ [B]Light Gray[/B][/COLOR]"
+msgstr "[COLOR lightgray]█ [B]Cinza Claro[/B][/COLOR]"
+
+msgctxt "#40284"
+msgid "[COLOR gray]█ [B]Gray[/B][/COLOR]"
+msgstr "[COLOR gray]█ [B]Cinza[/B][/COLOR]"
+
+msgctxt "#40285"
+msgid "[COLOR FFFFF0DB]█ [B]Beige[/B][/COLOR]"
+msgstr "[COLOR FFFFF0DB]█ [B]Bege[/B][/COLOR]"
+
+msgctxt "#40286"
+msgid "[COLOR darkgoldenrod]█ [B]Dark Goldenrod[/B][/COLOR]"
+msgstr "[COLOR darkgoldenrod]█ [B]Dourado Escuro[/B][/COLOR]"
+
+msgctxt "#40287"
+msgid "[COLOR peru]█ [B]Peru[/B][/COLOR]"
+msgstr "[COLOR peru]█ [B]Pérola[/B][/COLOR]"
+
+msgctxt "#40288"
+msgid "[COLOR orangered]█ [B]Orange[/B][/COLOR]"
+msgstr "[COLOR orangered]█ [B]Laranja[/B][/COLOR]"
+
+msgctxt "#40289"
+msgid "[COLOR pink]█ [B]Pink[/B][/COLOR]"
+msgstr "[COLOR pink]█ [B]Rosa[/B][/COLOR]"
+
+msgctxt "#40290"
+msgid "[COLOR fuchsia]█ [B]Fuchsia[/B][/COLOR]"
+msgstr "[COLOR fuchsia]█ [B]Fúcsia[/B][/COLOR]"
+
+msgctxt "#40291"
+msgid "[COLOR lightcoral]█ [B]Light Coral[/B][/COLOR]"
+msgstr "[COLOR lightcoral]█ [B]Coral Claro[/B][/COLOR]"
+
+msgctxt "#40292"
+msgid "[COLOR FFD10000]█ [B]Dark Red[/B][/COLOR]"
+msgstr "[COLOR FFD10000]█ [B]Vermelho Escuro[/B][/COLOR]"
+
+msgctxt "#40293"
+msgid "[COLOR FF750000]█ [B]Maroon[/B][/COLOR]"
+msgstr "[COLOR FF750000]█ [B]Marrom[/B][/COLOR]"
+
+msgctxt "#40294"
+msgid "[COLOR blueviolet]█ [B]Blue Violet[/B][/COLOR]"
+msgstr "[COLOR blueviolet]█ [B]Violeta Azul[/B][/COLOR]"
+
+msgctxt "#40295"
+msgid "[COLOR darkorchid]█ [B]Dark Orchid[/B][/COLOR]"
+msgstr "[COLOR darkorchid]█ [B]Orquídea Escura[/B][/COLOR]"
+
+msgctxt "#40296"
+msgid "[COLOR purple]█ [B]Purple[/B][/COLOR]"
+msgstr "[COLOR purple]█ [B]Roxo[/B][/COLOR]"
+
+msgctxt "#40297"
+msgid "[COLOR indigo]█ [B]Indigo[/B][/COLOR]"
+msgstr "[COLOR indigo]█ [B]Índigo[/B][/COLOR]"
+
+msgctxt "#40298"
+msgid "[COLOR darkslateblue]█ [B]Dark Slate Blue[/B][/COLOR]"
+msgstr "[COLOR darkslateblue]█ [B]Azul Ardósia Escuro[/B][/COLOR]"
+
+msgctxt "#40299"
+msgid "[COLOR slateblue]█ [B]Slate Blue[/B][/COLOR]"
+msgstr "[COLOR slateblue]█ [B]Azul Ardósia[/B][/COLOR]"
+
+msgctxt "#40300"
+msgid "[COLOR navy]█ [B]Navy[/B][/COLOR]"
+msgstr "[COLOR navy]█ [B]Azul Marinho[/B][/COLOR]"
+
+msgctxt "#40301"
+msgid "[COLOR blue]█ [B]Blue[/B][/COLOR]"
+msgstr "[COLOR blue]█ [B]Azul[/B][/COLOR]"
+
+msgctxt "#40302"
+msgid "[COLOR dodgerblue]█ [B]Dodger Blue[/B][/COLOR]"
+msgstr "[COLOR dodgerblue]█ [B]Azul Dodger[/B][/COLOR]"
+
+msgctxt "#40303"
+msgid "[COLOR skyblue]█ [B]Sky Blue[/B][/COLOR]"
+msgstr "[COLOR skyblue]█ [B]Azul Céu[/B][/COLOR]"
+
+msgctxt "#40304"
+msgid "[COLOR powderblue]█ [B]Powder Blue[/B][/COLOR]"
+msgstr "[COLOR powderblue]█ [B]Azul Pó[/B][/COLOR]"
+
+msgctxt "#40305"
+msgid "[COLOR turquoise]█ [B]Turquoise[/B][/COLOR]"
+msgstr "[COLOR turquoise]█ [B]Turquesa[/B][/COLOR]"
+
+msgctxt "#40306"
+msgid "[COLOR cyan]█ [B]Cyan[/B][/COLOR]"
+msgstr "[COLOR cyan]█ [B]Ciano[/B][/COLOR]"
+
+msgctxt "#40307"
+msgid "[COLOR aqua]█ [B]Aqua[/B][/COLOR]"
+msgstr "[COLOR aqua]█ [B]Água[/B][/COLOR]"
+
+msgctxt "#40308"
+msgid "[COLOR aquamarine]█ [B]Aqua Marine[/B][/COLOR]"
+msgstr "[COLOR aquamarine]█ [B]Água Marinha[/B][/COLOR]"
+
+msgctxt "#40309"
+msgid "[COLOR greenyellow]█ [B]Green Yellow[/B][/COLOR]"
+msgstr "[COLOR greenyellow]█ [B]Verde Amarelo[/B][/COLOR]"
+
+msgctxt "#40310"
+msgid "[COLOR mediumspringgreen]█ [B]Medium Spring Green[/B][/COLOR]"
+msgstr "[COLOR mediumspringgreen]█ [B]Verde Primavera Médio[/B][/COLOR]"
+
+msgctxt "#40311"
+msgid "[COLOR green]█ [B]Green[/B][/COLOR]"
+msgstr "[COLOR green]█ [B]Verde[/B][/COLOR]"
+
+msgctxt "#40312"
+msgid "[COLOR lime]█ [B]Lime[/B][/COLOR]"
+msgstr "[COLOR lime]█ [B]Lima[/B][/COLOR]"
+
+msgctxt "#40313"
+msgid "[COLOR forestgreen]█ [B]Forest Green[/B][/COLOR]"
+msgstr "[COLOR forestgreen]█ [B]Verde Floresta[/B][/COLOR]"
+
+msgctxt "#40314"
+msgid "[COLOR lawngreen]█ [B]Lawn Green[/B][/COLOR]"
+msgstr "[COLOR lawngreen]█ [B]Verde Gramado[/B][/COLOR]"
+
+msgctxt "#40315"
+msgid "[COLOR darkgreen]█ [B]Dark Green[/B][/COLOR]"
+msgstr "[COLOR darkgreen]█ [B]Verde Escuro[/B][/COLOR]"
+
+msgctxt "#40316"
+msgid "Default Theme"
+msgstr "Tema Padrão"
+
+msgctxt "#40317"
+msgid "AH2 Style"
+msgstr "Estilo AH2"
+
+msgctxt "#40318"
+msgid "Netflix Style"
+msgstr "Estilo Netflix"
+
+msgctxt "#40319"
+msgid "Playnext Popup Theme"
+msgstr "Tema do Popup Playnext"
+
+msgctxt "#40320"
+msgid "Seconds Remaining"
+msgstr "Segundos Restantes"
+
+msgctxt "#40321"
+msgid "Percentage Watched"
+msgstr "Porcentagem Assistida"
+
+msgctxt "#40322"
+msgid "Subtitle End"
+msgstr "Fim da Legenda"
+
+msgctxt "#40323"
+msgid "Playnext Popup Trigger"
+msgstr "Gatilho do Popup Playnext"
+
+msgctxt "#40324"
+msgid "Backup Percentage Watched"
+msgstr "Backup da Porcentagem Assistida"
+
+msgctxt "#40325"
+msgid "Backup # of Seconds Remaining"
+msgstr "Backup # de Segundos Restantes"
+
+msgctxt "#40326"
+msgid "Playnext will attempt to use the time from the last subtitle to trigger popup. If no subtitles found, backup time or percentage is used."
+msgstr "Playnext tentará usar o tempo da última legenda para acionar o popup. Se nenhuma legenda for encontrada, o tempo ou porcentagem de backup é usado."
+
+msgctxt "#40327"
+msgid "Backup Trigger if Subtitles Fail"
+msgstr "Gatilho de Backup se Legendas Falharem"
+
+msgctxt "#40328"
+msgid "Backup Percentage"
+msgstr "Porcentagem de Backup"
+
+msgctxt "#40329"
+msgid "# of Seconds Remaining"
+msgstr "# de Segundos Restantes"
+
+msgctxt "#40330"
+msgid "Trending Today (TMDB)"
+msgstr "Em Alta Hoje (TMDB)"
+
+msgctxt "#40331"
+msgid "Trending this Week (TMDB)"
+msgstr "Em Alta Esta Semana (TMDB)"
+
+msgctxt "#40332"
+msgid "Movie Search Provider"
+msgstr "Provedor de Busca de Filmes"
+
+msgctxt "#40333"
+msgid "TV Show Search Provider"
+msgstr "Provedor de Busca de Séries de TV"
+
+msgctxt "#40334"
+msgid "Fix Blank Settings: [B]UMBRELLA[/B]"
+msgstr "Corrigir Configurações em Branco: [B]UMBRELLA[/B]"
+
+msgctxt "#40335"
+msgid "Full-Screen"
+msgstr "Tela Cheia"
+
+msgctxt "#40336"
+msgid "Icon Only"
+msgstr "Apenas Ícone"
+
+msgctxt "#40337"
+msgid "Press back to cancel"
+msgstr "Pressione voltar para cancelar"
+
+msgctxt "#40338"
+msgid "Use artwork for background"
+msgstr "Usar arte para fundo"
+
+msgctxt "#40339"
+msgid "Mark watched"
+msgstr "Marcar assistido"
+
+msgctxt "#40340"
+msgid "Percentage to use to mark items watched"
+msgstr "Porcentagem a usar para marcar itens assistidos"
+
+msgctxt "#40341"
+msgid "Only try one source."
+msgstr "Tentar apenas uma fonte."
+
+msgctxt "#40342"
+msgid "Simkl"
+msgstr "Simkl"
+
+msgctxt "#40343"
+msgid "Simkl"
+msgstr "Simkl"
+
+msgctxt "#40344"
+msgid "Simkl settings category for Simkl authorization and settings exclusive to Simkl. Currently only setup for authentication for adding as a search provider. More features will be added later."
+msgstr "Categoria de configurações Simkl para autorização Simkl e configurações exclusivas ao Simkl. Atualmente apenas configuração para autenticação para adicionar como provedor de busca. Mais recursos serão adicionados posteriormente."
+
+msgctxt "#40345"
+msgid "simkl token"
+msgstr "token simkl"
+
+msgctxt "#40346"
+msgid "Simkl Auth"
+msgstr "Autenticação Simkl"
+
+msgctxt "#40347"
+msgid "Authentication with Simkl has failed, please try again"
+msgstr "Autenticação com Simkl falhou, tente novamente"
+
+msgctxt "#40348"
+msgid "Sources Highlight Color"
+msgstr "Cor de Destaque de Fontes"
+
+msgctxt "#40349"
+msgid "Error Connecting to Simkl"
+msgstr "Erro ao Conectar ao Simkl"
+
+msgctxt "#40350"
+msgid "Trending Today (Simkl)"
+msgstr "Em Alta Hoje (Simkl)"
+
+msgctxt "#40351"
+msgid "Trending Today"
+msgstr "Em Alta Hoje"
+
+msgctxt "#40352"
+msgid "Trending this Week (Simkl)"
+msgstr "Em Alta Esta Semana (Simkl)"
+
+msgctxt "#40353"
+msgid "Trending this Week"
+msgstr "Em Alta Esta Semana"
+
+msgctxt "#40354"
+msgid "Trending this Month (Simkl)"
+msgstr "Em Alta Este Mês (Simkl)"
+
+msgctxt "#40355"
+msgid "Trending this Month"
+msgstr "Em Alta Este Mês"
+
+msgctxt "#40356"
+msgid "Remove AAC"
+msgstr "Remover AAC"
+
+msgctxt "#40357"
+msgid "Reuselanguageinvoker Setting"
+msgstr "Configuração Reuselanguageinvoker"
+
+msgctxt "#40358"
+msgid "Furk Highlight Color"
+msgstr "Cor de Destaque Furk"
+
+msgctxt "#40359"
+msgid "FilePursuit Highlight Color"
+msgstr "Cor de Destaque FilePursuit"
+
+msgctxt "#40360"
+msgid "Get Furk API"
+msgstr "Obter API Furk"
+
+msgctxt "#40361"
+msgid "Clear Furk API"
+msgstr "Limpar API Furk"
+
+msgctxt "#40362"
+msgid "Providers"
+msgstr "Provedores"
+
+msgctxt "#40363"
+msgid "Cache"
+msgstr "Cache"
+
+msgctxt "#40364"
+msgid "Navigation (Movies)"
+msgstr "Navegação (Filmes)"
+
+msgctxt "#40365"
+msgid "Navigation (TV Shows)"
+msgstr "Navegação (Séries de TV)"
+
+msgctxt "#40366"
+msgid "Navigation settings category for turning on and off different lists or features within the Movies section."
+msgstr "Categoria de configurações de navegação para ligar e desligar diferentes listas ou recursos na seção Filmes."
+
+msgctxt "#40367"
+msgid "Navigation settings category for turning on and off different lists or features within the TV Show section."
+msgstr "Categoria de configurações de navegação para ligar e desligar diferentes listas ou recursos na seção Séries de TV."
+
+msgctxt "#40368"
+msgid "Cache settings for customizing the amount of time lists and other information are kept in memory before a fresh copy is pulled from online sources."
+msgstr "Configurações de cache para personalizar a quantidade de tempo que listas e outras informações são mantidas na memória antes de uma cópia fresca ser puxada de fontes online."
+
+msgctxt "#40369"
+msgid "IMDB Lists (Default 168 Hours)"
+msgstr "Listas IMDb (Padrão 168 Horas)"
+
+msgctxt "#40370"
+msgid "TMDb Lists (Default 96 Hours)"
+msgstr "Listas TMDb (Padrão 96 Horas)"
+
+msgctxt "#40371"
+msgid "TMDb Collections (Default 96 Hours)"
+msgstr "Coleções TMDb (Padrão 96 Horas)"
+
+msgctxt "#40372"
+msgid "TMDb Recent Day (Default 12 Hours)"
+msgstr "Dia Recente TMDb (Padrão 12 Horas)"
+
+msgctxt "#40373"
+msgid "TMDB Recent Week (Default 24 Hours)"
+msgstr "Semana Recente TMDB (Padrão 24 Horas)"
+
+msgctxt "#40374"
+msgid "Cache Hours"
+msgstr "Horas de Cache"
+
+msgctxt "#40375"
+msgid "Trakt General Lists (Default Hours 720)"
+msgstr "Listas Gerais Trakt (Horas Padrão 720)"
+
+msgctxt "#40376"
+msgid "Trakt Progress (Default Hours 12)"
+msgstr "Progresso Trakt (Horas Padrão 12)"
+
+msgctxt "#40377"
+msgid "Trakt History (Default Hours 24)"
+msgstr "Histórico Trakt (Horas Padrão 24)"
+
+msgctxt "#40378"
+msgid "Trakt Popular (Default Hours 168)"
+msgstr "Popular Trakt (Horas Padrão 168)"
+
+msgctxt "#40379"
+msgid "Trakt Trending (Default Hours 48)"
+msgstr "Em Alta Trakt (Horas Padrão 48)"
+
+msgctxt "#40380"
+msgid "Trakt Other (Default Hours 24)"
+msgstr "Outros Trakt (Horas Padrão 24)"
+
+msgctxt "#40381"
+msgid "Trakt User Lists (Default Hours 48)"
+msgstr "Listas de Usuário Trakt (Horas Padrão 48)"
+
+msgctxt "#40382"
+msgid "MDBList (Default Hours 24)"
+msgstr "MDBList (Horas Padrão 24)"
+
+msgctxt "#40383"
+msgid "Simkl (Default Hours 24)"
+msgstr "Simkl (Horas Padrão 24)"
+
+msgctxt "#40384"
+msgid "Provider Cache (Default Hours 48)"
+msgstr "Cache de Provedor (Horas Padrão 48)"
+
+msgctxt "#40385"
+msgid "Others"
+msgstr "Outros"
+
+msgctxt "#40386"
+msgid "New icon package downloaded successfully. [CR]Would you like to apply it now?"
+msgstr "Novo pacote de ícones baixado com sucesso. [CR]Gostaria de aplicá-lo agora?"
+
+msgctxt "#40387"
+msgid "Add Back button for touchscreens"
+msgstr "Adicionar Botão Voltar para telas de toque"
+
+msgctxt "#40388"
+msgid "Trending Recently Released (Trakt)"
+msgstr "Em Alta Lançados Recentemente (Trakt)"
+
+msgctxt "#40389"
+msgid "Trending Recently Released"
+msgstr "Em Alta Lançados Recentemente"
+
+msgctxt "#40390"
+msgid " "
+msgstr " "
+
+msgctxt "#40391"
+msgid "Enable library (Marked Watched) sync"
+msgstr "Ativar sincronização de biblioteca (Marcado Assistido)"
+
+msgctxt "#40392"
+msgid "Similar to Recent Watched (Library)"
+msgstr "Similar a Assistidos Recentemente (Biblioteca)"
+
+msgctxt "#40393"
+msgid "Recommended (Library)"
+msgstr "Recomendados (Biblioteca)"
+
+msgctxt "#40394"
+msgid "Show Watched in Lists (Library)"
+msgstr "Mostrar Assistidos em Listas (Biblioteca)"
+
+msgctxt "#40395"
+msgid "Hide Watched in Widgets"
+msgstr "Ocultar Assistidos em Widgets"
+
+msgctxt "#40396"
+msgid "Hidden"
+msgstr "Oculto"
+
+msgctxt "#40397"
+msgid "Use Full Context Menu in Widgets (Kodi 20 Only)"
+msgstr "Usar Menu de Contexto Completo em Widgets (Apenas Kodi 20)"
+
+msgctxt "#40398"
+msgid "Widget Context Menu"
+msgstr "Menu de Contexto de Widget"
+
+msgctxt "#30001"
+msgid "Return to home screen on back"
+msgstr "Retornar à tela inicial ao voltar"
+
+msgctxt "#30002"
+msgid "Enable/Disable context menu items"
+msgstr "Ativar/Desativar itens do menu de contexto"
+
+msgctxt "#30004"
+msgid "Clear Providers"
+msgstr "Limpar Provedores"
+
+msgctxt "#30005"
+msgid "Rescrape"
+msgstr "Raspar Novamente"
+
+msgctxt "#30006"
+msgid "Play from Here"
+msgstr "Reproduzir a Partir Daqui"
+
+msgctxt "#30007"
+msgid "Auto Play"
+msgstr "Autoplay"
+
+msgctxt "#30008"
+msgid "Source Select"
+msgstr "Selecionar Fonte"
+
+msgctxt "#30009"
+msgid "Find Similar"
+msgstr "Encontrar Similares"
+
+msgctxt "#30010"
+msgid "Browse Series"
+msgstr "Navegar Séries"
+
+msgctxt "#30011"
+msgid "Browse Episodes"
+msgstr "Navegar Episódios"
+
+msgctxt "#30012"
+msgid "Context Menu Settings"
+msgstr "Configurações do Menu de Contexto"
+
+msgctxt "#30013"
+msgid "Clear Bookmark"
+msgstr "Limpar Favorito"
+
+msgctxt "#30014"
+msgid "Options"
+msgstr "Opções"
+
+msgctxt "#30015"
+msgid "Notify Me About Available Updates"
+msgstr "Notifique-me Sobre Atualizações Disponíveis"
+
+msgctxt "#30016"
+msgid "Use default option vs Menu"
+msgstr "Usar opção padrão vs Menu"
+
+msgctxt "#30017"
+msgid "selected default"
+msgstr "padrão selecionado"
+
+msgctxt "#30018"
+msgid "Rescrape Item - AutoPlay"
+msgstr "Raspar Item Novamente - Autoplay"
+
+msgctxt "#30019"
+msgid "Rescrape Item - Source Select"
+msgstr "Raspar Item Novamente - Selecionar Fonte"
+
+msgctxt "#30020"
+msgid "Rescrape Item with All Providers - AutoPlay"
+msgstr "Raspar Item Novamente com Todos os Provedores - Autoplay"
+
+msgctxt "#30021"
+msgid "Rescrape Item with All Providers - Source Select"
+msgstr "Raspar Item Novamente com Todos os Provedores - Selecionar Fonte"
+
+msgctxt "#30021"
+msgid "Rescrape Item with All Providers - Source Select"
+msgstr "Raspar Item Novamente com Todos os Provedores - Selecionar Fonte"
+
+msgctxt "#40399"
+msgid "Cache movies for similar list"
+msgstr "Cache de filmes para lista similar"
+
+msgctxt "#40400"
+msgid "Prioritize Direct to top"
+msgstr "Priorizar Direto no topo"
+
+msgctxt "#40401"
+msgid "Progress Shows"
+msgstr "Séries em Progresso"
+
+msgctxt "#40402"
+msgid "Clear [COLOR yellow]Library Movies [/COLOR]Cache..."
+msgstr "Limpar Cache de [COLOR yellow]Filmes da Biblioteca [/COLOR]..."
+
+msgctxt "#40403"
+msgid "Remove AppleTV+"
+msgstr "Remover AppleTV+"
+
+msgctxt "#40404"
+msgid "No Sources found, retrying with all providers."
+msgstr "Nenhuma Fonte encontrada, tentando novamente com todos os provedores."
+
+msgctxt "#40405"
+msgid "Auto-Retry using all providers if no sources are found."
+msgstr "Tentar Automaticamente usando todos os provedores se nenhuma fonte for encontrada."
+
+msgctxt "#40406"
+msgid "Make umbrella work properly"
+msgstr "Fazer o umbrella funcionar corretamente"
+
+msgctxt "#40407"
+msgid "Show information for TV Show on select"
+msgstr "Mostrar informações da Série de TV ao selecionar"
+
+msgctxt "#40408"
+msgid "Show information for Movie on select"
+msgstr "Mostrar informações do Filme ao selecionar"
+
+msgctxt "#40409"
+msgid "Information Screens"
+msgstr "Telas de Informação"
+
+msgctxt "#40410"
+msgid "Released this Month (TMDb)"
+msgstr "Lançados Este Mês (TMDb)"
+
+msgctxt "#40411"
+msgid "Released this Month"
+msgstr "Lançados Este Mês"
+
+msgctxt "#40412"
+msgid "Released this Month (Digital and DVD) (TMDb)"
+msgstr "Lançados Este Mês (Digital e DVD) (TMDb)"
+
+msgctxt "#40413"
+msgid "Released this Month (Digital and DVD)"
+msgstr "Lançados Este Mês (Digital e DVD)"
+
+msgctxt "#40414"
+msgid "Umbrella"
+msgstr "Umbrella"
+
+msgctxt "#40415"
+msgid "No Results"
+msgstr "Nenhum Resultado"
+
+msgctxt "#40416"
+msgid "Dialogs"
+msgstr "Diálogos"
+
+msgctxt "#40417"
+msgid "Color Options for Dialogs"
+msgstr "Opções de Cor para Diálogos"
+
+msgctxt "#40418"
+msgid "Color titlebar of dialogs"
+msgstr "Colorir barra de título dos diálogos"
+
+msgctxt "#40419"
+msgid "Titlebar Color"
+msgstr "Cor da Barra de Título"
+
+msgctxt "#40420"
+msgid "Light or Dark Mode"
+msgstr "Modo Claro ou Escuro"
+
+msgctxt "#40421"
+msgid "Button color"
+msgstr "Cor do botão"
+
+msgctxt "#40422"
+msgid "Dark Mode"
+msgstr "Modo Escuro"
+
+msgctxt "#40423"
+msgid "Light Mode"
+msgstr "Modo Claro"
+
+msgctxt "#40424"
+msgid "Custom Color"
+msgstr "Cor Personalizada"
+
+msgctxt "#40425"
+msgid "Use Custom Umbrella Dialogs"
+msgstr "Usar Diálogos Personalizados do Umbrella"
+
+msgctxt "#40426"
+msgid "Test Ok Dialog"
+msgstr "Testar Diálogo Ok"
+
+msgctxt "#40427"
+msgid "Test Confirm Dialog"
+msgstr "Testar Diálogo de Confirmação"
+
+msgctxt "#40428"
+msgid "Message from testing dialog."
+msgstr "Mensagem do diálogo de teste."
+
+msgctxt "#40429"
+msgid "Import list(s) now"
+msgstr "Importar lista(s) agora"
+
+msgctxt "#40430"
+msgid "Show Umbrella next to Umbrella context items."
+msgstr "Mostrar Umbrella ao lado de itens de contexto do Umbrella."
+
+msgctxt "#40431"
+msgid "Play Trailer"
+msgstr "Reproduzir Trailer"
+
+msgctxt "#40432"
+msgid "Show watched in TV Show Progress"
+msgstr "Mostrar assistidos no Progresso da Série de TV"
+
+msgctxt "#40433"
+msgid "Watched Shows"
+msgstr "Séries Assistidas"
+
+msgctxt "#40434"
+msgid "Watched Sorting"
+msgstr "Classificação Assistida"
+
+msgctxt "#40435"
+msgid "History Sorting"
+msgstr "Classificação de Histórico"
+
+msgctxt "#40436"
+msgid "Arctic Fuse"
+msgstr "Arctic Fuse"
+
+msgctxt "#40437"
+msgid "Choose Color"
+msgstr "Escolher Cor"
+
+msgctxt "#40438"
+msgid "Enable multiple seasons."
+msgstr "Ativar múltiplas temporadas."
+
+msgctxt "#40439"
+msgid "Continue to next season (if available)"
+msgstr "Continuar para a próxima temporada (se disponível)"
+
+msgctxt "#40440"
+msgid "This allows for playnext to play episodes from the next season if available when you reach the end of a season."
+msgstr "Isso permite que o playnext reproduza episódios da próxima temporada se disponível quando você chegar ao fim de uma temporada."
+
+msgctxt "#40441"
+msgid "Minimum Seconds for Popup"
+msgstr "Segundos Mínimos para Popup"
+
+msgctxt "#40442"
+msgid "For situations where the subtitles go till the very end but you want a backup time in seconds for playnext popup. Default is 20."
+msgstr "Para situações onde as legendas vão até o fim, mas você quer um tempo de backup em segundos para o popup playnext. Padrão é 20."
+
+msgctxt "#40443"
+msgid "Hide episode counts on unwatched and fully watched"
+msgstr "Ocultar contagens de episódios em não assistidos e totalmente assistidos"
+
+msgctxt "#40444"
+msgid "Enable External Providers"
+msgstr "Ativar Provedores Externos"
+
+msgctxt "#40445"
+msgid "External Provider:"
+msgstr "Provedor Externo:"
+
+msgctxt "#40446"
+msgid "%s is not a valid external module selection. Please choose a different module."
+msgstr "%s não é uma seleção válida de módulo externo. Escolha um módulo diferente."
+
+msgctxt "#40447"
+msgid "External Providers are enabled but no provider was found."
+msgstr "Provedores Externos estão ativados, mas nenhum provedor foi encontrado."
+
+msgctxt "#40448"
+msgid "Error setting external providers."
+msgstr "Erro ao definir provedores externos."
+
+msgctxt "#40449"
+msgid "External module set successfully."
+msgstr "Módulo externo definido com sucesso."
+
+msgctxt "#40450"
+msgid "External Providers"
+msgstr "Provedores Externos"
+
+msgctxt "#40451"
+msgid "[COLOR FFA0C12C] -- External Modules Help --[/COLOR]"
+msgstr "[COLOR FFA0C12C] -- Ajuda de Módulos Externos --[/COLOR]"
+
+msgctxt "#40452"
+msgid "[B]SETTINGS[/B] : Providers"
+msgstr "[B]CONFIGURAÇÕES[/B] : Provedores"
+
+msgctxt "#40453"
+msgid "User Lists"
+msgstr "Listas de Usuário"
+
+msgctxt "#40454"
+msgid "Liked Lists"
+msgstr "Listas Curtidas"
+
+msgctxt "#40455"
+msgid "MDBList TV Shows"
+msgstr "Séries de TV MDBList"
+
+msgctxt "#40456"
+msgid "TVMaze"
+msgstr "TVMaze"
+
+msgctxt "#40457"
+msgid "Trakt List"
+msgstr "Lista Trakt"
+
+msgctxt "#40458"
+msgid "IMDb List"
+msgstr "Lista IMDb"
+
+msgctxt "#40459"
+msgid "Viewtypes"
+msgstr "Tipos de Visualização"
+
+msgctxt "#40460"
+msgid "Logging Tools"
+msgstr "Ferramentas de Log"
+
+msgctxt "#40461"
+msgid "Trakt Management Tools"
+msgstr "Ferramentas de Gerenciamento Trakt"
+
+msgctxt "#40462"
+msgid "Cache Functions"
+msgstr "Funções de Cache"
+
+msgctxt "#40463"
+msgid "Add to Umbrella Favourites"
+msgstr "Adicionar aos Favoritos do Umbrella"
+
+msgctxt "#40464"
+msgid "Umbrella Favourites"
+msgstr "Favoritos do Umbrella"
+
+msgctxt "#40465"
+msgid "Favourite Movies"
+msgstr "Filmes Favoritos"
+
+msgctxt "#40466"
+msgid "Favourite TV Shows"
+msgstr "Séries de TV Favoritas"
+
+msgctxt "#40467"
+msgid "Favourite Episodes"
+msgstr "Episódios Favoritos"
+
+msgctxt "#40468"
+msgid "Remove from Umbrella Favourites"
+msgstr "Remover dos Favoritos do Umbrella"
+
+msgctxt "#40469"
+msgid "Refresh container on add / remove from favourites"
+msgstr "Atualizar contêiner ao adicionar / remover dos favoritos"
+
+msgctxt "#40470"
+msgid "Refresh widgets on add / remove from favourites"
+msgstr "Atualizar widgets ao adicionar / remover dos favoritos"
+
+msgctxt "#40471"
+msgid "Add Library Item to Umbrella Favourites"
+msgstr "Adicionar Item da Biblioteca aos Favoritos do Umbrella"
+
+msgctxt "#40472"
+msgid "Favourites Sorting"
+msgstr "Classificação de Favoritos"
+
+msgctxt "#40473"
+msgid "Show release year with movie title"
+msgstr "Mostrar ano de lançamento com título do filme"
+
+msgctxt "#40474"
+msgid "Digital Releases (DVDReleaseDates)"
+msgstr "Lançamentos Digitais (DVDReleaseDates)"
+
+msgctxt "#40475"
+msgid "Digital Releases"
+msgstr "Lançamentos Digitais"
+
+msgctxt "#40476"
+msgid "Back to Movies"
+msgstr "Voltar aos Filmes"
+
+msgctxt "#40477"
+msgid "Back to TV Shows"
+msgstr "Voltar às Séries de TV"
+
+msgctxt "#40478"
+msgid "Enable Plex Scraper"
+msgstr "Ativar Scraper Plex"
+
+msgctxt "#40479"
+msgid "Plex Token"
+msgstr "Token Plex"
+
+msgctxt "#40480"
+msgid "Plex Client ID"
+msgstr "ID do Cliente Plex"
+
+msgctxt "#40481"
+msgid "Plex Device ID"
+msgstr "ID do Dispositivo Plex"
+
+msgctxt "#40482"
+msgid "Plexshare Source Title"
+msgstr "Título da Fonte Plexshare"
+
+msgctxt "#40483"
+msgid "Plexshare accessToken"
+msgstr "Token de Acesso Plexshare"
+
+msgctxt "#40484"
+msgid "Plexshare url"
+msgstr "URL Plexshare"
+
+msgctxt "#40485"
+msgid "Authorize Plex"
+msgstr "Autorizar Plex"
+
+msgctxt "#40486"
+msgid "See Active PlexShares"
+msgstr "Ver PlexShares Ativos"
+
+msgctxt "#40487"
+msgid "(Select/Re-Select) PlexShare Source"
+msgstr "(Selecionar/Re-Selecionar) Fonte PlexShare"
+
+msgctxt "#40488"
+msgid "Revoke Plex"
+msgstr "Revogar Plex"
+
+msgctxt "#40489"
+msgid "EASYNEWS"
+msgstr "EASYNEWS"
+
+msgctxt "#40490"
+msgid "Exclude Adult Results"
+msgstr "Excluir Resultados Adultos"
+
+msgctxt "#40491"
+msgid "Title Check Results"
+msgstr "Verificar Resultados de Título"
+
+msgctxt "#40492"
+msgid "IMDb list amount"
+msgstr "Quantidade de lista IMDb"
+
+msgctxt "#40493"
+msgid "Genres (Trakt)"
+msgstr "Gêneros (Trakt)"
+
+msgctxt "#40494"
+msgid "Trending %s %s"
+msgstr "Em Alta %s %s"
+
+msgctxt "#40495"
+msgid "Popular %s %s"
+msgstr "Popular %s %s"
+
+msgctxt "#40496"
+msgid "Most Played %s %s"
+msgstr "Mais Reproduzidos %s %s"
+
+msgctxt "#40497"
+msgid "Most Watched %s %s"
+msgstr "Mais Assistidos %s %s"
+
+msgctxt "#40498"
+msgid "Anticipated %s %s"
+msgstr "Antecipados %s %s"
+
+msgctxt "#40499"
+msgid "Decades %s %s"
+msgstr "Décadas %s %s"
+
+msgctxt "#40500"
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+msgctxt "#40501"
+msgid "Subtitle Service"
+msgstr "Serviço de Legendas"
+
+msgctxt "#40502"
+msgid "Subscene"
+msgstr "Subscene"
+
+msgctxt "#40503"
+msgid "OpenSubs"
+msgstr "OpenSubs"
+
+msgctxt "#40504"
+msgid "Open Subtitles Username"
+msgstr "Nome de Usuário Open Subtitles"
+
+msgctxt "#40505"
+msgid "Open Subtitles Password"
+msgstr "Senha Open Subtitles"
+
+msgctxt "#40506"
+msgid "%s - Lang Downloaded from Opensubtitles.com"
+msgstr "%s - Legenda baixada de Opensubtitles.com"
+
+msgctxt "#40507"
+msgid "Check Opensubtitles Account"
+msgstr "Verificar Conta Opensubtitles"
+
+msgctxt "#40508"
+msgid "Logged in Username: %s [CR] Allowed Downloads: %s"
+msgstr "Nome de Usuário Logado: %s [CR] Downloads Permitidos: %s"
+
+msgctxt "#40509"
+msgid "Unable to authorize opensubs. Please check username and password."
+msgstr "Não foi possível autorizar opensubs. Verifique nome de usuário e senha."
+
+msgctxt "#40510"
+msgid "Revoke OpenSubtitles Token"
+msgstr "Revogar Token OpenSubtitles"
+
+msgctxt "#40511"
+msgid "Play Trailer (Select)"
+msgstr "Reproduzir Trailer (Selecionar)"
+
+msgctxt "#40512"
+msgid "YouTube Trailers:"
+msgstr "Trailers do YouTube:"
+
+msgctxt "#40513"
+msgid "Local scrobble notification"
+msgstr "Notificação de scrobble local"
+
+msgctxt "#40514"
+msgid "Never"
+msgstr "Nunca"
+
+msgctxt "#40515"
+msgid "Always"
+msgstr "Sempre"
+
+msgctxt "#40516"
+msgid "One Season"
+msgstr "Uma Temporada"
+
+msgctxt "#40517"
+msgid "Use TMDB Clearlogo"
+msgstr "Usar Clearlogo TMDb"
+
+msgctxt "#40518"
+msgid "Fanart Cache Successfully Cleared!"
+msgstr "Cache de Fanart Limpo com Sucesso!"
+
+msgctxt "#40519"
+msgid "Clear [COLOR yellow]Fanart Cache [/COLOR]..."
+msgstr "Limpar Cache de [COLOR yellow]Fanart [/COLOR]..."
+
+msgctxt "#40520"
+msgid "Library Movie Cache Successfully Cleared!"
+msgstr "Cache de Filmes da Biblioteca Limpo com Sucesso!"
+
+msgctxt "#40521"
+msgid "Use custom background for Fanart"
+msgstr "Usar fundo personalizado para Fanart"
+
+msgctxt "#40522"
+msgid "Background"
+msgstr "Fundo"
+
+msgctxt "#40523"
+msgid "Reset background"
+msgstr "Redefinir fundo"
+
+msgctxt "#40524"
+msgid "Use tmdb.org instead of themoviedb.org for API"
+msgstr "Usar tmdb.org em vez de themoviedb.org para API"
+
+msgctxt "#40525"
+msgid "Umbrella Addon Settings"
+msgstr "Configurações do Addon Umbrella"
+
+msgctxt "#40526"
+msgid "Use language setting for trakt lists"
+msgstr "Usar configuração de idioma para listas trakt"
+
+msgctxt "#40527"
+msgid "Enable TorBox Menu"
+msgstr "Ativar Menu TorBox"
+
+msgctxt "#40528"
+msgid "TorBox Revoked"
+msgstr "TorBox Revogado"
+
+msgctxt "#40529"
+msgid "TorBox"
+msgstr "TorBox"
+
+msgctxt "#40530"
+msgid "Account ID"
+msgstr "ID da Conta"
+
+msgctxt "#40531"
+msgid "Error Connecting to TorBox"
+msgstr "Erro ao Conectar ao TorBox"
+
+msgctxt "#40532"
+msgid "TorBox Highlight Color"
+msgstr "Cor de Destaque TorBox"
+
+msgctxt "#40533"
+msgid "Play button behavior"
+msgstr "Comportamento do botão reproduzir"
+
+msgctxt "#40534"
+msgid "Play immediately"
+msgstr "Reproduzir imediatamente"
+
+msgctxt "#40535"
+msgid "Background scrape"
+msgstr "Raspar em segundo plano"
+
+msgctxt "#40536"
+msgid "EasyDebrid Highlight Color"
+msgstr "Cor de Destaque EasyDebrid"
+
+msgctxt "#40537"
+msgid "EasyDebrid"
+msgstr "EasyDebrid"
+
+msgctxt "#40538"
+msgid "easydebrid token"
+msgstr "token easydebrid"
+
+msgctxt "#40539"
+msgid "EasyDebrid successfully authorized"
+msgstr "EasyDebrid autorizado com sucesso"
+
+msgctxt "#40540"
+msgid "Offcloud"
+msgstr "Offcloud"
+
+msgctxt "#40541"
+msgid "Enable Offcloud Menu"
+msgstr "Ativar Menu Offcloud"
+
+msgctxt "#40542"
+msgid "Offcloud Highlight Color"
+msgstr "Cor de Destaque Offcloud"
+
+msgctxt "#40543"
+msgid "[B]Delete all active torrents from TorBox?[/B]"
+msgstr "[B]Excluir todos os torrents ativos do TorBox?[/B]"
+
+msgctxt "#40544"
+msgid "[B]Delete all queued torrents from TorBox?[/B]"
+msgstr "[B]Excluir todos os torrents enfileirados do TorBox?[/B]"
+
+msgctxt "#40545"
+msgid "No"
+msgstr "Não"
+
+msgctxt "#40546"
+msgid "[B]Delete all cloud files from TorBox?[/B]"
+msgstr "[B]Excluir todos os arquivos na nuvem do TorBox?[/B]"
+
+msgctxt "#40547"
+msgid "Completed"
+msgstr "Concluído"
+
+msgctxt "#40548"
+msgid "Completed (SimKl)"
+msgstr "Concluído (SimKl)"
+
+msgctxt "#40549"
+msgid "Plan to Watch"
+msgstr "Planejar Assistir"
+
+msgctxt "#40550"
+msgid "Plan to Watch (SimKl)"
+msgstr "Planejar Assistir (SimKl)"
+
+msgctxt "#40551"
+msgid "[B]Simkl Management Tools[/B]"
+msgstr "[B]Ferramentas de Gerenciamento Simkl[/B]"
+
+msgctxt "#40552"
+msgid "Simkl Management Tools"
+msgstr "Ferramentas de Gerenciamento Simkl"
+
+msgctxt "#40553"
+msgid "[COLOR %s][B]Force Simkl Sync to local database[/B][/COLOR]"
+msgstr "[COLOR %s][B]Forçar Sincronização Simkl para banco de dados local[/B][/COLOR]"
+
+msgctxt "#40554"
+msgid "Watched in Simkl"
+msgstr "Assistido no Simkl"
+
+msgctxt "#40555"
+msgid "Unwatched in Simkl"
+msgstr "Não Assistido no Simkl"
+
+msgctxt "#40556"
+msgid "Background Services Sync Interval"
+msgstr "Intervalo de Sincronização de Serviços em Segundo Plano"
+
+msgctxt "#40557"
+msgid "Simkl Progress Show unaired episodes"
+msgstr "Progresso Simkl mostrar episódios não exibidos"
+
+msgctxt "#40558"
+msgid "Simkl Upcoming Progress prepend date"
+msgstr "Progresso Próximo Simkl preceder data"
+
+msgctxt "#40559"
+msgid "[B]SETTINGS[/B] : Simkl"
+msgstr "[B]CONFIGURAÇÕES[/B] : Simkl"
+
+msgctxt "#40560"
+msgid "%s Failed to Mark As Watched On Simkl"
+msgstr "%s Falhou ao Marcar Como Assistido no Simkl"
+
+msgctxt "#40561"
+msgid "%s Marked As Watched On Simkl"
+msgstr "%s Marcado Como Assistido no Simkl"
+
+msgctxt "#40562"
+msgid "%s Failed to Mark As Unwatched On Simkl"
+msgstr "%s Falhou ao Marcar Como Não Assistido no Simkl"
+
+msgctxt "#40563"
+msgid "%s Marked As Unwatched On Simkl"
+msgstr "%s Marcado Como Não Assistido no Simkl"
+
+msgctxt "#40564"
+msgid "Watched in Online Services"
+msgstr "Assistido em Serviços Online"
+
+msgctxt "#40565"
+msgid "Unwatched in Online Services"
+msgstr "Não Assistido em Serviços Online"
+
+msgctxt "#40566"
+msgid "Use Fanart for Thumbs"
+msgstr "Usar Fanart para Thumbs"
+
+msgctxt "#40567"
+msgid "[COLOR %s][B]Force Simkl Sync to local database[/B][/COLOR]"
+msgstr "[COLOR %s][B]Forçar Sincronização Simkl para banco de dados local[/B][/COLOR]"
+
+msgctxt "#40568"
+msgid "Customize Artwork"
+msgstr "Personalizar Arte"
+
+msgctxt "#40569"
+msgid "Plan to Watch Sorting"
+msgstr "Classificação Planejar Assistir"
+
+msgctxt "#40570"
+msgid "Add Show to [COLOR %s][B]Plan to Watch[/B][/COLOR]"
+msgstr "Adicionar Série a [COLOR %s][B]Planejar Assistir[/B][/COLOR]"
+
+msgctxt "#40571"
+msgid "Remove Show from [COLOR %s][B]Plan to Watch[/B][/COLOR]"
+msgstr "Remover Série de [COLOR %s][B]Planejar Assistir[/B][/COLOR]"
+
+msgctxt "#40572"
+msgid "Add movie to [COLOR %s][B]Dropped[/B][/COLOR]"
+msgstr "Adicionar filme a [COLOR %s][B]Abandonado[/B][/COLOR]"
+
+msgctxt "#40573"
+msgid "Remove movie from [COLOR %s][B]Dropped[/B][/COLOR]"
+msgstr "Remover filme de [COLOR %s][B]Abandonado[/B][/COLOR]"
+
+msgctxt "#40574"
+msgid "Add movie to [COLOR %s][B]Plan to Watch[/B][/COLOR]"
+msgstr "Adicionar filme a [COLOR %s][B]Planejar Assistir[/B][/COLOR]"
+
+msgctxt "#40575"
+msgid "Remove movie from [COLOR %s][B]Plan to Watch[/B][/COLOR]"
+msgstr "Remover filme de [COLOR %s][B]Planejar Assistir[/B][/COLOR]"
+
+msgctxt "#40576"
+msgid "Simkl Manager"
+msgstr "Gerenciador Simkl"
+
+msgctxt "#40577"
+msgid "[COLOR %s]Simkl Manager[/COLOR]"
+msgstr "[COLOR %s]Gerenciador Simkl[/COLOR]"
+
+msgctxt "#40578"
+msgid "Add movie to [COLOR %s][B]On-Hold[/B][/COLOR]"
+msgstr "Adicionar filme a [COLOR %s][B]Em Espera[/B][/COLOR]"
+
+msgctxt "#40579"
+msgid "Remove movie from [COLOR %s][B]On-Hold[/B][/COLOR]"
+msgstr "Remover filme de [COLOR %s][B]Em Espera[/B][/COLOR]"
+
+msgctxt "#40580"
+msgid "Add Show to [COLOR %s][B]Dropped[/B][/COLOR]"
+msgstr "Adicionar Série a [COLOR %s][B]Abandonada[/B][/COLOR]"
+
+msgctxt "#40581"
+msgid "Remove Show from [COLOR %s][B]Dropped[/B][/COLOR]"
+msgstr "Remover Série de [COLOR %s][B]Abandonada[/B][/COLOR]"
+
+msgctxt "#40582"
+msgid "Add Show to [COLOR %s][B]On-Hold[/B][/COLOR]"
+msgstr "Adicionar Série a [COLOR %s][B]Em Espera[/B][/COLOR]"
+
+msgctxt "#40583"
+msgid "Remove Show from [COLOR %s][B]On-Hold[/B][/COLOR]"
+msgstr "Remover Série de [COLOR %s][B]Em Espera[/B][/COLOR]"
+
+msgctxt "#40584"
+msgid "Item Added To Simkl"
+msgstr "Item Adicionado ao Simkl"
+
+msgctxt "#40585"
+msgid "Item Removed From Simkl"
+msgstr "Item Removido do Simkl"
+
+msgctxt "#40586"
+msgid "TMDB Lists Origin Countries"
+msgstr "Países de Origem das Listas TMDb"
+
+msgctxt "#40587"
+msgid "Use api language for original language in requests"
+msgstr "Usar idioma da API para idioma original em solicitações"
+
+msgctxt "#40588"
+msgid "Use origin countries in requests"
+msgstr "Usar países de origem em solicitações"
+
+msgctxt "#40589"
+msgid "Full Change Log!!"
+msgstr "Registro Completo de Alterações!!"
+
+msgctxt "#40590"
+msgid "Show [COLOR yellow]Full Changelog[/COLOR]..."
+msgstr "Mostrar [COLOR yellow]Registro Completo de Alterações[/COLOR]..."
+
+msgctxt "#40591"
+msgid "Movies Viewtype"
+msgstr "Tipo de Visualização de Filmes"
+
+msgctxt "#40592"
+msgid "TV Shows Viewtype"
+msgstr "Tipo de Visualização de Séries de TV"
+
+msgctxt "#40593"
+msgid "Seasons Viewtype"
+msgstr "Tipo de Visualização de Temporadas"
+
+msgctxt "#40594"
+msgid "Episodes Viewtype"
+msgstr "Tipo de Visualização de Episódios"
+
+msgctxt "#40595"
+msgid "MDBList Watchlist"
+msgstr "Lista de Observação MDBList"
+
+msgctxt "#40596"
+msgid "Add item to your [COLOR %s][B]MDBList Watchlist[/B][/COLOR]"
+msgstr "Adicionar item à sua [COLOR %s][B]Lista de Observação MDBList[/B][/COLOR]"
+
+msgctxt "#40597"
+msgid "Remove item from your [COLOR %s][B]MDBList Watchlist[/B][/COLOR]"
+msgstr "Remover item da sua [COLOR %s][B]Lista de Observação MDBList[/B][/COLOR]"
+
+msgctxt "#40598"
+msgid "MDBList Watchlist Lib"
+msgstr "Lista de Observação MDBList Lib"
+
+msgctxt "#40599"
+msgid "Use alternate API address. (app.real-debrid.com)"
+msgstr "Usar endereço API alternativo. (app.real-debrid.com)"

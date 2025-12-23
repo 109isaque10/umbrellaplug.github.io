@@ -124,11 +124,11 @@ class TorBoxAPI:
 			if not torrent['success']: return None
 			torrent_id = torrent['data']['torrent_id']
 			torrent_files = self.torrent_info(torrent_id)
-			selected_files = [{'url': '%d,%d' % (torrent_id, item['id']), 'filename': item['short_name'], 'size': item['size']} \
+			selected_files = [{'url': '%d,%d' % (torrent_id, item['id']), 'filename': item['short_name'], 'name': item['name'], 'size': item['size']} \
 							for item in torrent_files['data']['files'] if item['short_name'].lower().endswith(tuple(extensions))]
 			if not selected_files: return None
 			if season:
-				selected_files = [i for i in selected_files if seas_ep_filter(season, episode, i['filename'])]
+				selected_files = [i for i in selected_files if seas_ep_filter(season, episode, i['name'])]
 			else:
 				if self._m2ts_check(selected_files): return None
 				selected_files = [i for i in selected_files if not any(x in i['filename'] for x in extras_filtering_list)]

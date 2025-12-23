@@ -1,127 +1,112 @@
 # -*- coding: UTF-8 -*-
 # (updated 7-19-2022)
 '''
-	Umbrella Internal Scrapers
+    Infinity Internal Scrapers
 '''
 
-from base64 import b64encode
-import re
+from json import loads as jsloads
+from resource.lib.modules import source_utils
 import requests
-from urllib.parse import quote
-from resources.lib.modules.control import setting as getSetting
-from resources.lib.modules import scrape_utils
-from resources.lib.modules import source_utils
 
-SORT = {'s1': 'relevance', 's1d': '-', 's2': 'dsize', 's2d': '-', 's3': 'dtime', 's3d': '-'}
-SEARCH_PARAMS = {'st': 'adv', 'sb': 1, 'fex': 'm4v,3gp,mov,divx,xvid,wmv,avi,mpg,mpeg,mp4,mkv,avc,flv,webm', 'fty[]': 'VIDEO', 'spamf': 1, 'u': '1', 'gx': 1, 'pno': 1, 'sS': 3}
-SEARCH_PARAMS.update(SORT)
+headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:137.0) Gecko/137.0 Firefox/137.0'}
 
 
 class source:
-	priority = 21
-	pack_capable = False
-	hasMovies = True
-	hasEpisodes = True
-	def __init__(self):
-		self.language = ['en']
-		self.base_link = "https://members.easynews.com"
-		self.search_link = "/2.0/search/solr-search/advanced"
+    priority = 1
+    pack_capable = False
+    hasMovies = True
+    hasEpisodes = True
 
-	def sources(self, data, hostDict):
-		sources = []
-		if not data: return sources
-		sources_append = sources.append
-		auth = self._get_auth()
-		if not auth: return sources
-		try:
-			title_chk = getSetting('easynews.title.chk') == 'true'
-			year = data['year']
-			aliases = data['aliases']
-			if 'tvshowtitle' in data:
-				title = data['tvshowtitle'].replace('&', 'and').replace('Special Victims Unit', 'SVU').replace('/', ' ')
-				episode_title = None
-				years = None
-				season = int(data.get('season'))
-				episode = int(data.get('episode'))
-				hdlr = 'S%02dE%02d' % (season, episode)
-				query = '%s %s' % (re.sub(r'[^A-Za-z0-9\s\.-]+', '', title), hdlr)
-			else:
-				title = data['title'].replace('&', 'and').replace('/', ' ')
-				episode_title = data['title']
-				years = [str(int(year)-1), str(year), str(int(year)+1)]
-				hdlr = year
-				query = '%s' % re.sub(r'[^A-Za-z0-9\s\.-]+', '', title) # let "source_utils.check_title()" verify "release_title" contains a matching year in years list
-			url, params = self._translate_search(query)
-			results = requests.get(url, params=params, headers={'Authorization': auth}, timeout=20).json()
-			down_url = results.get('downURL')
-			dl_farm = results.get('dlFarm')
-			dl_port = results.get('dlPort')
-			files = results.get('data', [])
-		except:
-			source_utils.scraper_error('EASYNEWS')
-			return sources
+    def __init__(self):
+        self.language = ['en']
+        self.scrape_provider = 'folders'
+        self.base_link = "https://davio.327835.xyz"
+        self.movieSearch_link = "/eyJkYXZJZCI6ImN1c3RvbSIsIm5hbWUiOiJDdXN0b20iLCJzaG9ydE5hbWUiOiJEQVYiLCJ1cmwiOiJodHRwczovL2Rhdi4zMjc4MzUueHl6IiwidXNlcm5hbWUiOiJqZWxseSIsInBhc3N3b3JkIjoiUTdpRm42bFBQM0YzbTZOb1BLeTVYcWxZRjlXYTc0Iiwicm9vdCI6Ii9GaWxtZXMvIiwicm9vdFRWIjoiL1NlcmlhZG9zLyJ9/stream/movie/%s.json"
+        self.tvSearch_link = "/eyJkYXZJZCI6ImN1c3RvbSIsIm5hbWUiOiJDdXN0b20iLCJzaG9ydE5hbWUiOiJEQVYiLCJ1cmwiOiJodHRwczovL2Rhdi4zMjc4MzUueHl6IiwidXNlcm5hbWUiOiJqZWxseSIsInBhc3N3b3JkIjoiUTdpRm42bFBQM0YzbTZOb1BLeTVYcWxZRjlXYTc0Iiwicm9vdCI6Ii9GaWxtZXMvIiwicm9vdFRWIjoiL1NlcmlhZG9zLyJ9/stream/series/%s:%s:%s.json"
 
+    def results(self, data):
+        sources = []
+        if not data: return sources
+        append = sources.append
+        try:
+            from resource.lib.modules import log_utils
+            aliases = data['aliases']
+            year = data['year']
+            imdb = data['imdb_id']
+            season = None
+            episode = None
+            if data['media_type'] == 'movie':
+                title = data['title'].replace('&', 'and').replace('/', ' ')
+                episode_title = None
+                hdlr = year
+                link = self.movieSearch_link % imdb
+            else:
+                title = data['title'].replace('&', 'and').replace('Special Victims Unit', 'SVU').replace('/', ' ')
+                episode_title = data['ep_name']
+                season = data['season']
+                episode = data['episode']
+                hdlr = 'S%02dE%02d' % (int(season), int(episode))
+                link = self.tvSearch_link % (imdb, season, episode)
+            url = '%s%s' % (self.base_link, link)
+            # log_utils.log('url = %s' % url, level=log_utils.LOGDEBUG)
+            r = requests.get(url, headers=headers, timeout=6).text
+            if not r: return sources
+            r = jsloads(r)
+            results = r['streams']
+        except Exception as e:
+            from resource.lib.modules import log_utils
+            log_utils.log('davio scraper Exception\n' + str(e), level=log_utils.LOGERROR)
+            return sources
 
-		for item in files:
-			try:
-				post_hash, post_title, ext, duration = item['0'], item['10'], item['11'], item['14']
-				audio_langs = item.get('alangs')
-				if audio_langs:
-					if 'eng' not in audio_langs: continue
+        for item in results:
+            try:
+                url = item['url']
+                description = item['description']
+                try:
+                    size = description.split('💾')[1]
+                except:
+                    size = 0
+                try:
+                    file_name = description.split('\n')[0]
+                except:
+                    file_name = 'Unknown'
+                origname = file_name.replace('.mp4', '').replace('.mkv', '')
+                name = source_utils.clean_title(origname)
+                if not source_utils.check_title(title, name, aliases, year, season, episode): continue
+                name_info = source_utils.release_info_format(name)
+                # if source_utils.remove_lang(name_info, check_foreign_audio): continue
+                # if undesirables and source_utils.remove_undesirables(name_info, undesirables): continue
 
-				if re.match(r'^\d+s', duration) or re.match('^[0-5]m', duration): continue
-				if 'virus' in item and item['virus']: continue
-				if 'type' in item and item['type'].upper() != 'VIDEO': continue
-				stream_url = down_url + quote('/%s/%s/%s%s/%s%s' % (dl_farm, dl_port, post_hash, ext, post_title, ext))
-				name = scrape_utils.clean_name(post_title)
-				name_chk = name
-				if 'tvshowtitle' in data:
-					name_chk = re.sub(r'S\d+([.-])E\d+', hdlr, name_chk, 1, re.I)
-					name_chk = re.sub(r'^tvp[.-]', '', name_chk, 1, re.I)
-				name_chk = re.sub(r'disney[.-]gallery[.-]star[.-]wars[.-]', '', name_chk, 0, re.I)
-				name_chk = re.sub(r'marvels[.-]', '', name_chk, 0, re.I)
+                # link_header = client.request(url, output='headers', timeout=5) # to slow to check validity of links
+                # if not any(value in str(link_header) for value in ('stream', 'video/mkv')): continue
 
-				if title_chk:
-					if not scrape_utils.check_title(title, aliases, name_chk, hdlr, year, years): continue
-				name_info = scrape_utils.info_from_name(name_chk, title, year, hdlr, episode_title)
-				# if source_utils.remove_lang(name_info, check_foreign_audio): continue
-				#if not audio_langs:
-				#	if source_utils.remove_lang(name_info, check_foreign_audio): continue
-				#if undesirables and source_utils.remove_undesirables(name_info, undesirables): continue
+                try:
+                    isize = _size(size)
+                except:
+                    isize = 0
+                quality, info = source_utils.get_file_info(name_info)
 
-				file_dl = '%s%s' % (stream_url, '|Authorization=%s' % quote(auth))
-				quality, info = scrape_utils.get_release_quality(name_info, file_dl)
-				try:
-					dsize, isize = scrape_utils.convert_size(float(int(item['rawSize'])), to='GB')
-					if isize: info.insert(0, isize)
-				except: dsize = 0
-				info = ' | '.join(info)
+                append(
+                    {'name': file_name, 'display_name': origname, 'quality': '1080p', 'size': isize, 'size_label': size,
+                     'extraInfo': info, 'url_dl': url, 'down_url': url, 'id': url, 'local': False, 'direct': True,
+                     'source': 'Davio',
+                     'scrape_provider': self.scrape_provider})
+            except Exception as e:
+                from resource.lib.modules import log_utils
+                log_utils.log('davio scraper Exception\n' + str(e), level=log_utils.LOGERROR)
+        source_utils.internal_results(self.scrape_provider, sources)
+        return sources
 
-				sources_append({'provider': 'easynews', 'source': 'direct', 'name': name, 'name_info': name_info, 'quality': quality,
-											'language': "en", 'url': file_dl, 'info': info, 'direct': True, 'debridonly': False, 'size': dsize})
-			except:
-				source_utils.scraper_error('EASYNEWS')
-		return sources
-
-	def _get_auth(self):
-		auth = None
-		try:
-			username, password = getSetting('easynews.user'), getSetting('easynews.password')
-			if username == '' or password == '': return auth
-			user_info = '%s:%s' % (username, password)
-			user_info = user_info.encode('utf-8')
-			auth = '%s%s' % ('Basic ', b64encode(user_info).decode('utf-8'))
-		except:
-			source_utils.scraper_error('EASYNEWS')
-		return auth
-
-	def _translate_search(self, query):
-		params = SEARCH_PARAMS
-		params['pby'] = 1000 # Results per Page, increased from 350
-		moderation = 1 if getSetting('easynews.moderation') == 'true' else 0
-		params['safeO'] = moderation # 1 is the moderation (adult filter) ON, 0 is OFF.
-		params['safeO'] = 1 if getSetting('easynews.moderation') == 'true' else 0 # 1 is the moderation(adult filter) ON, 0 is OFF.
-		# params['gps'] = params['sbj'] = query # gps stands for "group search" and does so by "Keywords", sbj=subject and can limit results, use gps only
-		params['gps'] = query
-		url = '%s%s' % (self.base_link, self.search_link)
-		return url, params
+    def _size(size):
+        try:
+            from resource.lib.modules import log_utils
+            size = size.split(' ')
+            log_utils.log('_size\n' + str(size), level=log_utils.LOGDEBUG)
+            isize = float(size[0])
+            options = {'GB': isize * (1024 * 1024 * 1024),
+                       'MB': isize * (1024 * 1024)}
+            fsize = int(options[size[1]])
+        except Exception as e:
+            from resource.lib.modules import log_utils
+            log_utils.log('_size\n' + str(e), level=log_utils.LOGERROR)
+        return fsize
