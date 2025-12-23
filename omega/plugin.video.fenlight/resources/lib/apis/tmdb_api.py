@@ -22,13 +22,13 @@ def no_api_key():
 
 def movie_details(tmdb_id, api_key):
 	try:
-		url = '%s/movie/%s?api_key=%s&language=en&append_to_response=%s&include_image_language=en' % (base_url, tmdb_id, api_key, movies_append)
+		url = '%s/movie/%s?api_key=%s&language=pt-BR&append_to_response=%s&include_image_language=pt-BR,en' % (base_url, tmdb_id, api_key, movies_append)
 		return get_tmdb(url).json()
 	except: return None
 
 def tvshow_details(tmdb_id, api_key):
 	try:
-		url = '%s/tv/%s?api_key=%s&language=en&append_to_response=%s&include_image_language=en' % (base_url, tmdb_id, api_key, tvshows_append)
+		url = '%s/tv/%s?api_key=%s&language=pt-BR&append_to_response=%s&include_image_language=pt-BR,en' % (base_url, tmdb_id, api_key, tvshows_append)
 		return get_tmdb(url).json()
 	except: return None
 
@@ -146,7 +146,7 @@ def tmdb_media_images(media_type, tmdb_id):
 	if media_type in ('movie', 'movies'): media_type = 'movie'
 	else: media_type = 'tv'
 	string = 'tmdb_media_images_%s_%s' % (media_type, tmdb_id)
-	url = '%s/%s/%s/images?include_image_language=en,null&api_key=%s' % (base_url, media_type, tmdb_id, api_key)
+	url = '%s/%s/%s/images?include_image_language=en,pt,null&api_key=%s' % (base_url, media_type, tmdb_id, api_key)
 	return cache_function(get_tmdb, string, url, expiration=EXPIRY_1_WEEK)
 
 def tmdb_media_videos(media_type, tmdb_id):

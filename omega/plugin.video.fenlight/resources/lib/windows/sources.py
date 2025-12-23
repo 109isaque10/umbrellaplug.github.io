@@ -124,6 +124,7 @@ class SourcesResults(BaseDialog):
 		def builder(results):
 			for count, item in enumerate(results, 1):
 				try:
+					kodi_utils.logger('builder',str(item))
 					get = item.get
 					listitem = self.make_listitem()
 					set_properties = listitem.setProperties

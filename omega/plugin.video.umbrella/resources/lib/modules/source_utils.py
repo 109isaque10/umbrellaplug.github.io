@@ -64,39 +64,53 @@ APPLE_TV = ('atvp',)
 
 def seas_ep_filter(season, episode, release_title, split=False):
 	try:
-		release_title = re.sub(r'[^A-Za-z0-9-]+', '.', unquote(release_title).replace('\'', '')).replace('&', 'and').replace('%', '.percent').lower()
-		season = str(season)
-		season_fill = season.zfill(2)
-		episode = str(episode)
-		episode_fill = episode.zfill(2)
-		int_episode = int(episode)
+		release_title = re.sub(r'[^A-Za-z0-9-]+', '.', unquote(release_title).replace('\'', '').replace('/','.')).lower()
+		str_season, str_episode = str(season), str(episode)
+		season_fill, episode_fill = str_season.zfill(2), str_episode.zfill(2)
+		episode_filled = str_episode.zfill(3)
+		str_ep_plus_1, str_ep_minus_1 = str(episode + 1), str(episode - 1)
 
 		string1 = r'(s<<S>>[.-]?e[p]?[.-]?<<E>>[.-])'
-		string2 = r'(season[.-]?<<S>>[.-]?episode[.-]?<<E>>[.-])|' \
-						r'([s]?<<S>>[x.]<<E>>[.-])'
+		string2 = r'(season[.-]?<<S>>[.-]?episode[.-]?<<E>>[.-])|([s]?<<S>>[x.]<<E>>[.-])'
 		string3 = r'(s<<S>>e<<E1>>[.-]?e?<<E2>>[.-])'
 		string4 = r'([.-]<<S>>[.-]?<<E>>[.-])'
 		string5 = r'(episode[.-]?<<E>>[.-])'
-		string6 = r'([.-]e[p]?[.-]?<<E>>[.-])'
-		string7 = r'(^(?=.*[.-]e?0*<<E>>[.-])(?:(?!((?:s|season)[.-]?\d+[.-x]?(?:ep?|episode)[.-]?\d+)|\d+x\d+).)*$)'
+		string6 = r'([\s.-][ep]?[\s.-_]?<<E>>[\s.-])'
+		string10 = r'(ep[\s]?[.-_]?<<E>>[\s.-]<<S>>)'
+		string11 = r'\d+'
+		string12 = r'<<E>>'
+		string13 = r'(season[.-]?<<S>>[.-]?<<E>>)'
+
 		string_list = []
 		append = string_list.append
 		append(string1.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
-		append(string1.replace('<<S>>', season).replace('<<E>>', episode_fill))
-		append(string1.replace('<<S>>', season_fill).replace('<<E>>', episode))
-		append(string1.replace('<<S>>', season).replace('<<E>>', episode))
+		append(string1.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
+		append(string13.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
+		append(string13.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
+		append(string1.replace('<<S>>', season_fill).replace('<<E>>', episode_filled))
+		append(string1.replace('<<S>>', str_season).replace('<<E>>', episode_filled))
+		append(string1.replace('<<S>>', season_fill).replace('<<E>>', str_episode))
+		append(string1.replace('<<S>>', str_season).replace('<<E>>', str_episode))
+		append(string13.replace('<<S>>', season_fill).replace('<<E>>', str_episode))
+		append(string13.replace('<<S>>', str_season).replace('<<E>>', str_episode))
 		append(string2.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
-		append(string2.replace('<<S>>', season).replace('<<E>>', episode_fill))
-		append(string2.replace('<<S>>', season_fill).replace('<<E>>', episode))
-		append(string2.replace('<<S>>', season).replace('<<E>>', episode))
-		append(string3.replace('<<S>>', season_fill).replace('<<E1>>', str(int_episode-1).zfill(2)).replace('<<E2>>', episode_fill))
-		append(string3.replace('<<S>>', season_fill).replace('<<E1>>', episode_fill).replace('<<E2>>', str(int_episode+1).zfill(2)))
+		append(string2.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
+		append(string2.replace('<<S>>', season_fill).replace('<<E>>', str_episode))
+		append(string2.replace('<<S>>', str_season).replace('<<E>>', str_episode))
+		append(string3.replace('<<S>>', season_fill).replace('<<E1>>', str_ep_minus_1.zfill(2)).replace('<<E2>>', episode_fill))
+		append(string3.replace('<<S>>', season_fill).replace('<<E1>>', episode_fill).replace('<<E2>>', str_ep_plus_1.zfill(2)))
 		append(string4.replace('<<S>>', season_fill).replace('<<E>>', episode_fill))
-		append(string4.replace('<<S>>', season).replace('<<E>>', episode_fill))
+		append(string4.replace('<<S>>', str_season).replace('<<E>>', episode_fill))
 		append(string5.replace('<<E>>', episode_fill))
-		append(string5.replace('<<E>>', episode))
-		append(string6.replace('<<E>>', episode_fill))
-		append(string7.replace('<<E>>', episode_fill))
+		append(string5.replace('<<E>>', str_episode))
+		if season == '1': append(string6.replace('<<E>>', episode_fill))
+		if season == '1': append(string6.replace('<<E>>', episode_filled))
+		append(string10.replace('<<E>>', episode_fill).replace('<<S>>', season_fill))
+		append(string10.replace('<<E>>', episode_fill).replace('<<S>>', str_season))
+		if len(re.findall(string11, release_title.replace('.mp4', '').replace('m4v', ''))) == 1: append(
+			string12.replace('<<E>>', episode_fill))
+		if len(re.findall(string11, release_title.replace('.mp4', '').replace('m4v', ''))) == 1: append(
+			string12.replace('<<E>>', episode_filled))
 		final_string = '|'.join(string_list)
 		reg_pattern = re.compile(final_string)
 		if split: return release_title.split(re.search(reg_pattern, release_title).group(), 1)[1]
@@ -116,6 +130,9 @@ def seas_filter(season, release_title, split=False):
 		string2 = r'(season[.-]?<<S>>[.-])|' \
 						r'([s]?<<S>>[x.])'
 		string4 = r'([.-]<<S>>[.-])'
+		string5 = r'<<S>>[.-]?x'
+		string6 = r'temporada[.-]?<<S>>'
+		string7 = r'<<S>>a[.-]?temporada'
 
 		string_list = []
 		append = string_list.append
@@ -129,6 +146,12 @@ def seas_filter(season, release_title, split=False):
 		append(string2.replace('<<S>>', season))
 		append(string4.replace('<<S>>', season_fill))
 		append(string4.replace('<<S>>', season))
+		append(string5.replace('<<S>>', season_fill))
+		append(string5.replace('<<S>>', season))
+		append(string6.replace('<<S>>', season_fill))
+		append(string6.replace('<<S>>', season))
+		append(string7.replace('<<S>>', season_fill))
+		append(string7.replace('<<S>>', season))
 
 		final_string = '|'.join(string_list)
 		reg_pattern = re.compile(final_string)

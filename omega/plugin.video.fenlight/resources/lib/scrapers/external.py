@@ -240,7 +240,7 @@ class source:
 							size = float(size) / divider
 						size_label = '%.2f GB' % size
 					except: pass
-					i.update({'provider': provider, 'display_name': display_name, 'external': True, 'scrape_provider': self.scrape_provider, 'extraInfo': extraInfo,
+					i.update({'provider': i_get('provider'), 'display_name': display_name, 'external': True, 'scrape_provider': self.scrape_provider, 'extraInfo': extraInfo,
 							'quality': quality, 'size_label': size_label, 'size': round(size, 2)})
 				except: pass
 		except: pass

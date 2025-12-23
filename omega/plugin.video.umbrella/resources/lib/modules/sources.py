@@ -619,6 +619,16 @@ class Sources:
 			if getSetting('scrapers.prioritize') == 'true': 
 				sourceDict = [(i[0], i[1], i[1].priority) for i in sourceDict]
 				sourceDict = sorted(sourceDict, key=lambda i: i[2]) # sorted by scraper priority
+			if getSetting('scrapers.portuguese') == 'true':
+				k=0
+				for i in sourceDict:
+					if 'dual' in i[1].name.lower():
+						k = 3
+					elif 'dublado' in i[1].name.lower():
+						k = 2
+					elif 'legendado' in i[1].name.lower():
+						k = 1
+				sourceDict = sorted(sourceDict, key=)
 			try: aliases = self.meta.get('aliases', [])
 			except: aliases = []
 			threads = [] ; threads_append = threads.append
@@ -1614,6 +1624,7 @@ class Sources:
 			if getSetting('external_provider.module', '') == '':
 				#no external_provider_module
 				control.notification(message=control.lang(40447))
+				self.sourceDict = internalSources()
 				self.sourceDict = internalSources()
 				self.sourceDict.extend(cloudSources())
 			else:

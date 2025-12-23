@@ -490,7 +490,7 @@ class Sources():
 		return self.provider_sort_ranks[account_type] or 11
 
 	def _sort_folder_to_top(self, provider):
-		if provider == 'folders': return 0
+		if provider == 'folders' or provider == 'easynews': return 0
 		else: return 1
 
 	def _sort_uncached_results(self, results):
