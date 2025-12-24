@@ -5342,3 +5342,7 @@ msgstr ""
 msgctxt "#40599"
 msgid "Use alternate API address. (app.real-debrid.com)"
 msgstr ""
+
+msgctxt "#40600"
+msgid "Prioritize Portuguese Streams"
+msgstr ""

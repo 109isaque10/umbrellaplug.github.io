@@ -103,7 +103,7 @@ class TorBox:
 		return self._POST(self.cache, params={'format': 'list'}, json=data)
 
 	def add_magnet(self, magnet):
-		data = {'magnet': magnet, 'seed': 3, 'allow_zip': False}
+		data = {'magnet': magnet, 'seed': 1, 'allow_zip': False}
 		return self._POST(self.cloud, data=data)
 
 	def create_transfer(self, magnet_url):
@@ -125,7 +125,7 @@ class TorBox:
 			torrent_id = torrent['data']['torrent_id']
 			torrent_files = self.torrent_info(torrent_id)
 			selected_files = [
-				{'link': '%d,%d' % (torrent_id, i['id']), 'filename': i['short_name'], 'name': item['name'], 'size': i['size']}
+				{'link': '%d,%d' % (torrent_id, i['id']), 'filename': i['short_name'], 'name': i['name'], 'size': i['size']}
 				for i in torrent_files['data']['files'] if i['short_name'].lower().endswith(tuple(extensions))
 			]
 			if not selected_files: return None

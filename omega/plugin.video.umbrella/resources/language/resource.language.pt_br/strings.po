@@ -5341,3 +5341,7 @@ msgstr "Lista de Observação MDBList Lib"
 msgctxt "#40599"
 msgid "Use alternate API address. (app.real-debrid.com)"
 msgstr "Usar endereço API alternativo. (app.real-debrid.com)"
+
+msgctxt "#40600"
+msgid "Prioritize Portuguese Streams"
+msgstr "Priorizar Videos Portugueses"

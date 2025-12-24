@@ -621,11 +621,11 @@ class Sources:
 				sourceDict = sorted(sourceDict, key=lambda i: i[2]) # sorted by scraper priority
 			if getSetting('scrapers.portuguese') == 'true':
 				def sortPortuguese(item):
-					if 'dual' in item.lower():
+					if 'dual' in item[1].name.lower():
 						return 1
-					elif 'dublado' in item.lower():
+					elif 'dublado' in item[1].name.lower():
 						return 2
-					elif 'legendado' in item.lower():
+					elif 'legendado' in item[1].name.lower():
 						return 3
 					return None
 

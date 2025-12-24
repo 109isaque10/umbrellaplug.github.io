@@ -2691,6 +2691,11 @@
 					<default>false</default>
 					<control type="toggle"/>
 				</setting>
+				<setting id="scrapers.portuguese" type="boolean" label="40600" help="">
+					<level>0</level>
+					<default>false</default>
+					<control type="toggle"/>
+				</setting>
 				<setting id="showHelpscrapersPrioritize" type="action" label="32137" help="">
 					<level>0</level>
 					<data>RunPlugin(plugin://plugin.video.umbrella/?action=tools_ShowHelp&amp;name=scrapersPrioritize)</data>
